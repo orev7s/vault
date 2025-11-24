@@ -242,6 +242,42 @@
           "url": "https://drive.usercontent.google.com/download?id=1AnLR9TxK7-nbpYMP-fseXdmvOH2jO9jK&export=download&authuser=0&confirm=t&uuid=f0e30e37-edbe-40a5-a1e7-c15cb0b883e1&at=ALWLOp6_M0Xjhrw6gX9_2uvKgZRm%3A1763974908957"
         }
       ]
+    },
+    "271590": {
+      "name": "Grand Theft Auto V Legacy",
+      "fixes": [
+        {
+          "title": "Fix",
+          "url": "https://pixeldrain.com/api/file/JnXpNT5P?download"
+        }
+      ]
+    },
+    "3240220": {
+      "name": "Grand Theft Auto V Enhanced",
+      "fixes": [
+        {
+          "title": "Fix",
+          "url": "https://pixeldrain.com/api/file/QrE1b1C8?download"
+        }
+      ]
+    },
+    "12110": {
+      "name": "Grand Theft Auto VC",
+      "fixes": [
+        {
+          "title": "Fix",
+          "url": "https://pixeldrain.com/api/file/fW6vAj3J?download"
+        }
+      ]
+    },
+    "1546970": {
+      "name": "Grand Theft Auto 3 Definitive Edition",
+      "fixes": [
+        {
+          "title": "Fix",
+          "url": "https://pixeldrain.com/api/file/2uJtBj83?download"
+        }
+      ]
     }
   }
 }
