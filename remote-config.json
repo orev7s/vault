@@ -1,4 +1,4 @@
 {
   "apiBaseUrl": "http://72.62.66.41:3000",
-  "fileApiBaseUrl": "http://18.195.193.150:8080"
+  "fileApiBaseUrl": "http://72.62.66.41:8080"
 }
