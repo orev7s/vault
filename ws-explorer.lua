@@ -1,2 +1,779 @@
--- this file was generated using ironbrew1
-return(function(a,a,b,b,b,b,c,d,e,f,g,h,i,j,k,l,m,m,m,n,n,n,n,n,n,o,o,o,o,o,o,o,o)local p,q,r,s,t,u,v,w,x,y,z,ba,bb,bc,bd,be,bf,bg,bh,bi,bj,bk,bl,bm,bn,bo,bp,bq,br,bs,bt,bu,bv,bw,bx,by,bz,ca local cb={}local cc={}cc[1]=4 cc[2]=1 cc[3]=0 local cd=0 local ce=-39870 repeat if ce>=-10402 then if ce<=52088 then if ce>=32341 then if ce>=34416 then if ce>=43951 then if ce<52088 then bt=nil cd,ce=34416,34416 else bj=function(cf)local cg=0 for ch=0,3 do cg=v(cg,w(e(cf,bh,bh),8*ch));bh=bh+1;end;return cg;end cd=cc[2]==1 and 32341 or-31528 ce=-31528 end else bt=function(cf)local cg=br(cf)local cf=br(cf)if cf==0 then return cg;elseif(cf>=2147483648)then cf=cf-4294967296;end;return cf*4294967296+cg;end cd,ce=52801,52801 end else if ce<=32341 then bl=function(cf)local cg=0 for ch=0,1 do cg=v(cg,w(e(cf,bh,bh),8*ch));bh=bh+1;end;return cg;end cd=cc[2]==0 and 76791 or 89727 cc[2]=(cc[2]+1)%5 ce=89727 else if ce~=34351 then s=function(cf,cg,ch)if(cg>ch)then return end local ci=ch-cg+1 do local cj=0 local ck=0 if ck==0 and ci>=8 then cj=26470 ck=1 end if ck==0 and ci>=7 then cj=10063 ck=1 end if ck==0 and ci>=6 then cj=36073 ck=1 end if ck==0 and ci>=5 then cj=87380 ck=1 end if ck==0 and ci>=4 then cj=94506 ck=1 end if ck==0 and ci>=3 then cj=18985 ck=1 end if ck==0 and ci>=2 then cj=67561 ck=1 end if ck==0 then cj=38810 ck=1 end if cj==26470 then return cf[cg],cf[cg+1],cf[cg+2],cf[cg+3],cf[cg+4],cf[cg+5],cf[cg+6],cf[cg+7],s(cf,cg+8,ch)end if cj==10063 then return cf[cg],cf[cg+1],cf[cg+2],cf[cg+3],cf[cg+4],cf[cg+5],cf[cg+6],s(cf,cg+7,ch)end if cj==36073 then return cf[cg],cf[cg+1],cf[cg+2],cf[cg+3],cf[cg+4],cf[cg+5],s(cf,cg+6,ch)end if cj==87380 then return cf[cg],cf[cg+1],cf[cg+2],cf[cg+3],cf[cg+4],s(cf,cg+5,ch)end if cj==94506 then return cf[cg],cf[cg+1],cf[cg+2],cf[cg+3],s(cf,cg+4,ch)end if cj==18985 then return cf[cg],cf[cg+1],cf[cg+2],s(cf,cg+3,ch)end if cj==67561 then return cf[cg],cf[cg+1],s(cf,cg+2,ch)end if cj==38810 then return cf[cg],s(cf,cg+1,ch)end end end cd=cc[2]~=0 and-15130 or 20457 ce=20457 else bs=function(cf)local cf,cg=e(cf,bh,bh+1)bh=bh+2;return((cg*256)+cf);end ce=43951 end end end else if ce<=20457 then if ce<=-10402 then be=function(cf)local cg=33 local ch=85 local ci={}local cj=#cf local ck=1 local cl=1 while ck<=cj do local cm=ck+4 local cj=(cm<=cj)and 5 or(cj-ck+1)if cj==0 then break;end;local cf,cm,cn,co,cp=e(cf,ck,cm)if cj<5 then cm=cm or 117;cn=cn or 117;co=co or 117;cp=cp or 117;end;if(cf<cg or cf>=cg+ch)then return"";end;if cj>=2 and(cm<cg or cm>=cg+ch)then return"";end;if cj>=3 and(cn<cg or cn>=cg+ch)then return"";end;if cj>=4 and(co<cg or co>=cg+ch)then return"";end;if cj>=5 and(cp<cg or cp>=cg+ch)then return"";end;local cf=((((cf-cg)*ch+(cm-cg))*ch+(cn-cg))*ch+(co-cg))*ch+(cp-cg)local cg=y(x(cf,24),255)local ch=y(x(cf,16),255)local cm=y(x(cf,8),255)local cf=y(cf,255)local cf=d(cg,ch,cm,cf)if cj<5 then cf=b(cf,1,cj-1);end;ci[cl]=cf;cl=cl+1;ck=ck+5;end;return i(ci);end ce=25149 else t=function(cf,cg,ch)local ci=ch-cg+1 if ci>7997 then return s(cf,cg,ch)else return m(cf,cg,ch)end end cd=cc[3]==1 and-25750 or 78710 ce=78710 end else if ce<=20846 then br=nil cd=cc[2]~=1 and 43951 or-20795 cd,ce=-20795,-20795 else if ce<28274 then bf=function(m)local s,cf,cg,ch=nil,nil,nil,nil local ci={}for cj=0,255 do ci[cj]=d(cj);end;local function cj(ck)local cl=-1 local cm=256 local cn=257 local co=258 local cp=259 local cq=260 local cr=#ck local cs=1 local ct=0 local cu=0 local function cv(cw)while cu<cw and cs<=cr do local ck=e(ck,cs)cs=cs+1;ct=ct+w(ck,cu);cu=cu+8;end;end;local function ck()if cu==0 then cv(1);end;local cr=y(ct,1)ct=x(ct,1);cu=cu-1;return cr;end;local function cr(cs)if cs<=0 then return 0;end;cv(cs);local cv=w(1,cs)-1 local cv=y(ct,cv)ct=x(ct,cs);cu=cu-cs;return cv;end;local function cs()local ct=0 while ck()==0 do ct=ct+1;if ct>31 then break;end;end;if ct==0 then return 1;end;local cu=1 for cv=1,ct do cu=cu*2+ck();end;return cu;end;local function ct(cu)local cv=0 while ck()==0 do cv=cv+1;end;if cu==0 then return cv;end;local cw=cr(cu)return cv*(2^cu)+cw;end;local function cu(cv)local cw={}local function cx(cy,cz,da)local db=cw for dc=cz-1,0,-1 do local cy=y(x(cy,dc),1)if not db[cy]then db[cy]={};end;db=db[cy];end;db[cl]=da;end;local cy=cs()-1 if cy<=0 then return cw;end;local cz=0 local da={}local db=-1 local dc=0 for dd=1,cy do local cy if cv then if dd==1 then cy=cr(8);else local cv=cs()cy=db+cv;end;else local cv=cs()if dd==1 then cy=cv-1;else cy=db+cv;end;end;local cv if dd==1 then cv=cs();else local dd=ck()if dd==1 then cv=dc;else cv=cs();end;end;if cv>cz then cz=cv;end;local cs=da[cv]if cs==nil then cs={};da[cv]=cs;end;cs[#cs+1]=cy;db=cy;dc=cv;end;local cs=0 local cv=0 for cy=1,cz do local cz=da[cy]if cz~=nil then n(cz);if cy>cv then cs=w(cs,cy-cv);cv=cy;end;for n=1,#cz do cx(cs,cy,cz[n]);cs=cs+1;end;end;end;return cw;end;local function n(cs)local cs=cs while true do local cv=ck()cs=cs[cv];if not cs then return;end;local cl=cs[cl]if cl~=nil then return cl;end;end;end;local cl=cu(false)local cs=cu(false)local cv=cu(false)local cw=cu(true)local cu=cu(true)local cx=cr(2)local cy,cz,da,db if cx==0 then cy=s or 0;cz=cf or 0;da=cg or 0;db=ch or 0;elseif cx==1 then local cx={[-1]=0,[0]=1,[1]=2,[2]=3}local cx={[0]=-1,[1]=0,[2]=1,[3]=2}local dc=cx[cr(2)]local dd=cx[cr(2)]local de=cx[cr(2)]local cx=cx[cr(2)]cy=(s or 0)+dc;cz=(cf or 0)+dd;da=(cg or 0)+de;db=(ch or 0)+cx;s,cf,cg,ch=cy,cz,da,db;else cy=cr(4);cz=cr(4);da=cr(4);db=cr(4);s,cf,cg,ch=cy,cz,da,db;end;local s={}local cf=0 local cg=false local ch=false while true do local cl=ch and cv or(cg and cs or cl)local cl=n(cl)if cl==nil then break;end;if cl==cq then break;end;if cl==cm then local cm=cg and cu or cw local cm=n(cm)if cm==nil then break;end;local cq=ck()local cq=ct(cq==0 and da or db)+1 local cs=ci[cm]cf=cf+1;s[cf]=h(cs,cq);cg=(cm==0);ch=true;elseif cl==cn then local ck=ck()local ck=ct(ck==0 and cy or cz)+1 local cm=ci[0]cf=cf+1;s[cf]=h(cm,ck);cg=true;ch=true;elseif cl==co then local ck=2+cr(5)local cm=ci[0]cf=cf+1;s[cf]=h(cm,ck);cg=true;ch=true;elseif cl==cp then local ck=cg and cu or cw local n=n(ck)if n==nil then break;end;local ck=2+cr(3)local cm=ci[n]cf=cf+1;s[cf]=h(cm,ck);cg=(n==0);ch=true;else cf=cf+1;s[cf]=ci[cl];cg=(cl==0);ch=false;end;end;return i(s);end;local function h(n)local s={}local cf=256 local cg={}for ch=1,cf do cg[ch]={};for cf=0,255 do cg[ch][cf+1]=cf;end;end;local cf=0 local ch=#n for ck=1,ch do local ch=cf+1 local cg=cg[ch]local n=e(n,ck)+1 local ch=cg[n]s[ck]=ci[ch];if n>1 then p(cg,1,n-1,2);cg[1]=ch;end;cf=ch;end;return i(s);end;local function n(s,cf)local cg=#s if cg==0 then return"";end;cf=cf+1;local ch={}if cg>0 then ch[cg]=0;ch[cg]=nil;end;local ck={}local cl={}cl[256]=0;cl[256]=nil;for cm=1,cg do local cm=e(s,cm)ck[cm]=(ck[cm]or 0)+1;end;local cm=1 for cn=0,255 do local ck=ck[cn]or 0 cl[cn]=cm;cm=cm+ck;end;for ck=1,cg do local cm=e(s,ck)local cn=cl[cm]ch[cn]=ck;cl[cm]=cn+1;end;local ck={}if cg>0 then ck[cg]="";ck[cg]=nil;end;local cf=cf for cl=1,cg do cf=ch[cf];ck[cl]=ci[e(s,cf)];end;return i(ck);end;local m=be(m)local s={}local be=0 local cf=1 local cg=#m while cf+7<=cg do local ch,ci,ck,cl=e(m,cf,cf+3)local ch=ch+ci*256+ck*65536+cl*16777216 cf=cf+4;local ci,ck,cl,cm=e(m,cf,cf+3)local ci=ci+ck*256+cl*65536+cm*16777216 cf=cf+4;if cf+ci-1>cg then break;end;local m=b(m,cf,cf+ci-1)cf=cf+ci;local m=cj(m)local h=h(m)local h=n(h,ch)be=be+1;s[be]=h;end;return i(s);end cd,ce=-12784,-12784 else bo=nil cd=cc[1]~=0 and 64672 or 79024 ce=79024 end end end end else if ce>=66085 then if ce<=78710 then if ce<=66085 then bs=nil cc[3]=(cc[3]+1)%5 ce=34351 else if ce~=78710 then bn=nil cd,ce=-35189,-35189 else u=q and q[(function(h,m)local n local s={}local be={}be[1]=4 be[2]=3 be[3]=1 local cf=-16878 local cg=0 repeat if cf<=29069 then if cf==-16878 then s[67]={}be[2]=(be[2]+1)%5 cf=62904 else return i(n)end else if cf<71191 then n=s[67]for s=1,#h do local h=e(h,s)n[s]=o(d(37,99),(h-(m+s))%256)end cg,cf=29069,29069 else break end end until cf==71191 end)("\175\198\190\194",76)]or function(h,m)local n=0 for s=0,31 do local be local cf={}local cf={}cf[1]=2 cf[2]=1 cf[3]=1 local cg=0 local ch=59478 repeat if ch>=56818 then if ch<=56818 then break else be=h/2+m/2 if be~=j(be)then n=n+2^s;end;cg,ch=25932,25932 end else h=j(h/2)m=j(m/2)cf[3]=(cf[3]+1)%5 cg,ch=56818,56818 end until ch==56818 end;return n;end v=q and q[(function(h,m)local n={}for s=1,#h do local h=e(h,s)n[s]=o(d(37,99),(h-(m+s))%256)end return i(n)end)("\115\129\133",16)]or function(h,m)local n=0 local s=1 while h>0 or m>0 do local u=h%2 local be=m%2 if u==1 or be==1 then n=n+s;end;h=j(h/2);m=j(m/2);s=s*2;end;return n;end cd,ce=-22972,-22972 end end else if ce<=79024 then bo=function(h)local h,m,n,s,u,be,cf,cg=e(h,bh,bh+7)bh=bh+8;local ch=cg>127 and-1 or 1 local cg=(cg%128)*16+j(cf/16)local h=((cf%16)*2^48+be*2^40+u*2^32+s*2^24+n*2^16+m*2^8+h)if cg==0 then if h==0 then return ch*0;else return ch*h*2^(-1022-52);end;elseif cg==2047 then if h==0 then return ch*(1/0);else return 0/0;end;end;h=h+2^52;return ch*h*2^(cg-1023-52);end ce=-44623 else if ce<=81539 then bi=function(h)local m=0 local n=0 for s=0,3 do local u=e(h,bh)m=v(m,w(u,8*s));bh=bh+1;end;for s=0,3 do local h=e(h,bh)n=v(n,w(h,8*s));bh=bh+1;end;return n*4294967296+m;end cd,ce=-17302,-17302 else bm=nil cd,ce=60354,60354 end end end else if ce<=59586 then if ce>=57823 then if ce==57823 then bd=setfenv ce=-10402 else bk=function(h)local m=0 for n=0,2 do m=v(m,w(e(h,bh,bh),8*n));bh=bh+1;end;return m;end cd,ce=-18845,-18845 end else bu=nil ce=-37099 end else if ce>=63654 then if ce<=63654 then cb[885]={}ce=-45209 else bp=function(h)local m=0 local n=1 repeat local h=e(h,bh,bh)m=m+(h>127 and h-128 or h)*n n=n*128 bh=bh+1 until(h<128)return m end cd=cc[3]~=1 and-20795 or-47949 ce=-47949 end else bm=function(h)local m=0 m=v(m,w(e(h,bh,bh),8));bh=bh+1;return m;end ce=76791 end end end end else if ce<=-35189 then if ce<=-44623 then if ce>=-45209 then if ce>=-44872 then if ce~=-44623 then p=cb[883]q=bit32 or bit r=2^32 cd,ce=34143,34143 else bp=nil ce=64672 end else cb[883]=table and table.move or function(h,m,n,p,s)s=s or h;p=p+n;for u=n,m,-1 do p=p-1;s[p]=h[u];end;return s;end cd,ce=-44872,-44872 end else if ce<=-47949 then bq=nil cd,ce=-16176,-16176 else break end end else if ce<=-39550 then if ce<=-42192 then bv=function(...)return{...},k('#',...)end cd,ce=-34672,-34672 else if ce==-39870 then cb[884]={}ce=63654 else bi=nil cd,ce=81539,81539 end end else if ce>=-37099 then if ce<-35189 then bu=function(h)local m={[2517]={},[3464]={},[5416]={},[4095]={},[842]={},[552]={},[2404]={},}local n={}n[(function(p)local s s=0 while true do do if(-16784)>=(p)then do local u=(p>=-21630)if u then do if p==-21630 then do p=p+22518 end do s=s+1 end else p=p+35567 s=s+1 end end else if(-39102)>(p)then p=p+37091 s=s+1 else p=p-14773 s=s+1 end end end else if p>=15138 then if not((p)>(15138))then do p=p-36768 s=s+1 end else do p=p-3645 s=s+1 end end else if p==-246 then p=p-38856 s=s+1 else p=p-885 s=s+1 end end end end if s==8 then break end end return p end)(-246)]=bn(h);bc(n,(function(p)local s s=0 repeat if not(true)then break end do if p>=363 then if p<=363 then do p=p-33250 end s=s+1 else if p<45074 then p=p-48385 s=s+1 else p=p-44711 s=s+1 end end else if not((p)==(-32887))then p=p+47931 s=s+1 else p=p+33347 s=s+1 end end end if not((s)~=(5))then break end until false return p end)(45074),bn(h))n[(function(p)local s=0 while true do if p<=-39831 then do local u=(not((p)~=(-48249)))if u then p=p+16244 do s=s+1 end else do p=p-8418 end s=s+1 end end else if p<3367 then p=p+32010 s=s+1 else p=p-43198 s=s+1 end end do if s==4 then break end end end do return p end end)(3367)]=bn(h);bc(n,(function(p)local s=0 repeat if not(true)then break end if p>=10193 then if p<=24257 then do local u=((24257)~=(p))if u then p=p-10185 s=s+1 else p=p+9129 s=s+1 end end else do local u=(p<=25234)if u then p=p-15041 s=s+1 else p=p-8152 s=s+1 end end end else if p>=-45193 then do local u=(p==-45193)if u then do p=p+22143 s=s+1 end else do p=p+47307 end s=s+1 end end else do p=p+26151 end s=s+1 end end if s==7 then break end until false return p end)(-71344),bn(h))n[(function(p)local s s=0 while true do do if p<=6643 then do if p<=-21416 then do p=p+28746 s=s+1 end else if p~=6643 then p=p+886 s=s+1 else do p=p-7522 s=s+1 end end end end else if p>=21825 then do if not((p)>(21825))then p=p-15182 s=s+1 else p=p-28760 s=s+1 end end else p=p+43255 s=s+1 end end if s==6 then break end end end return p end)(-21416)]=bn(h);do n[(function(p)local s s=0 do repeat if not(true)then break end if p<=70126 then if p==27990 then do p=p-27989 end s=s+1 else p=p-42136 do s=s+1 end end else if p==83355 then p=p+36075 s=s+1 else p=p-49304 s=s+1 end end if s==4 then break end until false return p end end)(83355)]=bn(h);end do n[(function(p)local s=0 while true do do do local u=(p<=-85045)if u then if p>=-85523 then do if p==-85523 then do p=p+44320 s=s+1 end else p=p-478 s=s+1 end end else do p=p+38641 s=s+1 end end else if not((p)>(-82064))then p=p-12024 s=s+1 else do local u=(p==-55447)if u then do p=p-29598 s=s+1 end else do p=p+41215 s=s+1 end end end end end end end if s==6 then break end end return p end)(-82064)]=bn(h);bc(n,(function(p)local s=0 do while true do do do local u=(p<=21321)if u then if p>=17645 then do do local u=(p<=17645)if u then p=p+40401 s=s+1 else p=p-41876 s=s+1 end end end else if p==-20555 then p=p+6851 s=s+1 else do p=p+13713 end do s=s+1 end end end else do local u=(p>=58046)if u then if(60079)<=(p)then do if p<96505 then p=p-42434 s=s+1 else p=p-36426 s=s+1 end end else p=p-4498 s=s+1 end else if not((p)==(53548))then p=p+49093 s=s+1 else do p=p-32227 s=s+1 end end end end end end do local s=(s==9)if s then break end end end end end return p end)(47412),bn(h))end n[(function(p)local s=0 while true do do local u=(p>=4333)if u then do local u=(p<=4333)if u then p=p-4329 do s=s+1 end else do local u=(p<=8991)if u then p=p+35030 do s=s+1 end else p=p-39688 s=s+1 end end end end else if p>=-30088 then if(-11083)>(p)then p=p-3181 s=s+1 else do p=p+20074 end do s=s+1 end end else p=p+22186 do s=s+1 end end end end if not(not((6)==(s)))then break end end return p end)(-30088)]=bn(h);n[(function(p)local s=0 while true do if p<=-6355 then do local u=(p==-9006)if u then do p=p+14332 end s=s+1 else do p=p-2651 end s=s+1 end end else if p<39133 then p=p-5315 s=s+1 else p=p-45488 s=s+1 end end if s==4 then break end end return p end)(39133)]=bn(h);do n[(function(p)local s=0 while true do if p>=-9457 then if p<=-9457 then p=p-15334 s=s+1 else do if p<=-6027 then do p=p+15825 s=s+1 end else p=p-19255 s=s+1 end end end else if not((p)~=(-24791))then p=p+4739 do s=s+1 end else do p=p+20054 end s=s+1 end end do do local s=(s==5)if s then break end end end end return p end)(-6027)]=bn(h);bc(n,(function(p)local s=0 while true do if(-2161)>=(p)then if p<=-2572 then do p=p+2586 end s=s+1 else do p=p+18353 s=s+1 end end else if p<43384 then p=p-18764 do s=s+1 end else p=p-45545 s=s+1 end end do if(4)==(s)then break end end end return p end)(43384),bn(h))end bc(n,(function(p)local s=0 while true do do local u=(p<=-57097)if u then do local u=(not((p)>(-63005)))if u then if(-63005)>(p)then p=p+15161 do s=s+1 end else p=p+29124 s=s+1 end else if p<-57097 then do p=p+2634 s=s+1 end else p=p+44090 do s=s+1 end end end end else do if p<=-44743 then if p==-51893 then p=p-11112 s=s+1 else p=p-14988 s=s+1 end else if p>=-13966 then if p==-13966 then p=p+13976 s=s+1 else p=p-959 s=s+1 end else do p=p-10862 s=s+1 end end end end end end do local s=(s==9)if s then break end end end return p end)(-67054),bn(h))n[(function(p)local s=0 repeat if not(true)then break end if not((p)>(10530))then if(-18729)>=(p)then p=p+29259 s=s+1 else p=p+49848 s=s+1 end else do local u=(p>=60378)if u then if(74748)~=(p)then do p=p+14370 s=s+1 end else p=p-26694 s=s+1 end else p=p-48041 s=s+1 end end end if not((s)~=(5))then break end until false return p end)(-18729)]=bn(h);m[1906]=n;local p=bp(h)local s s={}local u=0 do do local v=(1)local bd=(1)local p=(p)if bd>=0 then while v<=p do local be be=bn(h)~=0 local be=be and 1 or 0 local bm bm=bq(h)local cf cf=u+bm do u=cf end local bm=bn(h)bc(s,#(s)+1,{be,cf,bm})v=v+bd end else while v>=p do local p p=bn(h)~=0 local p=p and 1 or 0 local be be=bq(h)local bm bm=u+be do u=bm end local u=bn(h)bc(s,#(s)+1,{p,bm,u})v=v+bd end end end m[552]=s end do local p=(1)local s=(1)local u=(bp(h))if s>=0 then if p<=u then repeat m[4095][p]=bu(h);p=p+s until not(p<=u)end else if p>=u then repeat m[4095][p]=bu(h);p=p+s until not(p>=u)end end end m[5416]=bn(h);local p=bp(h)local s={}do local u=(1)local v=(1)local p=(p)if v>=0 then if u<=p then repeat local bd=bn(h)if bd==0 then local be be=bn(h)if be==0 then local be=bp(h)local bm do local cf=(not((be)~=(0)))if cf then bm="";else bm=b(h,bh,bh+be-1);end end do bh=bh+be;end s[u]=bm;end;elseif bd==1 then local be be=bn(h)if be==1 then do s[u]=bq(h);end else s[u]=bt(h);end;elseif bd==2 then local be=bn(h)do s[u]=((be==1)and(bp(h))or(bi(h)))end elseif bd==3 then s[u]=bo(h);elseif not((bd)~=(4))then local be=bn(h)if be==1 then do bc(s,u,bq(h))end else bc(s,u,bo(h))end;elseif not((bd)~=(5))then s[u]=bn(h)==1;else s[u]=nil;end;u=u+v until not(u<=p)end else if u>=p then repeat local bd=bn(h)if bd==0 then local be be=bn(h)if be==0 then local be=bp(h)local bm do local cf=(not((be)~=(0)))if cf then bm="";else bm=b(h,bh,bh+be-1);end end do bh=bh+be;end s[u]=bm;end;elseif bd==1 then local b b=bn(h)if b==1 then do s[u]=bq(h);end else s[u]=bt(h);end;elseif bd==2 then local b=bn(h)do s[u]=((b==1)and(bp(h))or(bi(h)))end elseif bd==3 then s[u]=bo(h);elseif not((bd)~=(4))then local b=bn(h)if b==1 then do bc(s,u,bq(h))end else bc(s,u,bo(h))end;elseif not((bd)~=(5))then s[u]=bn(h)==1;else s[u]=nil;end;u=u+v until not(u>=p)end end end do m[3464]=s;m[1381]=bp(h);end local b=bp(h)local p={}local s,u,v,bd=0,0,0,0 local be be=n[(function(bi)local bm=0 while true do if bi>=10193 then if bi<=24257 then if bi~=24257 then bi=bi-10185 bm=bm+1 else bi=bi+9129 bm=bm+1 end else if bi<=25234 then bi=bi-15041 bm=bm+1 else bi=bi-8152 bm=bm+1 end end else if bi>=-45193 then if bi==-45193 then bi=bi+22143 bm=bm+1 else bi=bi+47307 bm=bm+1 end else bi=bi+26151 bm=bm+1 end end if bm==7 then break end end return bi end)(-71344)]local bi=n[(function(bi)local bm=0 while true do if bi<=6643 then if bi<=-21416 then bi=bi+28746 bm=bm+1 else if bi~=6643 then bi=bi+886 bm=bm+1 else bi=bi-7522 bm=bm+1 end end else if bi>=21825 then if bi<=21825 then bi=bi-15182 bm=bm+1 else bi=bi-28760 bm=bm+1 end else bi=bi+43255 bm=bm+1 end end if bm==6 then break end end return bi end)(-21416)]local bm=n[(function(bm)local bo=0 while true do if bm>=363 then if bm<=363 then bm=bm-33250 bo=bo+1 else if bm<45074 then bm=bm-48385 bo=bo+1 else bm=bm-44711 bo=bo+1 end end else if bm~=-32887 then bm=bm+47931 bo=bo+1 else bm=bm+33347 bo=bo+1 end end if bo==5 then break end end return bm end)(45074)]local bo bo=n[(function(bt)local cf=0 while true do if bt<=10530 then if bt<=-18729 then bt=bt+29259 cf=cf+1 else bt=bt+49848 cf=cf+1 end else if bt>=60378 then if bt~=74748 then bt=bt+14370 cf=cf+1 else bt=bt-26694 cf=cf+1 end else bt=bt-48041 cf=cf+1 end end if cf==5 then break end end return bt end)(-18729)]local bt=n[(function(bt)local cf=0 while true do if bt<=-39831 then if bt==-48249 then bt=bt+16244 cf=cf+1 else bt=bt-8418 cf=cf+1 end else if bt<3367 then bt=bt+32010 cf=cf+1 else bt=bt-43198 cf=cf+1 end end if cf==4 then break end end return bt end)(3367)]for cf=1,b do local b={}bc(b,bt,bp(h))local bt=(bn(h))~=0 local cg=(bn(h))~=0 local ch ch=not((bn(h))~=(1))local ci=bn(h)do if ci==1 then local cj cj=bs(h)local ck ck={}local cl={}local cm cm={}local cn,co,cp=0,0,0 for cq=1,cj do cp=cp+bq(h);do co=co+bq(h);end cn=cn+bq(h);cm[cq]=cp;cl[cq]=co;ck[cq]=cn;end;do b[be]=ck;b[bi]=cl;end b[bm]=cm;elseif ci==2 then local cj=bs(h)local ck={}local cl={}local cm,cn cm,cn=0,0 do local co=(1)local cp=(1)local cj=(cj)if cp>=0 then while co<=cj do do cn=cn+bq(h);end do cm=cm+bq(h);end cl[co]=cn;ck[co]=cm;co=co+cp end else while co>=cj do do cn=cn+bq(h);end do cm=cm+bq(h);end cl[co]=cn;ck[co]=cm;co=co+cp end end end do b[be]=ck;bc(b,bi,cl)end elseif ci==3 then local cj=bs(h)local ck={}local cl cl=0 do for cm=1,cj do cl=cl+bq(h);ck[cm]=cl;end;b[be]=ck;end elseif ci==4 then local ci ci=bs(h)local bs={}local cj={}local ck={}local cl cl={}local cm,cn,co,cp cm,cn,co,cp=0,0,0,0 for cq=1,ci do co=co+bq(h);cn=cn+bq(h);cp=cp+bq(h);cm=cm+bq(h);ck[cq]=co;cj[cq]=cn;cl[cq]=cp;bs[cq]=cm;end;b[be]=bs;do bc(b,bi,cj)end do b[bm]=ck;bc(b,bo,cl)end else v=v+bq(h);do u=u+bq(h);bd=bd+bq(h);end s=s+bq(h);b[bm]=v;bc(b,bi,u)b[bo]=bd;b[be]=s;end end b[n[(function(s)local u=0 while true do if s<=-85045 then if s>=-85523 then if s==-85523 then s=s+44320 u=u+1 else s=s-478 u=u+1 end else s=s+38641 u=u+1 end else if s<=-82064 then s=s-12024 u=u+1 else if s==-55447 then s=s-29598 u=u+1 else s=s+41215 u=u+1 end end end if u==6 then break end end return s end)(-82064)]]=bt;bc(b,n[(function(s)local u=0 while true do if s<=-57097 then if s<=-63005 then if s<-63005 then s=s+15161 u=u+1 else s=s+29124 u=u+1 end else if s<-57097 then s=s+2634 u=u+1 else s=s+44090 u=u+1 end end else if s<=-44743 then if s==-51893 then s=s-11112 u=u+1 else s=s-14988 u=u+1 end else if s>=-13966 then if s==-13966 then s=s+13976 u=u+1 else s=s-959 u=u+1 end else s=s-10862 u=u+1 end end end if u==9 then break end end return s end)(-67054)],cg)b[n[(function(s)local u=0 while true do if s<=-16784 then if s>=-21630 then if s==-21630 then s=s+22518 u=u+1 else s=s+35567 u=u+1 end else if s<-39102 then s=s+37091 u=u+1 else s=s-14773 u=u+1 end end else if s>=15138 then if s<=15138 then s=s-36768 u=u+1 else s=s-3645 u=u+1 end else if s==-246 then s=s-38856 u=u+1 else s=s-885 u=u+1 end end end if u==8 then break end end return s end)(-246)]]=ch;b[n[(function(n)local s=0 while true do if n<=70126 then if n==27990 then n=n-27989 s=s+1 else n=n-42136 s=s+1 end else if n==83355 then n=n+36075 s=s+1 else n=n-49304 s=s+1 end end if s==4 then break end end return n end)(83355)]]=p[cf-1];p[cf]=b;end;m[2517]=p;m[842]=bn(h)==1;local b=bn(h)~=0 if b then local b=bp(h)local n={}local p=0 for s=1,b do local b=bn(h)~=0 local b=b and 1 or 0 local s=bq(h)local s=p+s do p=s end c(n,{b,s})end bc(m,2404,n)end;local b=bp(h)local c c={}do for n=1,b do local b={}local p=bp(h)do for s=1,p do b[s]=bp(h);end;end bc(c,n,b)end;end m[1312]=c;return m;end ce=-42192 else bn=function(b)local c=0 c=e(b,bh);bh=bh+1;return c;end cd,ce=28274,28274 end else bx=cb[885]ce=-17937 end end end else if ce<=-20795 then if ce<=-31528 then if ce<=-34672 then bw=function(b,...)local c=k('#',...);for h=1,c do b[h]=k(h,...);end;local h=b[0]or 0 if h>c then for m=c+1,h do b[m]=nil;end;end;b[0]=c;return c;end ce=-39199 else if ce==-32435 then bz=bu(bg)ca=by(bz,{},l())return ca();else bk=nil cd=cc[1]==0 and-18845 or 59586 cd,ce=59586,59586 end end else if ce<=-25750 then ba=(table.create or function(b)return{t({},1,b)};end)bb=cb[884]bc=rawset cd,ce=57823,57823 else if ce<=-22972 then w=nil x=nil w=q and q[(function(b,c)local h={}for l=1,#b do local b=e(b,l)h[l]=o(d(37,99),(b-(c+l))%256)end return i(h)end)("\142\150\140\142\140\155",33)]or function(b,c)if c<0 then return x(b,-c)end return(b*2^c)%r;end x=q and q[(function(b,c)local h={}for l=1,#b do local b=e(b,l)h[l]=o(d(37,99),(b-(c+l))%256)end return i(h)end)("\165\167\157\159\157\172",50)]or function(b,c)if c<0 then return w(b,-c)end return j(b%r/2^c)end cc[1]=(cc[1]+1)%5 cd,ce=-15130,-15130 else br=function(b)local b,c,h,l=e(b,bh,bh+3)bh=bh+4;return((l*16777216)+(h*65536)+(c*256)+b);end cd,ce=66085,66085 end end end else if ce<=-17302 then if ce<=-18845 then bl=nil ce=32341 else if ce<=-17937 then by=function(b,c,h,...)local l=(b[2517])local m=b[5416]local n=b[842]local n=b[4095]local p=b[3464]local s=b[1312]local u=b[1906]local u,v,w,x,bb=u[(function(v)local w=0 while true do if v>=363 then if v<=363 then v=v-33250 w=w+1 else if v<45074 then v=v-48385 w=w+1 else v=v-44711 w=w+1 end end else if v~=-32887 then v=v+47931 w=w+1 else v=v+33347 w=w+1 end end if w==5 then break end end return v end)(45074)],u[(function(v)local w=0 while true do if v>=10193 then if v<=24257 then if v~=24257 then v=v-10185 w=w+1 else v=v+9129 w=w+1 end else if v<=25234 then v=v-15041 w=w+1 else v=v-8152 w=w+1 end end else if v>=-45193 then if v==-45193 then v=v+22143 w=w+1 else v=v+47307 w=w+1 end else v=v+26151 w=w+1 end end if w==7 then break end end return v end)(-71344)],u[(function(v)local w=0 while true do if v<=10530 then if v<=-18729 then v=v+29259 w=w+1 else v=v+49848 w=w+1 end else if v>=60378 then if v~=74748 then v=v+14370 w=w+1 else v=v-26694 w=w+1 end else v=v-48041 w=w+1 end end if w==5 then break end end return v end)(-18729)],u[(function(v)local w=0 while true do if v<=-39831 then if v==-48249 then v=v+16244 w=w+1 else v=v-8418 w=w+1 end else if v<3367 then v=v+32010 w=w+1 else v=v-43198 w=w+1 end end if w==4 then break end end return v end)(3367)],u[(function(u)local v=0 while true do if u<=6643 then if u<=-21416 then u=u+28746 v=v+1 else if u~=6643 then u=u+886 v=v+1 else u=u-7522 v=v+1 end end else if u>=21825 then if u<=21825 then u=u-15182 v=v+1 else u=u-28760 v=v+1 end else u=u+43255 v=v+1 end end if v==6 then break end end return u end)(-21416)]return function(...)local b=ba(b[1381])local ba={}local bc={}local bd={}local be=0 local bi=0 local bk={}local bl=0 local k=k('#',...)local bm=m+1 local bm,bn=bv(...);local bn={...};local bn=1 local bo=-1 for br=1,k do if br-1<=m then b[br]=bm[br];end;end;local k,m while true do k=l[bn];m=k[x];if m>=11 then if m<=29 then if m>=18 then if m<=23 then if m>=21 then if m<=22 then if m==21 then if k[u]==7 then b[k[v]]=not b[k[bb]];elseif k[u]==194 then b[k[v]]=#b[k[bb]];else b[k[v]]=not b[k[bb]];end else bn=b[k[v]];end else local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 bs(br,bm)end else if m<=19 then if m~=19 then local bm=k[v]b[bm]={b[bm]}else local bm=k[v]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 b[bm]=bs(br)end else b[k[v]]=b[k[bb]]==b[k[u]];end end else if m<=26 then if m>=26 then b[k[v]]=h[p[k[bb]]];else if m~=25 then b[k[v]][1]=b[k[bb]]else if k[u]==44 then c[k[bb]][1]=b[k[v]]elseif k[u]==207 then b[k[v]]=nil;else c[k[bb]][1]=b[k[v]]end end end else if m>=29 then local bm=k[bb]local bm=c[bm]b[k[v]]=bm[1]else if m<=27 then local bm,br=k[v],k[bb]local br=s[br]local bs={}for bt=1,#br do bs[bt]=p[br[bt]]end b[bm]=bs else local bm,br=b[k[bb]],k[v]b[br+1]=bm;b[br]=bm[b[k[u]]];end end end end else if m>=14 then if m>=16 then if m~=17 then local bm=k[bb]local bm=p[bm]be=be+1 bd[be]=bm else local bm=k[v]for br=1,#bm do local bm=b[bm[br]]be=be+1 bd[be]=bm end end else if m<=14 then do return end else do return b[k[v]]end end end else if m<=12 then if m<=11 then b[k[v]]={};else b[k[v]]=bn+k[bb];end else b[k[v]]=c[k[bb]]end end end else if m>=138 then if m<=342 then if m>=241 then if m<=291 then if m>=267 then if m<=279 then if m<=273 then if m<=270 then if m>=269 then if m~=270 then b[k[bb]]=b[k[v]][b[k[u]]];else b[k[bb]][b[k[v]]]=b[k[u]];end else if m==267 then b[k[bb]][b[k[v]]]=b[k[u]];else b[k[bb]]={};end end else if m<=272 then if m<272 then b[k[bb]]=b[k[v]][b[k[u]]];else b[k[bb]][b[k[v]]]=b[k[u]];end else b[k[bb]]=b[k[v]][b[k[u]]];end end else if m>=277 then if m>=279 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else if m<278 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm,br=k[bb],(k[u]*100)local bs=b[bm]do local bm,bt,bu=b[bm+1],b[bm+2],b[bm+3]bs[br+1]=bm bs[br+2]=bt bs[br+3]=bu end end end else if m>=276 then b[k[bb]][b[k[v]]]=b[k[u]];else if m<275 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else bn=k[v];end end end end else if m<=285 then if m<=282 then if m>=282 then do return end else if m<=280 then b[k[bb]]=c[k[v]]else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m>=285 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else if m==283 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 b[bm]=bt(bs,br)end end end else if m>=289 then if m>=291 then b[k[bb]][b[k[v]]]=b[k[u]];else if m~=290 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 bs(br,bm)end end else if m<=287 then if m<287 then b[k[bb]]=b[k[v]][b[k[u]]];else b[k[bb]][b[k[v]]]=b[k[u]];end else bn=k[v];end end end end else if m<=253 then if m<=247 then if m<=244 then if m<=242 then if m~=242 then b[k[bb]]=b[k[v]][b[k[u]]];else b[k[bb]]=b[k[v]][b[k[u]]];end else if m~=244 then b[k[bb]]={};else local bm,br=k[bb],k[v]local br=b[br]b[bm]=br[1]end end else if m>=247 then do return b[k[bb]]end else if m<246 then b[k[bb]][b[k[v]]]=b[k[u]];else do return b[k[bb]]end end end end else if m<=250 then if m>=250 then b[k[bb]]=c[k[v]]else if m<249 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end end else if m>=253 then local bm,br,bs=k[bb],k[v],k[u]local br=s[br]local bm=b[bm]for bt=1,#br do if bm==nil then break end bm=bm[p[br[bt]]]end b[bs]=bm else if m==251 then local bm,br,bs=k[bb],k[v],k[u]local br=s[br]local bm=b[bm]for bt=1,#br do if bm==nil then break end bm=bm[p[br[bt]]]end b[bs]=bm else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end end end else if m>=261 then if m<=263 then if m<=262 then if m==261 then local bm,br=k[bb],k[v]local br=s[br]local bs={}for bt=1,#br,2 do bs[p[br[bt]]]=p[br[bt+1]]end b[bm]=bs else b[k[bb]]=b[k[v]]+b[k[u]];end else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 b[bm]=bs(br)end else if m>=266 then b[k[bb]][b[k[v]]]=b[k[u]];else if m<=264 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else bn=k[v];end end end else if m<=257 then if m<=255 then if m<255 then b[k[bb]][b[k[v]]]=b[k[u]];else do return b[k[bb]]end end else if m~=257 then bn=k[v];else do return b[k[bb]]end end end else if m<=259 then if m<=258 then if b[k[bb]]then bn=k[v];end;else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 b[bm]=bs(br)end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end end end end else if m<=317 then if m<=304 then if m>=299 then if m>=302 then if m>=304 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else if m<303 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local br=bw(bc,bs(br))bo=bm+br-1 for bs=1,br do b[bm+bs-1]=bc[bs]end end end else if m<=300 then if m<=299 then do return end else b[k[bb]]=b[k[v]];end else do return b[k[bb]]end end end else if m<=295 then if m<=293 then if m<=292 then local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 b[bm]=br()else b[k[bb]]={};end else if m<=294 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else do return end end end else if m>=298 then local bm=k[bb]local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 br(bm)else if m==296 then b[k[bb]][b[k[v]]]=b[k[u]];else local bm,br=k[bb],(k[u]*100)local bs=b[bm]do local bm,bt,bu=b[bm+1],b[bm+2],b[bm+3]bs[br+1]=bm bs[br+2]=bt bs[br+3]=bu end end end end end else if m<=311 then if m>=309 then if m<=310 then if m<310 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else bn=k[v];end else b[k[bb]]=b[k[v]]+b[k[u]];end else if m<=306 then if m~=306 then b[k[bb]]=c[k[v]]else do return end end else if m==307 then b[k[bb]]=c[k[v]]else b[k[bb]]=b[k[v]][b[k[u]]];end end end else if m<=314 then if m>=314 then bn=k[v];else if m<313 then b[k[bb]]=b[k[v]][b[k[u]]];else if b[k[bb]]then bn=k[v];end;end end else if m>=317 then local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 bt(bs,br,bm)else if m<316 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else bn=k[v];end end end end end else if m>=331 then if m<=336 then if m<=333 then if m>=333 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else if m<332 then do return b[k[bb]]end else b[k[bb]]=c[k[v]]end end else if m>=336 then l[b[k[w]]]={[v]=(k[v]+6),[bb]=(k[bb]-16),[u]=k[u],[x]=l[b[k[w]]][x]}else if m<335 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end end else if m>=340 then if m<=341 then if m==340 then l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]+5),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]-2),[u]=k[u],[x]=l[b[k[w]]][x]}end else l[b[k[w]]]={[v]=(k[v]-2),[bb]=k[bb],[u]=(k[u]+18),[x]=l[b[k[w]]][x]}end else if m<=338 then if m<=337 then l[b[k[w]]]={[v]=(k[v]+9),[bb]=k[bb],[u]=(k[u]-9),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]-6),[bb]=(k[bb]+31),[u]=k[u],[x]=l[b[k[w]]][x]}end else l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]+43),[u]=k[u],[x]=l[b[k[w]]][x]}end end end else if m>=325 then if m<=327 then if m<=326 then if m==325 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else b[k[bb]]=c[k[v]]end else if m>=330 then bn=k[v];else if m<329 then local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 b[bm]=bt(bs,br)else local bm,br=b[k[v]],k[bb]b[br+1]=bm;b[br]=bm[b[k[u]]];end end end else if m<=321 then if m<=319 then if m==318 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else local bm=k[bb]b[bm]={b[bm]}end else if m<=320 then do return b[k[bb]]end else bn=k[v];end end else if m<=323 then if m<323 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 b[bm]=bs(br)end else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end end end end end end else if m>=190 then if m<=215 then if m>=203 then if m<=209 then if m<=206 then if m>=205 then if m<206 then local bm=k[bb]local br=k[v]local bs=b[k[w]]local bt=b[bm]local bs=bt[bs]local br=bm+br-1 b[bm]=bs b[bm+1]=bt b[bm]=b[bm](t(b,bm+1,br))else local bm=k[bb]local br=b[k[w]]local bs=b[bm]local br=bs[br]b[bm]=br b[bm+1]=bs b[bm]=b[bm](b[bm+1])end else if m<=203 then local bm=k[bb]local br=k[v]local bs=b[k[w]]local bt=b[bm]local bs=bt[bs]local br=bm+br-1 b[bm]=bs b[bm+1]=bt b[bm]=b[bm](t(b,bm+1,br))else local bm,br=k[bb],k[v]local br=b[br]b[bm]=br[1]end end else if m>=209 then local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local br,bs=bs(br)do local br,bs=br,bs b[bm]=br b[bm+1]=bs end else if m<=207 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else do return end end end end else if m>=213 then if m>=215 then bl=bl+1 bk[bl]=bi bi=be else if m<=213 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m<=211 then if m<=210 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else b[k[bb]]=b[k[v]]+b[k[u]];end end end else if m>=197 then if m<=199 then if m>=199 then do return end else if m<198 then b[k[bb]]={};else b[k[bb]]={};end end else if m>=202 then do return b[k[bb]]end else if m~=201 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else bn=k[v];end end end else if m<=193 then if m>=192 then if m<=192 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else b[k[bb]]=c[k[v]]end else if m<=190 then b[k[bb]]=c[k[v]]else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m>=196 then do return b[k[bb]]end else if m<195 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else do return end end end end end end else if m>=229 then if m>=235 then if m<=237 then if m<=236 then if m~=236 then bn=k[v];else b[k[bb]]=b[k[v]][b[k[u]]];end else b[k[bb]][b[k[v]]]=b[k[u]];end else if m>=240 then b[k[bb]][b[k[v]]]=b[k[u]];else if m~=239 then bn=k[v];else do return b[k[bb]]end end end end else if m>=232 then if m<=233 then if m~=233 then b[k[bb]][b[k[v]]]=b[k[u]];else local bm,br,bs=k[bb],k[v],k[u]local br=s[br]local bm=b[bm]for bt=1,#br do if bm==nil then break end bm=bm[p[br[bt]]]end b[bs]=bm end else b[k[bb]]={};end else if m<=230 then if m~=230 then local bm,br,bs=k[bb],k[v],k[u]local br=s[br]local bm=b[bm]for bt=1,#br do if bm==nil then break end bm=bm[p[br[bt]]]end b[bs]=bm else b[k[bb]][b[k[v]]]=b[k[u]];end else local bm,br,bs=k[bb],k[v],k[u]local br=s[br]local bm=b[bm]for bt=1,#br do if bm==nil then break end bm=bm[p[br[bt]]]end b[bs]=bm end end end else if m<=222 then if m<=219 then if m<=217 then if m<217 then b[k[bb]]=b[k[v]][b[k[u]]];else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end else if m<219 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else local bm,br=k[bb],k[v]local br=b[br]b[bm]=br[1]end end else if m<=221 then if m<221 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else b[k[bb]]=b[k[v]][b[k[u]]];end else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end end else if m>=226 then if m>=228 then b[k[bb]][b[k[v]]]=b[k[u]];else if m<227 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m<=224 then if m<=223 then b[k[bb]]=b[k[v]][b[k[u]]];else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 do local br,bs,bt=bs(br)b[bm]=br b[bm+1]=bs b[bm+2]=bt end end end end end end else if m<=163 then if m>=151 then if m<=157 then if m<=154 then if m<=152 then if m~=152 then b[k[bb]][b[k[v]]]=b[k[u]];else do return end end else if m==153 then b[k[bb]][b[k[v]]]=b[k[u]];else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m>=157 then do return b[k[bb]]end else if m~=156 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end end end else if m>=161 then if m>=163 then b[k[bb]][b[k[v]]]=b[k[u]];else if m==161 then bn=k[v];else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 local bu=bd[be]bd[be]=nil be=be-1 do local br,bs=bu(bt,bs,br)b[bm]=br b[bm+1]=bs end end end else if m>=160 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else if m==158 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else do return end end end end end else if m<=144 then if m<=141 then if m<=139 then if m<=138 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end else if m<141 then local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 b[bm]=bs(br)else do return b[k[bb]]end end end else if m>=144 then do return end else if m<=142 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 bs(br,bm)end end end else if m>=148 then if m>=150 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else if m~=149 then b[k[bb]][b[k[v]]]=b[k[u]];else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m<=146 then if m<146 then do return end else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 b[bm]=br()end else b[k[bb]]={};end end end end else if m<=176 then if m>=171 then if m>=174 then if m>=176 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else if m==174 then b[k[bb]]={};else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end end else if m<=172 then if m~=172 then b[k[bb]]=b[k[v]][b[k[u]]];else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m>=168 then if m>=170 then b[k[bb]]=b[k[v]]%b[k[u]];else if m<169 then b[k[bb]][b[k[v]]]=b[k[u]];else local bm=k[bb]local bm=bd[be]bd[be]=nil be=be-1 bm()end end else if m>=166 then if m~=167 then b[k[bb]]=b[k[v]][b[k[u]]];else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else if m<=164 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else do return b[k[bb]]end end end end end else if m<=183 then if m>=181 then if m>=183 then do for bm,br in a,ba do if br[1]==b and bm>=0 then br[1]={b[bm]}br[2]=1 ba[bm]=nil end end end local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 do return br,bm end else if m~=182 then b[k[bb]]={};else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m>=179 then if m~=180 then b[k[bb]][b[k[v]]]=b[k[u]];else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local br,bs=bs(br)do local br,bs=br,bs b[bm]=br b[bm+1]=bs end end else if m==177 then b[k[bb]]=b[k[v]][b[k[u]]];else do return end end end end else if m>=187 then if m>=189 then do for bm,br in a,ba do if br[1]==b and bm>=0 then br[1]={b[bm]}br[2]=1 ba[bm]=nil end end end local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 do return br,bm end else if m<=187 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else do return b[k[bb]]end end end else if m<=185 then if m<=184 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else bn=k[v];end else do return end end end end end end end end else if m>=445 then if m>=496 then if m<=521 then if m>=509 then if m<=515 then if m>=513 then if m<=514 then if m<514 then local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 b[bm]=bs(br)else bn=k[v];end else local bm=k[bb]local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 br(bm)end else if m<=510 then if m<=509 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm,br=b[k[v]],k[bb]b[br+1]=bm;b[br]=bm[b[k[u]]];end else if m~=512 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else b[k[bb]]=b[k[v]]..b[k[u]];end end end else if m<=518 then if m>=518 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else if m~=517 then b[k[bb]]=b[k[v]][b[k[u]]];else if b[k[bb]]then bn=k[v];end;end end else if m<=520 then if m<=519 then b[k[bb]]=b[k[v]][b[k[u]]];else do return end end else local bm,br=b[k[v]],k[bb]b[br+1]=bm;b[br]=bm[b[k[u]]];end end end else if m>=503 then if m>=506 then if m>=508 then b[k[bb]][b[k[v]]]=b[k[u]];else if m~=507 then b[k[bb]][b[k[v]]]=b[k[u]];else b[k[bb]]=b[k[v]][b[k[u]]];end end else if m<=504 then if m<504 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]b[bm]=b[bm]();end else if b[k[bb]]then bn=k[v];end;end end else if m<=499 then if m<=497 then if m~=497 then b[k[bb]]=c[k[v]]else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else if m<499 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m<=501 then if m<501 then local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 do local br,bs,bt=bs(br)b[bm]=br b[bm+1]=bs b[bm+2]=bt end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else do return b[k[bb]]end end end end end else if m<=534 then if m>=529 then if m<=531 then if m<=530 then if m~=530 then local bm=k[bb]local br=k[v]local br=(br==0)and bo or(bm+br-1)for bs=bm,br do be=be+1 bd[be]=b[bs]end else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else if m>=534 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else if m==532 then local bm,br=k[bb],(k[u]*100)local bs=b[bm]for bt=1,bo-bm do bs[br+bt]=b[bm+bt]end else local bm=k[bb]local br=be local bs=bi local bt=bs+1 local bu=bd[bt]local bu=bw(bc,bu(t(bd,bt+1,br)))bo=bm+bu-1 for bv=1,bu do b[bm+bv-1]=bc[bv]end for bm=br,bt,-1 do bd[bm]=nil end be=bs local bm=bk[bl]bk[bl]=nil bl=bl-1 bi=bm or 0 end end end else if m>=526 then if m>=528 then b[k[bb]][b[k[v]]]=b[k[u]];else if m<=526 then b[k[bb]]={};else if b[k[bb]]then bn=k[v];end;end end else if m<=523 then if m<=522 then local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local br=bw(bc,bs(br))bo=bm+br-1 for bs=1,br do b[bm+bs-1]=bc[bs]end else local bm=k[bb]local br=k[v]local br=(br==0)and bo or(bm+br-1)for bs=bm,br do be=be+1 bd[be]=b[bs]end end else if m~=525 then bn=k[v];else b[k[bb]]={};end end end end else if m>=541 then if m<=543 then if m<=542 then if m==541 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else bn=k[v];end else local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;end else if m<=545 then if m~=545 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else if m<=546 then b[k[bb]]=b[k[v]][b[k[u]]];else if m>=548 then if m>548 then if m<=549 then local bm=k[v]local br=be local bs=bi local bt=bs+1 local bu=bd[bt]local bu=bw(bc,bu(t(bd,bt+1,br)))bo=bm+bu-1 for bv=1,bu do b[bm+bv-1]=bc[bv]end for bm=br,bt,-1 do bd[bm]=nil end be=bs local bm=bk[bl]bk[bl]=nil bl=bl-1 bi=bm or 0 else local bm=k[v]b[bm]=b[bm]();end end else local bm=k[v]local br=k[bb]local bs=b[k[w]]local bt=b[bm]local bs=bt[bs]local br=bm+br-1 b[bm]=bs b[bm+1]=bt b[bm]=b[bm](t(b,bm+1,br))end end end end else if m>=538 then if m>=540 then local bm,br=k[bb],k[v]local br=b[br]b[bm]=br[1]else if m~=539 then local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 local br=bw(bc,bt(bs,br))bo=bm+br-1 for bs=1,br do b[bm+bs-1]=bc[bs]end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m<=536 then if m<=535 then if b[k[bb]]then bn=k[v];end;else b[k[bb]]=b[k[v]][b[k[u]]];end else do return end end end end end end else if m>=471 then if m<=483 then if m<=477 then if m>=475 then if m<=476 then if m<=475 then b[k[bb]]=b[k[v]][b[k[u]]];else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else if m<=472 then if m~=472 then b[k[bb]][b[k[v]]]=b[k[u]];else b[k[bb]][b[k[v]]]=b[k[u]];end else if m==473 then b[k[bb]]={};else local bm=k[bb]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local br,bs=bs(br)do local br,bs=br,bs b[bm]=br b[bm+1]=bs end end end end else if m<=480 then if m<=479 then if m~=479 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else if m<=482 then if m~=482 then b[k[bb]]=c[k[v]]else bn=k[v];end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end end else if m<=489 then if m>=487 then if m>=489 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else if m==487 then b[k[bb]]=b[k[v]][b[k[u]]];else b[k[bb]]={};end end else if m<=485 then if m~=485 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else do return end end else local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 bs(br,bm)end end else if m<=492 then if m<=491 then if m<=490 then do return end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else local bm=k[bb]local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 br(bm)end else if m>=495 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else if m<=493 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else b[k[bb]]=b[k[v]][b[k[u]]];end end end end end else if m<=457 then if m<=451 then if m<=448 then if m>=447 then if m<=447 then local bm=k[bb]local bm=be local br=bi local bs=br+1 local bt=bd[bs]bt(t(bd,bs+1,bm))for bt=bm,bs,-1 do bd[bt]=nil end be=br local bm=bk[bl]bk[bl]=nil bl=bl-1 bi=bm or 0 else bl=bl+1 bk[bl]=bi bi=be end else if m==445 then local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 bs(br,bm)else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m<=450 then if m<=449 then local bm,br=k[bb],(k[u]*100)local bs=b[bm]for bt=1,bo-bm do bs[br+bt]=b[bm+bt]end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else b[k[bb]]={};end end else if m<=454 then if m<=453 then if m<=452 then local bm=k[bb]local br=k[v]local bm=b[bm]if not bm then bn=br;end;else b[k[bb]][b[k[v]]]=b[k[u]];end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end else if m>=457 then b[k[bb]][b[k[v]]]=b[k[u]];else if m~=456 then b[k[bb]][b[k[v]]]=b[k[u]];else b[k[bb]]=b[k[v]][b[k[u]]];end end end end else if m>=465 then if m<=467 then if m>=467 then b[k[bb]]=c[k[v]]else if m<466 then b[k[bb]]=b[k[v]][b[k[u]]];else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m>=470 then local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 bs(br,bm)else if m<=468 then local bm,br=b[k[v]],k[bb]b[br+1]=bm;b[br]=bm[b[k[u]]];else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end end else if m<=461 then if m>=460 then if m<=460 then bn=k[v];else b[k[bb]][b[k[v]]]=b[k[u]];end else if m==458 then do return end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end else if m<=463 then if m~=463 then b[k[bb]]=c[k[v]]else do return end end else b[k[bb]][b[k[v]]]=b[k[u]];end end end end end end else if m>=394 then if m>=420 then if m<=432 then if m>=427 then if m>=430 then if m>=432 then local bm=bn local br=k if br[w]==288 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs elseif br[w]==285 then b[br[v]]=b[br[bb]][b[br[u]]];else b[br[v]]=h[p[br[bb]]];end local br=l[bm+1]if br[w]==282 then local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)elseif br[w]==79 then b[br[v]][b[br[bb]]]=b[br[u]];else b[br[v]]=p[br[bb]];end local br=l[bm+2]if br[w]==46 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==116 then b[br[v]]=p[br[bb]];elseif br[w]==222 then b[br[v]]=#b[br[bb]];end local br=l[bm+3]if br[w]==108 then b[br[v]]=b[br[bb]]+b[br[u]];elseif br[w]==113 then b[br[v]]=b[br[bb]];else b[br[v]][b[br[bb]]]=b[br[u]];end local bm=l[bm+4]if bm[w]==84 then local br=n[bm[bb]]local bs=br[552]local bt=#bs local bu={}for bv=1,bt do local bs=bs[bv]local bt=bs[2]local bx=bs[3]if bs[1]==1 then if bx==0 then local bs=b[bt]ba[bt]=bs bu[bv]=bs else bu[bv]=b[bt]end else local bs=c[bt]if bx==0 and bs[1]then bs=bs[1][bs[2]]end bu[bv]=bs end end b[bm[v]]=by(br,bu,h)elseif bm[w]==132 then b[bm[v]]=b[bm[bb]];else b[bm[v]]=p[bm[bb]];end bn=bn+4 else if m==430 then l[b[k[w]]]={[v]=(k[v]-22),[bb]=(k[bb]-11),[u]=(k[u]+32),[x]=l[b[k[w]]][x]}else local bm=bn local br=k if br[w]==294 then b[br[v]]=#b[br[bb]];elseif br[w]==195 then b[br[v]]=b[br[bb]][b[br[u]]];elseif br[w]==158 then b[br[v]]=b[br[bb]]+b[br[u]];end local br=l[bm+1]if br[w]==66 then b[br[v]]=#b[br[bb]];elseif br[w]==174 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==160 then b[br[v]]=not b[br[bb]];end local br=l[bm+2]if br[w]==281 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs elseif br[w]==193 then b[br[v]]=p[br[bb]];elseif br[w]==152 then b[br[v]]=h[p[br[bb]]];end local br=l[bm+3]if br[w]==277 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==179 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs else b[br[v]]=not b[br[bb]];end local br=l[bm+4]if br[w]==94 then b[br[v]]=#b[br[bb]];elseif br[w]==44 then b[br[v]]=b[br[bb]]%b[br[u]];else b[br[v]]=p[br[bb]];end local bm=l[bm+5]if bm[w]==254 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br elseif bm[w]==271 then b[bm[v]]=#b[bm[bb]];elseif bm[w]==120 then b[bm[v]]=h[p[bm[bb]]];end bn=bn+5 end end else if m>=429 then l[b[k[w]]]={[v]=(k[v]+22),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}else if m==427 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]-14),[u]=(k[u]+11),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]-9),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}end end end else if m>=424 then if m>=426 then l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]-9),[x]=l[b[k[w]]][x]}else if m~=425 then l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]+31),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]-7),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}end end else if m<=421 then if m==420 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]-4),[u]=(k[u]-4),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]-28),[x]=l[b[k[w]]][x]}end else if m<423 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]+30),[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]+6),[bb]=(k[bb]+42),[u]=(k[u]+46),[x]=l[b[k[w]]][x]}end end end end else if m<=438 then if m<=435 then if m>=435 then local bm=bn local br=k if br[w]==89 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==41 then b[br[v]]=p[br[bb]];else local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)end local br=l[bm+1]if br[w]==45 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==259 then b[br[v]]=b[br[bb]]-b[br[u]];elseif br[w]==88 then b[br[v]]=h[p[br[bb]]];end local bm=l[bm+2]if bm[w]==270 then b[bm[v]]=b[bm[bb]]-b[bm[u]];elseif bm[w]==56 then b[bm[v]]=b[bm[bb]][b[bm[u]]];elseif bm[w]==104 then b[bm[v]]=p[bm[bb]];end bn=bn+2 else if m==433 then local bm=bn local br=k if br[w]==70 then local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)elseif br[w]==136 then b[br[v]]=p[br[bb]];elseif br[w]==219 then b[br[v]]=b[br[bb]][b[br[u]]];end local br=l[bm+1]if br[w]==116 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==226 then b[br[v]]=b[br[bb]]+b[br[u]];else b[br[v]]=not b[br[bb]];end local bm=l[bm+2]if bm[w]==222 then b[bm[v]]=p[bm[bb]];elseif bm[w]==49 then b[bm[v]]=b[bm[bb]]-b[bm[u]];else b[bm[v]][b[bm[bb]]]=b[bm[u]];end bn=bn+2 else local bm=bn local br=k if br[w]==167 then b[br[v]]=h[p[br[bb]]];elseif br[w]==217 then b[br[v]]=b[br[bb]][b[br[u]]];else b[br[v]][b[br[bb]]]=b[br[u]];end local br=l[bm+1]if br[w]==227 then b[br[v]]=b[br[bb]];elseif br[w]==121 then b[br[v]]=b[br[bb]]+b[br[u]];else b[br[v]][b[br[bb]]]=b[br[u]];end local bm=l[bm+2]if bm[w]==261 then b[bm[v]]=p[bm[bb]];elseif bm[w]==256 then b[bm[v]]=h[p[bm[bb]]];else b[bm[v]]=b[bm[bb]]%b[bm[u]];end bn=bn+2 end end else if m<=437 then if m<437 then local bm=bn local br=k if br[w]==53 then b[br[v]]=p[br[bb]];elseif br[w]==100 then b[br[v]]=h[p[br[bb]]];else b[br[v]]=not b[br[bb]];end local br=l[bm+1]if br[w]==119 then b[br[v]]=b[br[bb]];elseif br[w]==280 then local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)elseif br[w]==147 then b[br[v]]=h[p[br[bb]]];end local bm=l[bm+2]if bm[w]==132 then b[bm[v]]=b[bm[bb]]-b[bm[u]];elseif bm[w]==131 then b[bm[v]]=b[bm[bb]][b[bm[u]]];else b[bm[v]]=p[bm[bb]];end bn=bn+2 else local bm=bn local br=k if br[w]==204 then b[br[v]]=not b[br[bb]];elseif br[w]==138 then b[br[v]]=b[br[bb]]%b[br[u]];else b[br[v]]=p[br[bb]];end local br=l[bm+1]if br[w]==202 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==295 then b[br[v]]=b[br[bb]]%b[br[u]];elseif br[w]==168 then b[br[v]]=h[p[br[bb]]];end local br=l[bm+2]if br[w]==123 then b[br[v]]=not b[br[bb]];elseif br[w]==46 then b[br[v]]=b[br[bb]];elseif br[w]==119 then b[br[v]]=p[br[bb]];end local br=l[bm+3]if br[w]==109 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==102 then b[br[v]]=b[br[bb]]%b[br[u]];else b[br[v]]=not b[br[bb]];end local br=l[bm+4]if br[w]==124 then b[br[v]]=h[p[br[bb]]];elseif br[w]==146 then b[br[v]]=p[br[bb]];else b[br[v]]=b[br[bb]]+b[br[u]];end local br=l[bm+5]if br[w]==173 then b[br[v]]=h[p[br[bb]]];elseif br[w]==157 then b[br[v]]=b[br[bb]]-b[br[u]];elseif br[w]==272 then b[br[v]]=b[br[bb]][b[br[u]]];end local bm=l[bm+6]if bm[w]==270 then b[bm[v]]=b[bm[bb]]+b[bm[u]];elseif bm[w]==139 then b[bm[v]]=b[bm[bb]];else b[bm[v]]=p[bm[bb]];end bn=bn+6 end else local bm=bn local br=k if br[w]==238 then b[br[v]]=b[br[bb]]+b[br[u]];elseif br[w]==131 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs else b[br[v]]=b[br[bb]]%b[br[u]];end local br=l[bm+1]if br[w]==277 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==80 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs elseif br[w]==219 then b[br[v]]=b[br[bb]][b[br[u]]];end local br=l[bm+2]if br[w]==209 then b[br[v]]=h[p[br[bb]]];elseif br[w]==59 then b[br[v]]=b[br[bb]];elseif br[w]==108 then local br=br[v]local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 local bu=bd[be]bd[be]=nil be=be-1 do local bs,bt=bu(bt,bs)b[br]=bs b[br+1]=bt end end local bm=l[bm+3]if bm[w]==212 then b[bm[v]]=p[bm[bb]];elseif bm[w]==178 then b[bm[v]]=not b[bm[bb]];elseif bm[w]==86 then b[bm[v]]=b[bm[bb]];end bn=bn+3 end end else if m>=442 then if m<=443 then if m~=443 then local bm=k[bb]local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 br(bm)else b[k[bb]]=b[k[v]][b[k[u]]];end else b[k[bb]][b[k[v]]]=b[k[u]];end else if m>=441 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else if m<440 then local bm=bn local br=k if br[w]==45 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs elseif br[w]==90 then b[br[v]]=h[p[br[bb]]];elseif br[w]==206 then b[br[v]][b[br[bb]]]=b[br[u]];end local bm=l[bm+1]if bm[w]==203 then b[bm[v]]=b[bm[bb]]-b[bm[u]];elseif bm[w]==191 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br else local br=n[bm[bb]]local bs=br[552]local bt=#bs local bu={}for bv=1,bt do local bs=bs[bv]local bt=bs[2]local bx=bs[3]if bs[1]==1 then if bx==0 then local bs=b[bt]ba[bt]=bs bu[bv]=bs else bu[bv]=b[bt]end else local bs=c[bt]if bx==0 and bs[1]then bs=bs[1][bs[2]]end bu[bv]=bs end end b[bm[v]]=by(br,bu,h)end bn=bn+1 else local bm=k[bb]local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 br(bm)end end end end end else if m>=407 then if m>=414 then if m>=417 then if m>=419 then l[b[k[w]]]={[v]=(k[v]+35),[bb]=k[bb],[u]=(k[u]-26),[x]=l[b[k[w]]][x]}else if m~=418 then l[b[k[w]]]={[v]=(k[v]+12),[bb]=(k[bb]+35),[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]-17),[x]=l[b[k[w]]][x]}end end else if m>=416 then l[b[k[w]]]={[v]=(k[v]-19),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}else if m==414 then local bm=bn local br=k if br[w]==261 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs elseif br[w]==119 then b[br[v]]=b[br[bb]][b[br[u]]];else b[br[v]]=b[br[bb]]%b[br[u]];end local br=l[bm+1]if br[w]==122 then b[br[v]]=not b[br[bb]];elseif br[w]==100 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs else b[br[v]]=#b[br[bb]];end local bm=l[bm+2]if bm[w]==123 then b[bm[v]]=b[bm[bb]]%b[bm[u]];elseif bm[w]==144 then local br=bm[v]local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 do local bs,bt,bu=bt(bs)b[br]=bs b[br+1]=bt b[br+2]=bu end elseif bm[w]==104 then b[bm[v]][b[bm[bb]]]=b[bm[u]];end bn=bn+2 else local bm=bn local br=k if br[w]==185 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs elseif br[w]==265 then b[br[v]]=b[br[bb]]+b[br[u]];else b[br[v]]=p[br[bb]];end local bm=l[bm+1]if bm[w]==218 then b[bm[v]]=b[bm[bb]];elseif bm[w]==278 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br elseif bm[w]==273 then b[bm[v]]=b[bm[bb]]-b[bm[u]];end bn=bn+1 end end end else if m<=410 then if m<=408 then if m<408 then b[k[v]]=b[k[bb]]-b[k[u]];else local bm=k[v]local br,bs,bt=b[bm],b[bm+1],b[bm+2]b[bm]=g(function()for bu in br,bs,bt do f(true,bu);end;end);bo=bm+2;bn=k[bb];end else if m==409 then local bm=k[v]local br,bs=b[bm]()if br then b[bm+3],bn=bs,k[bb]end else local bm,br=k[v],(k[u]*100)local bs=b[bm]for bt=1,bo-bm do bs[br+bt]=b[bm+bt]end end end else if m<=412 then if m<412 then b[k[v]]=#b[k[bb]];else local bm=bn local br=k if br[w]==178 then b[br[v]]=b[br[bb]]-b[br[u]];elseif br[w]==160 then b[br[v]]=p[br[bb]];else local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)end local br=l[bm+1]if br[w]==149 then b[br[v]]=p[br[bb]];elseif br[w]==219 then b[br[v]]=h[p[br[bb]]];else b[br[v]]=b[br[bb]][b[br[u]]];end local bm=l[bm+2]if bm[w]==168 then b[bm[v]]=b[bm[bb]]-b[bm[u]];elseif bm[w]==103 then b[bm[v]]=b[bm[bb]]%b[bm[u]];elseif bm[w]==226 then b[bm[v]]=not b[bm[bb]];end bn=bn+2 end else local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm end end end else if m>=401 then if m<=403 then if m<=402 then if m<=401 then local bm=bn local br=k if br[w]==286 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs elseif br[w]==100 then b[br[v]]=h[p[br[bb]]];elseif br[w]==103 then b[br[v]]=not b[br[bb]];end local bm=l[bm+1]if bm[w]==282 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br elseif bm[w]==185 then b[bm[v]]=b[bm[bb]][b[bm[u]]];elseif bm[w]==151 then b[bm[v]][b[bm[bb]]]=b[bm[u]];end bn=bn+1 else local bm=k[bb]for br=1,#bm do local bm=bm[br]local bm=p[bm]be=be+1 bd[be]=bm end end else local bm=#k[v]for br=1,bm do b[k[v][br]]=b[k[bb][br]];end;end else if m<=405 then if m<=404 then local bm=k[v]local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 local bu=bd[be]bd[be]=nil be=be-1 do local br,bs=bu(bt,bs,br)b[bm]=br b[bm+1]=bs end else local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 bt(bs,br,bm)end else b[k[v]]=b[k[bb]]<b[k[u]];end end else if m<=397 then if m>=396 then if m==396 then local bm=bn local br=k if br[w]==207 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==52 then b[br[v]]=#b[br[bb]];elseif br[w]==149 then local br=br[v]local br=b[br]be=be+1 bd[be]=br end local br=l[bm+1]if br[w]==290 then b[br[v]]=#b[br[bb]];elseif br[w]==180 then b[br[v]]=b[br[bb]];elseif br[w]==41 then local br=br[v]local br=b[br]be=be+1 bd[be]=br end local br=l[bm+2]if br[w]==218 then local bs=br[v]local bt=bd[be]bd[be]=nil be=be-1 local bu=bd[be]bd[be]=nil be=be-1 local bt,bu=bu(bt)do local bt,bu=bt,bu b[bs]=bt b[bs+1]=bu end elseif br[w]==195 then b[br[v]]=b[br[bb]][b[br[u]]];else b[br[v]][b[br[bb]]]=b[br[u]];end local bm=l[bm+3]if bm[w]==250 then b[bm[v]]=#b[bm[bb]];elseif bm[w]==96 then b[bm[v]]=b[bm[bb]]%b[bm[u]];else b[bm[v]]=b[bm[bb]];end bn=bn+3 else local bm=bn local br=k if br[w]==145 then b[br[v]]=b[br[bb]]+b[br[u]];elseif br[w]==186 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs else b[br[v]]=h[p[br[bb]]];end local br=l[bm+1]if br[w]==273 then b[br[v]]=b[br[bb]]-b[br[u]];elseif br[w]==247 then b[br[v]]=h[p[br[bb]]];else local br=br[v]local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 local bs,bt=bt(bs)do local bs,bt=bs,bt b[br]=bs b[br+1]=bt end end local bm=l[bm+2]if bm[w]==279 then b[bm[v]]=p[bm[bb]];elseif bm[w]==92 then b[bm[v]]=b[bm[bb]][b[bm[u]]];else b[bm[v]]=b[bm[bb]];end bn=bn+2 end else if m~=395 then local bm=bn local br=k if br[w]==281 then b[br[v]]=b[br[bb]];elseif br[w]==50 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs else b[br[v]]=b[br[bb]]+b[br[u]];end local bm=l[bm+1]if bm[w]==120 then local br=n[bm[bb]]local bs=br[552]local bt=#bs local bu={}for bv=1,bt do local bs=bs[bv]local bt=bs[2]local bx=bs[3]if bs[1]==1 then if bx==0 then local bs=b[bt]ba[bt]=bs bu[bv]=bs else bu[bv]=b[bt]end else local bs=c[bt]if bx==0 and bs[1]then bs=bs[1][bs[2]]end bu[bv]=bs end end b[bm[v]]=by(br,bu,h)elseif bm[w]==293 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br elseif bm[w]==215 then b[bm[v]]=b[bm[bb]];end bn=bn+1 else local bm=bn local br=k if br[w]==158 then b[br[v]]=p[br[bb]];elseif br[w]==255 then b[br[v]]=h[p[br[bb]]];else local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)end local bm=l[bm+1]if bm[w]==107 then b[bm[v]]=h[p[bm[bb]]];elseif bm[w]==219 then b[bm[v]]=b[bm[bb]];else b[bm[v]]=b[bm[bb]]-b[bm[u]];end bn=bn+1 end end else if m>=400 then local bm=bn local br=k if br[w]==202 then b[br[v]]=p[br[bb]];elseif br[w]==244 then b[br[v]]=h[p[br[bb]]];elseif br[w]==169 then b[br[v]]=not b[br[bb]];end local bm=l[bm+1]if bm[w]==72 then b[bm[v]]=b[bm[bb]][b[bm[u]]];elseif bm[w]==296 then b[bm[v]]=b[bm[bb]]+b[bm[u]];else local bm=bm[v]local bm=b[bm]be=be+1 bd[be]=bm end bn=bn+1 else if m~=399 then local bm=bn local br=k if br[w]==116 then b[br[v]]=not b[br[bb]];elseif br[w]==280 then b[br[v]]=b[br[bb]];else b[br[v]]=#b[br[bb]];end local bm=l[bm+1]if bm[w]==271 then b[bm[v]]=b[bm[bb]][b[bm[u]]];elseif bm[w]==165 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br elseif bm[w]==137 then b[bm[v]]=p[bm[bb]];end bn=bn+1 else local bm=bn local br=k if br[w]==52 then b[br[v]]=h[p[br[bb]]];elseif br[w]==232 then b[br[v]]=b[br[bb]]%b[br[u]];else local br=br[v]local br=b[br]be=be+1 bd[be]=br end local bm=l[bm+1]if bm[w]==152 then b[bm[v]]=b[bm[bb]]%b[bm[u]];elseif bm[w]==101 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br else b[bm[v]]=not b[bm[bb]];end bn=bn+1 end end end end end end else if m>=369 then if m>=382 then if m<=387 then if m<=384 then if m<=383 then if m<383 then l[b[k[w]]]={[v]=(k[v]-10),[bb]=k[bb],[u]=(k[u]+12),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]-37),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}end else l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]-25),[u]=k[u],[x]=l[b[k[w]]][x]}end else if m>=387 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]-33),[u]=k[u],[x]=l[b[k[w]]][x]}else if m~=386 then l[b[k[w]]]={[v]=(k[v]-5),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]+1),[x]=l[b[k[w]]][x]}end end end else if m>=391 then if m<=392 then if m==391 then local bm=bn local br=k if br[w]==168 then local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)elseif br[w]==221 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs elseif br[w]==65 then b[br[v]]=not b[br[bb]];end local br=l[bm+1]if br[w]==47 then b[br[v]]=b[br[bb]]-b[br[u]];elseif br[w]==191 then b[br[v]]=b[br[bb]];else local br=br[v]local br=b[br]be=be+1 bd[be]=br end local br=l[bm+2]if br[w]==207 then local bs=br[v]local bt=bd[be]bd[be]=nil be=be-1 local bu=bd[be]bd[be]=nil be=be-1 local bv=bd[be]bd[be]=nil be=be-1 do local bt,bu=bv(bu,bt)b[bs]=bt b[bs+1]=bu end elseif br[w]==220 then b[br[v]]=b[br[bb]]-b[br[u]];else local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)end local bm=l[bm+3]if bm[w]==233 then b[bm[v]]=b[bm[bb]]%b[bm[u]];elseif bm[w]==71 then b[bm[v]]=h[p[bm[bb]]];else b[bm[v]]=b[bm[bb]];end bn=bn+3 else local bm=bn local br=k if br[w]==185 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==93 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs else b[br[v]]=b[br[bb]][b[br[u]]];end local br=l[bm+1]if br[w]==265 then b[br[v]]=b[br[bb]]+b[br[u]];elseif br[w]==282 then b[br[v]]=#b[br[bb]];elseif br[w]==102 then local br=br[v]local br=b[br]be=be+1 bd[be]=br end local br=l[bm+2]if br[w]==254 then local bs=br[v]local bt=bd[be]bd[be]=nil be=be-1 local bu=bd[be]bd[be]=nil be=be-1 b[bs]=bu(bt)elseif br[w]==99 then b[br[v]]=b[br[bb]]%b[br[u]];elseif br[w]==54 then b[br[v]]=#b[br[bb]];end local bm=l[bm+3]if bm[w]==41 then b[bm[v]]=not b[bm[bb]];elseif bm[w]==40 then b[bm[v]]=b[bm[bb]]+b[bm[u]];elseif bm[w]==216 then local br=n[bm[bb]]local bs=br[552]local bt=#bs local bu={}for bv=1,bt do local bs=bs[bv]local bt=bs[2]local bx=bs[3]if bs[1]==1 then if bx==0 then local bs=b[bt]ba[bt]=bs bu[bv]=bs else bu[bv]=b[bt]end else local bs=c[bt]if bx==0 and bs[1]then bs=bs[1][bs[2]]end bu[bv]=bs end end b[bm[v]]=by(br,bu,h)end bn=bn+3 end else local bm=bn local br=k if br[w]==191 then local bs=br[v]local bs=b[bs]be=be+1 bd[be]=bs elseif br[w]==243 then b[br[v]]=b[br[bb]];elseif br[w]==264 then b[br[v]]=b[br[bb]]%b[br[u]];end local br=l[bm+1]if br[w]==155 then b[br[v]]=h[p[br[bb]]];elseif br[w]==93 then b[br[v]]=b[br[bb]]+b[br[u]];else local br=br[v]local bs=bd[be]bd[be]=nil be=be-1 local bt=bd[be]bd[be]=nil be=be-1 local bs,bt=bt(bs)do local bs,bt=bs,bt b[br]=bs b[br+1]=bt end end local bm=l[bm+2]if bm[w]==201 then b[bm[v]]=not b[bm[bb]];elseif bm[w]==108 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br else b[bm[v]]=b[bm[bb]];end bn=bn+2 end else if m>=390 then local bm=bn local br=k if br[w]==205 then local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)elseif br[w]==219 then b[br[v]]=p[br[bb]];else b[br[v]]=b[br[bb]]%b[br[u]];end local bm=l[bm+1]if bm[w]==235 then b[bm[v]]=b[bm[bb]][b[bm[u]]];elseif bm[w]==210 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br elseif bm[w]==253 then b[bm[v]]=p[bm[bb]];end bn=bn+1 else if m~=389 then l[b[k[w]]]={[v]=(k[v]+13),[bb]=k[bb],[u]=(k[u]-22),[x]=l[b[k[w]]][x]}else local bm=bn local br=k if br[w]==191 then b[br[v]]=b[br[bb]];elseif br[w]==49 then b[br[v]]=p[br[bb]];elseif br[w]==160 then local bs=n[br[bb]]local bt=bs[552]local bu=#bt local bv={}for bx=1,bu do local bt=bt[bx]local bu=bt[2]local bz=bt[3]if bt[1]==1 then if bz==0 then local bt=b[bu]ba[bu]=bt bv[bx]=bt else bv[bx]=b[bu]end else local bt=c[bu]if bz==0 and bt[1]then bt=bt[1][bt[2]]end bv[bx]=bt end end b[br[v]]=by(bs,bv,h)end local br=l[bm+1]if br[w]==96 then b[br[v]]=h[p[br[bb]]];elseif br[w]==111 then b[br[v]]=b[br[bb]]+b[br[u]];elseif br[w]==136 then b[br[v]]=b[br[bb]][b[br[u]]];end local bm=l[bm+2]if bm[w]==218 then b[bm[v]]=not b[bm[bb]];elseif bm[w]==155 then b[bm[v]]=b[bm[bb]]%b[bm[u]];else b[bm[v]]=h[p[bm[bb]]];end bn=bn+2 end end end end else if m<=375 then if m<=372 then if m>=371 then if m<=371 then l[b[k[w]]]={[v]=(k[v]-21),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]+6),[bb]=k[bb],[u]=(k[u]-20),[x]=l[b[k[w]]][x]}end else if m~=370 then l[b[k[w]]]={[v]=(k[v]-12),[bb]=(k[bb]-2),[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]+14),[u]=k[u],[x]=l[b[k[w]]][x]}end end else if m<=374 then if m~=374 then l[b[k[w]]]={[v]=(k[v]+29),[bb]=k[bb],[u]=(k[u]+27),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]-35),[x]=l[b[k[w]]][x]}end else l[b[k[w]]]={[v]=(k[v]+40),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}end end else if m<=378 then if m>=378 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]+30),[u]=(k[u]+16),[x]=l[b[k[w]]][x]}else if m<=376 then l[b[k[w]]]={[v]=(k[v]+35),[bb]=(k[bb]+30),[u]=(k[u]+22),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]-30),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}end end else if m<=380 then if m<380 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]-22),[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]-31),[u]=(k[u]+27),[x]=l[b[k[w]]][x]}end else l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]-34),[x]=l[b[k[w]]][x]}end end end end else if m<=355 then if m>=350 then if m<=352 then if m>=352 then l[b[k[w]]]={[v]=(k[v]+36),[bb]=(k[bb]-24),[u]=k[u],[x]=l[b[k[w]]][x]}else if m<351 then l[b[k[w]]]={[v]=(k[v]-13),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]+24),[bb]=k[bb],[u]=(k[u]+13),[x]=l[b[k[w]]][x]}end end else if m<=354 then if m<354 then l[b[k[w]]]={[v]=(k[v]-20),[bb]=k[bb],[u]=(k[u]-27),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]+17),[x]=l[b[k[w]]][x]}end else l[b[k[w]]]={[v]=(k[v]+14),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}end end else if m>=347 then if m>=349 then l[b[k[w]]]={[v]=(k[v]-44),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}else if m==347 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]+12),[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]+45),[u]=k[u],[x]=l[b[k[w]]][x]}end end else if m>=345 then if m<=345 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]-38),[u]=(k[u]-20),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]-34),[u]=k[u],[x]=l[b[k[w]]][x]}end else if m~=344 then l[b[k[w]]]={[v]=(k[v]-29),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]+1),[bb]=(k[bb]-8),[u]=k[u],[x]=l[b[k[w]]][x]}end end end end else if m<=362 then if m<=359 then if m>=358 then if m<359 then l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]+6),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]+13),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}end else if m==356 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]+37),[u]=(k[u]-42),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]-38),[bb]=(k[bb]-34),[u]=(k[u]+21),[x]=l[b[k[w]]][x]}end end else if m<=361 then if m<=360 then l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]+2),[u]=k[u],[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=(k[v]-26),[bb]=k[bb],[u]=(k[u]+16),[x]=l[b[k[w]]][x]}end else b[k[bb]]={};end end else if m<=365 then if m>=365 then l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]-7),[x]=l[b[k[w]]][x]}else if m<=363 then local bm=k[bb]local bm=b[bm]be=be+1 bd[be]=bm else do return b[k[bb]]end end end else if m<=367 then if m<=366 then l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]+37),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=(k[bb]+39),[u]=k[u],[x]=l[b[k[w]]][x]}end else l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]-30),[x]=l[b[k[w]]][x]}end end end end end end end end else if m>=45 then if m>=80 then if m<=104 then if m>=93 then if m>=99 then if m<=101 then if m>=101 then local bm=k[bb]b[bm]={b[bm]}else if m<=99 then b[k[bb]][1]=b[k[v]]else b[k[bb]][1]=b[k[v]]end end else if m>=104 then local bm=k[bb]b[bm]={b[bm]}else if m<=102 then do return b[k[bb]]end else b[k[bb]][1]=b[k[v]]end end end else if m<=95 then if m<=94 then if m<94 then b[k[bb]][b[k[v]]]=b[k[u]];else b[k[bb]][b[k[v]]]=b[k[u]];end else b[k[bb]][b[k[v]]]=b[k[u]];end else if m<=97 then if m==96 then b[k[bb]][b[k[v]]]=b[k[u]];else local bm,br=k[bb],k[v]local br=s[br]local bs={}for bt=1,#br do bs[bt]=p[br[bt]]end b[bm]=bs end else b[k[bb]]={};end end end else if m>=87 then if m>=90 then if m<=91 then if m~=91 then l[b[k[w]]]={[v]=(k[v]-25),[bb]=(k[bb]+55),[u]=k[u],[x]=l[b[k[w]]][x]}else b[k[bb]][1]=b[k[v]]end else b[k[bb]][1]=b[k[v]]end else if m>=89 then b[k[bb]][b[k[v]]]=b[k[u]];else if m<88 then b[k[bb]][1]=b[k[v]]else b[k[bb]][1]=b[k[v]]end end end else if m>=84 then if m<=85 then if m~=85 then b[k[bb]]={};else local bm=k[bb]b[bm]={b[bm]}end else local bm,br=k[bb],k[v]local br=s[br]local bs={}for bt=1,#br do bs[bt]=p[br[bt]]end b[bm]=bs end else if m>=82 then if m==82 then b[k[bb]][b[k[v]]]=b[k[u]];else local bm=k[bb]b[bm]={b[bm]}end else if m<81 then l[b[k[w]]]={[v]=(k[v]-9),[bb]=k[bb],[u]=k[u],[x]=l[b[k[w]]][x]}else b[k[bb]][b[k[v]]]=b[k[u]];end end end end end else if m<=117 then if m<=111 then if m>=109 then if m<=110 then if m<110 then l[b[k[w]]]={[v]=(k[v]+27),[bb]=(k[bb]-47),[u]=(k[u]-3),[x]=l[b[k[w]]][x]}else local bm=bn local br=k if br[w]==276 then b[br[v]]=b[br[bb]][b[br[u]]];elseif br[w]==210 then b[br[v]][b[br[bb]]]=b[br[u]];elseif br[w]==232 then b[br[v]]=b[br[bb]]-b[br[u]];end local br=l[bm+1]if br[w]==212 then b[br[v]]=#b[br[bb]];elseif br[w]==225 then b[br[v]]=p[br[bb]];elseif br[w]==183 then b[br[v]]=b[br[bb]]-b[br[u]];end local bm=l[bm+2]if bm[w]==134 then b[bm[v]]=b[bm[bb]];elseif bm[w]==281 then b[bm[v]]=b[bm[bb]][b[bm[u]]];else local bm=bm[v]local bm=b[bm]be=be+1 bd[be]=bm end bn=bn+2 end else local bm=bn local br=k if br[w]==128 then b[br[v]]=p[br[bb]];elseif br[w]==294 then b[br[v]]=b[br[bb]][b[br[u]]];elseif br[w]==165 then b[br[v]][b[br[bb]]]=b[br[u]];end local bm=l[bm+1]if bm[w]==165 then b[bm[v]]=not b[bm[bb]];elseif bm[w]==191 then b[bm[v]]=b[bm[bb]];else b[bm[v]][b[bm[bb]]]=b[bm[u]];end bn=bn+1 end else if m<=106 then if m<106 then bn=k[v];else local bm=k[bb]b[bm]={b[bm]}end else if m<=107 then l[b[k[w]]]={[v]=(k[v]-38),[bb]=k[bb],[u]=(k[u]-24),[x]=l[b[k[w]]][x]}else l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]-29),[x]=l[b[k[w]]][x]}end end end else if m>=115 then if m>=117 then local bm=k[v]local br=b[bm]local bs=b[bm+2]b[bm]=br-bs;bn=k[bb];else if m<116 then b[k[v]]=b[k[bb]]+b[k[u]];else l[b[k[w]]]={[v]=k[v],[bb]=k[bb],[u]=(k[u]+35),[x]=l[b[k[w]]][x]}end end else if m<=113 then if m<113 then local x=bn local bm=k if bm[w]==191 then local br=bm[v]local br=b[br]be=be+1 bd[be]=br elseif bm[w]==248 then b[bm[v]][b[bm[bb]]]=b[bm[u]];elseif bm[w]==243 then b[bm[v]]=#b[bm[bb]];end local bm=l[x+1]if bm[w]==239 then b[bm[v]]=b[bm[bb]]-b[bm[u]];elseif bm[w]==47 then b[bm[v]]=p[bm[bb]];else b[bm[v]]=#b[bm[bb]];end local x=l[x+2]if x[w]==44 then b[x[v]]=b[x[bb]][b[x[u]]];elseif x[w]==49 then local bm=x[v]local bm=b[bm]be=be+1 bd[be]=bm else b[x[v]]=h[p[x[bb]]];end bn=bn+2 else local x=k[v]local bm=b[k[w]]local br=b[x]local bm=br[bm]b[x]=bm b[x+1]=br b[x]=b[x](b[x+1],b[x+2])end else local x=k[v]local bm=b[k[w]]local br=b[x]local bm=br[bm]b[x]=bm b[x+1]=br b[x]=b[x](b[x+1])end end end else if m>=127 then if m<=132 then if m>=130 then if m<=131 then if m~=131 then b[k[bb]]={};else local x=k[bb]local x=b[x]be=be+1 bd[be]=x end else b[k[bb]]=c[k[v]]end else if m>=129 then b[k[bb]]={};else if m~=128 then do return end else b[k[bb]]=c[k[v]]end end end else if m>=136 then if m<=136 then local x=k[bb]local x=b[x]be=be+1 bd[be]=x else local x=k[bb]local x=b[x]be=be+1 bd[be]=x end else if m>=135 then local x=k[bb]local x=b[x]be=be+1 bd[be]=x else if m~=134 then do return b[k[bb]]end else local x=k[bb]local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 b[x]=br(bm)end end end end else if m>=121 then if m>=124 then if m<=125 then if m<125 then do return end else local x=k[bb]local x=b[x]be=be+1 bd[be]=x end else local x=k[bb]local x=b[x]be=be+1 bd[be]=x end else if m>=123 then b[k[bb]]={};else if m<122 then local x=k[bb]local x=b[x]be=be+1 bd[be]=x else local x=k[bb]local x=b[x]be=be+1 bd[be]=x end end end else if m<=119 then if m<119 then local x,bm=k[v],(k[u]*100)local br=b[x]do local x,bs,bt=b[x+1],b[x+2],b[x+3]br[bm+1]=x br[bm+2]=bs br[bm+3]=bt end else c[k[bb]][1]=b[k[v]]end else local x=k[v]local bm=b[x]+b[x+2]b[x]=bm if bm<=b[x+1]then b[k[u]],bn=bm,k[bb]end end end end end end else if m<=56 then if m<=49 then if m<=47 then if m<=46 then if m==45 then local x=k[v]local x=bd[be]bd[be]=nil be=be-1 x()else local x=bn local bm=k if bm[w]==279 then local br=n[bm[bb]]local bs=br[552]local bt=#bs local bu={}for bv=1,bt do local bs=bs[bv]local bt=bs[2]local bx=bs[3]if bs[1]==1 then if bx==0 then local bs=b[bt]ba[bt]=bs bu[bv]=bs else bu[bv]=b[bt]end else local bs=c[bt]if bx==0 and bs[1]then bs=bs[1][bs[2]]end bu[bv]=bs end end b[bm[v]]=by(br,bu,h)elseif bm[w]==264 then b[bm[v]]=h[p[bm[bb]]];else b[bm[v]][b[bm[bb]]]=b[bm[u]];end local x=l[x+1]if x[w]==233 then b[x[v]]=b[x[bb]]-b[x[u]];elseif x[w]==149 then b[x[v]]=b[x[bb]];else b[x[v]]=p[x[bb]];end bn=bn+1 end else b[k[v]]=b[k[bb]]~=b[k[u]];end else if m<49 then local x,bm=k[v],k[bb]local bm=s[bm]local br={}for bs=1,#bm,2 do br[p[bm[bs]]]=p[bm[bs+1]]end b[x]=br else local x=k[v]local bm=bd[be]bd[be]=nil be=be-1 b[x]=bm()end end else if m>=53 then if m<=54 then if m==53 then b[k[v]]=b[k[bb]]%b[k[u]];else local x=k[v]local bm=b[k[w]]local br=b[x]local bm=br[bm]b[x]=bm b[x+1]=br b[x]=b[x](b[x+1],b[x+2],b[x+3])end else if m<56 then local x=k[v]local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local bs=bd[be]bd[be]=nil be=be-1 do local bm,br=bs(br,bm)b[x]=bm b[x+1]=br end else b[k[v]]=b[k[bb]]>=b[k[u]];end end else if m>=52 then do for x,bm in a,ba do if bm[1]==b and x>=0 then bm[1]={b[x]}bm[2]=1 ba[x]=nil end end end local a=bd[be]bd[be]=nil be=be-1 local x=bd[be]bd[be]=nil be=be-1 do return x,a end else if m<51 then b[k[v]]=nil;else b[k[v]]=not b[k[bb]];end end end end else if m>=68 then if m<=73 then if m<=70 then if m>=70 then b[k[bb]][b[k[v]]]=b[k[u]];else if m==68 then b[k[bb]][b[k[v]]]=b[k[u]];else local a,x=k[bb],k[v]local x=s[x]local bm={}for br=1,#x do bm[br]=p[x[br]]end b[a]=bm end end else if m<=72 then if m~=72 then b[k[bb]][b[k[v]]]=b[k[u]];else local a,x=k[bb],k[v]local x=s[x]local bm={}for br=1,#x do bm[br]=p[x[br]]end b[a]=bm end else b[k[bb]][b[k[v]]]=b[k[u]];end end else if m<=76 then if m<=75 then if m==74 then b[k[bb]][1]=b[k[v]]else local a=k[bb]b[a]={b[a]}end else b[k[bb]][1]=b[k[v]]end else if m<=78 then if m<78 then local a=k[bb]b[a]={b[a]}else b[k[bb]][1]=b[k[v]]end else local a=k[bb]local x=bd[be]bd[be]=nil be=be-1 local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 b[a]=br(bm,x)end end end else if m<=61 then if m<=59 then if m<=58 then if m<58 then b[k[v]]=b[k[bb]]>b[k[u]];else bl=bl+1 bk[bl]=bi bi=be end else local a=k[v]local x=bd[be]bd[be]=nil be=be-1 local bm=bd[be]bd[be]=nil be=be-1 local br=bd[be]bd[be]=nil be=be-1 local x=bw(bc,br(bm,x))bo=a+x-1 for bm=1,x do b[a+bm-1]=bc[bm]end end else if m==60 then local a=k[v]local x=k[bb]local x=(x==0)and bo or(a+x-1)for bm=a,x do be=be+1 bd[be]=b[bm]end else local a=k[v]local a=be local x=bi local bm=x+1 local br=bd[bm]br(t(bd,bm+1,a))for br=a,bm,-1 do bd[br]=nil end be=x local a=bk[bl]bk[bl]=nil bl=bl-1 bi=a or 0 end end else if m>=65 then if m>=67 then local a,x=k[bb],k[v]local x=s[x]local bi={}for bk=1,#x do bi[bk]=p[x[bk]]end b[a]=bi else if m~=66 then local a=k[bb]b[a]={b[a]}else b[k[bb]][1]=b[k[v]]end end else if m<=63 then if m~=63 then b[k[bb]][1]=b[k[v]]else b[k[bb]][b[k[v]]]=b[k[u]];end else b[k[bb]][1]=b[k[v]]end end end end end end else if m>=37 then if m>=41 then if m<=42 then if m<=41 then b[k[v]]=b[k[bb]];else local a,x=k[v],k[bb]local x=b[x]b[a]=x[1]end else if m<44 then b[k[v]]=b[k[bb]]..b[k[u]];else local a=bn local x=k if x[w]==217 then b[x[v]]=p[x[bb]];elseif x[w]==244 then b[x[v]][b[x[bb]]]=b[x[u]];elseif x[w]==282 then b[x[v]]=h[p[x[bb]]];end local x=l[a+1]if x[w]==50 then b[x[v]]=p[x[bb]];elseif x[w]==293 then b[x[v]]=h[p[x[bb]]];else b[x[v]][b[x[bb]]]=b[x[u]];end local x=l[a+2]if x[w]==171 then b[x[v]][b[x[bb]]]=b[x[u]];elseif x[w]==293 then b[x[v]]=h[p[x[bb]]];elseif x[w]==287 then b[x[v]]=p[x[bb]];end local x=l[a+3]if x[w]==182 then b[x[v]]=h[p[x[bb]]];elseif x[w]==199 then b[x[v]][b[x[bb]]]=b[x[u]];else b[x[v]]=p[x[bb]];end local x=l[a+4]if x[w]==161 then b[x[v]]=h[p[x[bb]]];elseif x[w]==223 then b[x[v]]=p[x[bb]];else b[x[v]][b[x[bb]]]=b[x[u]];end local x=l[a+5]if x[w]==118 then b[x[v]]=p[x[bb]];elseif x[w]==282 then b[x[v]][b[x[bb]]]=b[x[u]];elseif x[w]==91 then b[x[v]]=h[p[x[bb]]];end local a=l[a+6]if a[w]==126 then b[a[v]]=h[p[a[bb]]];elseif a[w]==92 then b[a[v]]=p[a[bb]];else b[a[v]][b[a[bb]]]=b[a[u]];end bn=bn+6 end end else if m>=39 then if m==39 then do return t(b,k[v],bo)end else b[k[v]]=by(n[k[bb]],nil,h)end else if m<38 then local a=k[v]local l=bd[be]bd[be]=nil be=be-1 local t=bd[be]bd[be]=nil be=be-1 local l=bw(bc,t(l))bo=a+l-1 for t=1,l do b[a+t-1]=bc[t]end else if b[k[v]]then bn=k[bb];end;end end end else if m<=33 then if m<=31 then if m~=31 then local a=k[v]local l,t,w=b[a]()if l then do local l,t,w=t,w,k[bb]b[a+3]=l b[a+4]=t bn=w end end else local a=k[v]local l,t,w=b[a],b[a+1],b[a+2]b[a]=g(function()for g,x in l,t,w do f(true,g,x);end;end);bo=a+2;bn=k[bb];end else if m<=32 then local a=k[v]local f=bd[be]bd[be]=nil be=be-1 local g=bd[be]bd[be]=nil be=be-1 local f,g=g(f)do local f,g=f,g b[a]=f b[a+1]=g end else local a=k[v]local a=bd[be]bd[be]=nil be=be-1 local f=bd[be]bd[be]=nil be=be-1 f(a)end end else if m>=36 then local a,f,g=k[v],k[bb],k[u]local f=s[f]local a=b[a]for l=1,#f do if a==nil then break end a=a[p[f[l]]]end b[g]=a else if m==34 then local a=k[v]local f=bd[be]bd[be]=nil be=be-1 local g=bd[be]bd[be]=nil be=be-1 local l=bd[be]bd[be]=nil be=be-1 b[a]=l(g,f)else local a=k[v]local f=bd[be]bd[be]=nil be=be-1 local g=bd[be]bd[be]=nil be=be-1 do local f,g,l=g(f)b[a]=f b[a+1]=g b[a+2]=l end end end end end end end end else if m<=3 then if m>=2 then if m<=2 then b[k[v]][b[k[bb]]]=b[k[u]];else if k[u]==119 then b[k[v]]=h[p[k[bb]]];elseif k[u]==67 then b[k[v]]=b[k[bb]];else b[k[v]]=h[p[k[bb]]];end end else if m==0 then if k[u]==32 then b[k[v]]=p[k[bb]];elseif k[u]==107 then local a=k[bb]local a=c[a]b[k[v]]=a[1]else b[k[v]]=p[k[bb]];end else local a=k[v]local a=b[a]be=be+1 bd[be]=a end end else if m<=7 then if m>=6 then if m==6 then local a=k[v]local f=k[bb]local a=b[a]if not a then bn=f;end;else bn=k[bb];end else if m~=4 then b[k[v]]=b[k[bb]][b[k[u]]];end end else if m>=10 then local a=#k[v]for f=1,a do b[k[v][f]]=p[k[bb][f]];end;else if m~=9 then local a=n[k[bb]]local f=a[552]local g=#f local l={}for m=1,g do local f=f[m]local g=f[2]local n=f[3]if f[1]==1 then if n==0 then local f=b[g]ba[g]=f l[m]=f else l[m]=b[g]end else local c=c[g]if n==0 and c[1]then c=c[1][c[2]]end l[m]=c end end b[k[v]]=by(a,l,h)else b[k[v]]=p[k[bb]];end end end end end bn=bn+1;end;end;end cd,ce=-32435,-32435 else bj=nil cd,ce=52088,52088 end end else if ce>=-15130 then if ce<=-15130 then y=q and q[(function(a,b)local c={}for f=1,#a do local a=e(a,f)c[f]=o(d(37,99),(a-(b+f))%256)end return i(c)end)("\205\205\219\210",106)]or function(a,b)local c=0 local f=1 while a>0 and b>0 do local g=a%2 local h=b%2 if g==1 and h==1 then c=c+f;end;a=j(a/2);b=j(b/2);f=f*2;end;return c;end z=q and q[(function(a,b)local c={}for f=1,#a do local a=e(a,f)c[f]=o(d(37,99),(a-(b+f))%256)end return i(c)end)("\110\123\125\131",11)]or function(a)a=a%r return(r-1)-a end cd=cc[3]==0 and-10402 or-25750 cd,ce=-25750,-25750 else bg=bf([==[LLU;acV"6<!'r,*NZS)tj8XUbs8S0(%f-/)LC/=*6iNbh)(O^@%N4R3rsp.8s8UH>5'3_jLH9OUd%Nd\3b50VL-"B;.cgW'%NR%kJ#G_aW'c=I*U6"I$N5bV6QbS\s*pD4Tu2Nj*U;"F%fM.irJ(^X@1I^Qcs]7r#p&.q+"$Vg_gL)jTg-aC2GE<gruX9qf[+'DL'`!ics]+[QpZ@jcs]7r3oi$3!fkThB^Cf[L\UoLO<G,0TgFJ>FiZesL\sL[3b50V*r8^,6iDd(eGk:1*Tg1l%i%-)k`DK*L'eqNA>hkN$kk,_s.KpNQr'IeFm)2I3crG>LCOtIoV'.i@1F5;XJ"H)+$.W$(<h@nbR9^F'DfWETu+NYR':#9)CFfZ_M/OFfJ%n?FP&9U%kZF$LHQ%`3p^9A+!tf;&$'-U)Wn9,qI)\u->]'r"%(EUM1.#Pa,^2?6Gu&/M]X],aS>(V3+P.inW5CdB#o5<iuo4,a?pe"6qAU8Jt1aB6\J\U+naAQKT(VDL\q_ROG=+@s7)2+:h>^rifM1-&0XV40M#8H<#7qn6rim"6q7BR!!QA=I4StE6::r37gTf^(k^(0CfM6;"@c7?_+mhX-[#Q(n>d^c)%]Z^D,LIKbljIHJT4or-H#.YOK6c\1^jLR&E6/$'SuubU0epn.(?'j8XMu6QtM=`8J$dq6Bl+t<Zs#7nKA&<cd<^!O<P^c/8nBfU/,XTU;\fB1k?"9$D8u.dCZ\$K(/DT)U/a`Z=:15`c-S^PJAQ*DQu2GQj*`;.=k^2?m_3%8`.+&6.?g<0goCqKI`ip"NBs\5YKRam9J'#>:cAB>eFUSWm)*-VkN`6cW8@DfJGC-q5TRfH'aTd](:uQ8PRJ"Fo)o\`M6D]md<rpSQ2^=Pc^8P\leU6BNaPSZ#.lU1(7bSOO(H;L<;iHGUk$V"Zf9^/2Df0'<5FiJ;h[U9$.l?gI9P`"c"qVeQ=jVE(2**RGT-$oRa*L,gMDNh2E6XO/W,&`UaI)&q]d%78qWTa)J[o3YR0T8Y1%`>b&l@=u*i-"L.98&hDfKh0H7]j+]F/'Lshu2,>pJBB.DcV9pqA*-&R02Jea%F_(!p5n#rVVE8:>>8AbT[p2d0=J&>/eS;:pU-$GKR(KUK-5*1%\D(WN?s1]X5'1#e$-16iX=gnG[pldK131mCnRISS39=k$SJHI5Y6`f5AYrlJ!`YW23T)NWQDLmTQH^A/An.QBWE%cJ35/2s">JhWRSJmTd3X`f0=*t\"4.8l.oM,P)EMYOL06(i<>7C(!lpMsQn[djrF/D4b9Do4rDg^#2dde)H<$FgFj'As=\,VPbHm<Va_o2k61,^@]eG7HR91L2).`A^Y/2C'B'R#JdT%=sH5foI8NOo'V<>8X3)UhLP7W]gRW[EeCa<;UM@44E]qY4h,/]$sf?[Z#ieo]o-3MKda,)S&]l\8&I/-lj7&>>FP'O;B'Fo=\$RX:qr?Uopa4I`Bg-u`%Z*Kb@[c>f9S#>9SkufT"h;3D0d9&PBBonA,6tJ\hpr8#&F^hQ+>0NABQk,JVH>BQ@hi:g2p%krIY!JK+h3dnJ&lm&J@=Qs$=b^H]H`C7^7?lfEq<]Bul>@6aMk,m;Z8tY,jX\ig4H'NkL=%?+I&'I$@bNU'XL:5'ZVD?4B'm"^4IK[<j&NJIl7Mh5X0p9<cs+2j?1l?^-CII?BuBoAeT=><msA5NQ54UB0u`RnOLXo=CUiKsE9V(^g[G\O.kNk1<?)Co>+O<hD6d>)="MR]UfkRW$"`<i[X2`?(U)&;54I]F1Kl)jX#sS?;B"k4=?#BY3a&YmEHOgr]T`q*XTDpF6q/l"&Bc<@1Mn,Sda?Xo`QMuUabeutMjNNKGicl"-?H/^k<q(dq1qZ/[bF5Vgs?C"bSEnT['5;VYu7H@1cn$tQcrNNY\#tUYV^1j;I5a%eV_&s:!1geSlq-cg*@YJGo7FR?q6M_]8Yr$o<EIlf4P1obS.7.D:RstS5E%@bY4QcfpT*D-SN`-L;C*c9WOek]r0DPn,g^(Ir/MI%b$QGhhfn.kH(F5i@8'Ers0)^XK0uAYR!;9??<[qlQL%p,n5]J[qY;+L/R5F?%c$$76)5IF_>6rVf[#Alc.?J"&$VUk-U^TMV11gD"ZG.CWCN6As1)7>MPSA\"m'P"Y8:67nr_]F^1MB5"sCB3BK7;B\#hnMMpbI.S]2oWNN#@9*XM;?48WT?!akc9tL9u??O8&mhC\D5s@K\:ZqT986nr72t%OJBQ\7:oZW0CafA,S<->4ReTpiIg)9#Dnd3:)39OF*RjXE5BoQ`D_W@jF;e[UNP,oR;h\!brp\^t-EF->aW`.6m0tR'HHUI1C]@B^3>d:sM$Qfc:3>otVmF]j@ldN/<P'LV=/63\%8<T+GIM+\8`\d$m.U(NZ]H$*^;J*2$XVfc_r'6Q[hGobCh0*_!B=p7f[+1u\<k<m.7i81)1:DUuV`i%V51RmTm4KsQ40lNO;MQMF`dFMeG"E:gE5[n+,aRes6;7s-)lSJ<U[j9'&l"q,b[YS$[[l*GT&8$=+70cuRdEksH&7^XjU9O'1,e=0eflXXV8K#\qU@)ko2EY#g8hn'X:A72>m=Gs/lt`$S^+17Zb/*61eFu6dpUl(r$k;#9PLLf<3(nn4*=g;<n+N'/(2']/XtWHVPKC:YrFZNo.2GQ]kj(?ShD#n/!X_u-iM3BqdRC[A_e#'R6j@*FV\#R=a>[EZ6CR:ZSM#8@PadqMcRE`R[hWN&1e5P,]u1O\\tB:bHbH;-V9aR=[,L$J[d'#Xsg3u9e=NlYj?+pT8a1C#`LbY;HH5D?+31kA[,lcl*u^a]NW^6Fd!^h9Rp-"1=A-QJ>QQsWFrp#TCG6Z,(qg83fiDd$.:r_G6imh^sH*!3,,ZK26,*MDcJ+h]K0>SbAmpqJIp,0F<,(1&r.IXKSrCZ:_7Ts%]e$Z!(%UI$&G#u-.%dlU7hiV/V3f^=5m%<CA#SL2k2T[D,Y2PCPOK-1XQl;P/B[;D&p&dL8_?g&V)Wm^oSeUlBn%)'#7&R].]?JCn$m%Au&"Q1ok)#:,PtV3,.5(&Sg_^Q"j-t[k&Ff#W-S&U9'd6#_6FGRROc[#dCb&6Y:R<!fR7e\`7q_m$+.TE1PK(lBB-B`@)a-L=H![1qqm/b[R/#0d)7hq%btQ\B78fl/73u1GUkl)RkE#MhGiFZV^U<-B4daGS6X_][&[GjH=sK%##"i,a&]?1Z_]L9dhb6+@jiNW_mb1C48Pb%b0'1#_%c>6X?(??>F!-C(RQOe+520ASJ?@6p!JE)-a4"0G`gUF.69?o!*/A8L>CS]&%3uV=TW]$AkR@U*TCmlHq@[g7:Qc!a01%QPKU@>:U@K-J[\AZue=3f+$;F`?O/)8(&[C0R]Z4W]?QBJoBTrGG!gq*?uS;]7DLP>eKm2e-,+bMG_SD!*p5ID(WD%C>OYPd;?O7_FYENYkFH_"pn1s!7[ABGUK0p\:AobihFoT1)!tJ6/?L\l1Kgn0<_m6rok6%gUut0b:\jm]>DS\OdV5t4Q<+!3Q[d\Uh57kNhAj^fjS&m0tkC,4OBE53UlqJh0O@/cC:Zg[W$=iCA*Oa\HbfQAgL/r7hGlCpj`b/\tF"n-#TEl]B3JRed8rJl8F^p7J*!g^_jS,kprt0m_j4:J[cU$hg2u<>FOF6ok*7^q7_#n.o@MOm#CYm+W^8mB;-YjIj-nV4.7u52jdEG0:0tr@GCI\\P32lkIE$bbij+L@i^D]a^O(J"@Llm>bH0*XsHntGe7<'37AC3?*\%L"I=7NA`qW]48.BW4M>8%[d.e.L$:sblkp1XY.fJKX)?\(F'#jtkdnH1=be1p%+:7hYAS<+[2Gk#f)-)@[E^?j"bhT7bt44<9%?$26(fY]M@e,?\)3],e*1*2hL=eI,^RXQ]CtXn\q=`rD7AOc]hc,mk3E[66Fs'u8nE;3n#5r;(FApKHY(rhlXd\GNS+c[NkIC!P+C?M_!+L]ff$-k<p_nl6^jhCkTa9&A7c\[&0^$sWKBRe#_Lm7.?/?%hYm8aRljF:]eT2#`Ek`'JVf4;(S@oC:%_QCAnAX5-H5W.m7Xo,GO;f:gV\W2Om]b]<n5(IZoOFRg?X,bp\;]hi`0W^lXB&CalA^@4PE9)9l/$LNZ:,=/3R@;'];JTJ:[c'8W%3/NKF`XTBSUEG$9ZWpJ$Jp=2e:bpNiXVp/%sYn2e#^9.!h8ZdFen#k_l35?[H&c*hl\ie]Z!5bG*f+Qe:CHk:YIG4*'*`i[ct5.L>H(4dVK=`:oP41sD*[:a\m9AMm`>aRL\BQLm%j-@f'f>9IWMHT>C\Nm!+&.$Lg%C_?;9Y;F4e]m&bG.-5>BCX5$[3FJGa3sUG\7=8G$gu$J<U&lZF-d2/*.-7G;tD8Cl%864[ee!7Of1Aq26*ppX*3ougc+#P-*Jg^">O*o@t%;/5.GHWQl_e>R?."Uib4G\^p,$-8AWh5Ved=KMSl.V(9i&iQmQfUT$%eR,i5npfkk/,n"TO(eg7L[h$e+b+^1YJp\*3a0^iWPEna;kAN4!:Y;3S^$X1=/i]9``=.SU"XBE`G?jK+\[St2M=#d];qQZLYabc36<ZR45ODOYl8>?6#%Np;$.qIBNCs@Z70+Fg3)'(61c9psEqPCTh]:CrWUB"UM>-(1d=K018'NUq.<e:<.#oEq6&J;T@"CXAdp=;Si//A,_=[m0V"Zp:6VMmQbieGGDHL-Pe%>mbY>%u<BSt083d#j0dOItX[gSC_2Jm;sj$q*Kg.$YYa!B-@fBeo4CM:f)]E:M.c*$g/orB;/<1U.MQJj<]Pib0G7rUA=<Qrol[YG+GeKW?&p40Q%>Sq"]@9h/RQ1).R::YW<*#S.P]/cjqOI*_<''CMLnjodr5fHhpj-"R.:'%Ttta=0k@l%CNK`2"2YJ.dN+&o:E2-35hGJ=%$u@]&R_j>$^NoF!]t-7D1df4IJa,/PVK,^=p6@4jDGg74TtbQN_5dPr?^&J.5BOt8IJ#:N/3"@8hq>okEr71i*8+qd0[(4-`DJrjSr&2a\:&:fk^63r\`bCW7t63m];N<YM5,RA+'C''8`6m>#s8M;rV,b[Uo&4Ao%,nPnu)?nPGQmC*>O9S%2"4=ZA:]s(].RF^k!f-u;8jl"e#!rp?"MtVN_k+6NeKdZc+UGoe$fFpE'*r:dL^7H&+c(f-!($sB&3s8cYm=g'cm4E=&eTcs7$7f]&HP3(&L%fRJ;AaX,mf5]&-O.AL^9+G(5Yk@&;1VC+KT\d`)%Y2&4n&i&u7N1!()3U@8/.AKLeE@+q]Y3Ob=92+<h@&J.N!#Os7D8$B=NrWHkht.7.Fa#R+rA6'igH-E0!q'$2O5+sP-?TEsa.#W1Oo1JptS#p>Ci#RH(h+s@Tg.>i_=-9!@[<9t/1&K.bT:]rSkNk8g2!s'Qu!!3`U"9K/QGL;qR&OHa8!CE;Sdm/SL)?bX'6:?VJaX'c>"@NlU!(7GCgfb]`P2OuP-=A#T8?>JK#`@Oc3JUC.1mu3INt_j[bQ1Il#Xj>ipE[TJLuf7<Rlm;i9P&u^5QFM&,172ISM>l\<T5bqC^L4tQXG#XY4VN7;^5:ZfX&ED>\@ZQU.pR6CXUXAl:Mb)A5<b',8_n^816gg&6[IQ$8Q@iVWBRi5a.]pM'aNF">m)@Fbhn!"Z0/N6oB`5PXH*.,.&D28V"l25_YtKJiJ=kRKONtY<XrM"OIaRV5l)D"UVO:8hO0V+qbT#<%oeX$:H(R8.860bTI%W/9m7Z0Jb0!ND;6a'$VsE7=!8*eB@o48oAN!G=kh"!\.=4aI=M%6B&F1'2"!G).Km`P+#oj3o12j_:`?]HE5jo(QISJYVM/A>IJpud+#"hXs/k-E@./ij(P;A)%K[_Qj.-n9]/&:O83Q\O,6#Z-'J^4\2>6@D[9hPAA?^.\0TS5OUKVYbL:KCial5ZVrNte>uof9=*S92R4[;\.*$'SYuY=k.dD2'`+!GP$-)doa,aM&oYR,-*Xn@ICek3Lb=61sL!F5[bI\qR/N7m<6l/IV^"fRYg:Y1.Ai:_F1gm_[OgmQr,/l7Ed.6L8.BmR>/m^c`"J*i;E\g`j!"R*a$=MG'q`6%*W)RA+m@q=(V=gk:Z8bag>qjLI,jK?I<JCZU'27>8;[NnDRH59?Atf[g=%LUa/]a,k02(0c!QMZD35;9F's-Kl=AgO:En=_kTghW4Rb*hD&Q)H>l,]X"\T&?eUfP4tr6@jSbSR^pn$_1l4)Wc$_msDsLq-YMmuD$2p@S%uYp\G<#JjSUB]Lj!@=VuCGW#4.gbY;CXrY2jCtEdqZs7@Sh\%WEN99[EF*$&eUiPT3bp4/=X@U5sJ9bZHI5dY`c(6YN:,T&Cfk('LGf.@Fq9E2g^@p9_>Lm>ch@Kk%($)f/-QI9b]WlN_@(L+<jKS0>Rk@_%Ym&6?AC=KjB%*h>CE(O^Wm#7@jU>*S5s$`WH\n0TKShHS1]o:\PkBV?foiM1V"7iAY)<3n^SXrEESgD11Mq$%g$b?S>I"%;=1n+8?%k_MUC"_Xq08s?WF24hh3t8412/D`'(b.jm(i#sZuDF>J#aU?]tL2&,gdD\[mYh%blo%^#)Z!^/RpOUZ]NP9kUX-(OOIR-ljcXfZu(!1N)(1PSQn(AGu5i%;p^,a!UNS*:/B*#-Saa703^V!Is,k,QZ\5-,_WR.B2tqnD+W@cC9$#15mp=@%;eogBs>L@,!'bgYSno^%Z$'Z]G7e^HusJP,#+;3>$o3!OiN-PDN%cK&&B]'EF'93k'l?9;(aS[gd7c-8<=aXbqtd/OZ""SqVspUdkL$,G=Bi8l&]LcgPBLK72Jg/=[A%$(D[b5bj*^K1a3+jP]W>VIYbB]bB/hXFcnA,jee;Yf48Y5&-+Gh\9NI"Mc%`32LFh=qWc!A-B)/@>@p(P1IG[iUIWgZW>e*J=sps79lIck]45Vu.3/i&@qXj\:5^n"-2U9GlubeRAk1Ti+olInb!ng_Qmp-H(Q>no2[AEJF03a;4E@D9e-uhXFRu4D=)hu^/710qX^jE9_'iCQ,P`cFbW*u8a;Q<;'@7Q+;f7DAAEm?tF[Jd$gc-0&=;!c9pG<o(9cLlg8$=WCDCQ#(k!;+R;Qr])LFGk08jV#9P`/J*1MMd%c-5!!QW\BmQm]7d1)JbU([k/C%]^KD:0Jti2AM*E-X]DO%-ZN9'hO]i7Nj9T+j&iLg)<Fj4D\k*UNACMQC<V?$a6e]*i0d>P2$1,?m7H6UcD?,d[ji,&-I%;V_XRI9M-#J,Srfnb;J5?ka4o"(Q1%+fokJlosW,RU^!91"C,mHSnuH$/jN&R>l]h_cif;Q#\k3PjcX2+ds[C6ODJsGMPU^,^\jTjjKL-\;6ZM29T=@cc-@R+UgYS]h2r%ZI##`G_(*<kdq.*j6^\IDdc`YX.Vh6.TS[a&S[>`]6dd@o(lQnG6QmdC"N]ZWk?%U!ZuG1n?,P-JMflSPRa9XGXATQuPF=iAi)(:/!I>f-K-c5[aVpG<^S[aKDG2>]E1SnS7fm(i#dt,A%5D7"CK+g_(sO;f=\CN<;6gB5"uB]tD%6hZ_D2:b/e]&.[W>!m(p-r0`e)c$l'/bg:7<umSd<PC;'*rol:Wfe0?jX,Mg@\6bk#MN"ksCE3E(Pc=X$dcUp[2aB!gV#W@$-6M#qOIU8HU9XNA#dfoU_Zih$">$(ajJ6:@8P.s%gaKi*F>:WWTADTf"X\#Ql'Y%,$M(+mmd8E@!iFbB`7_MqM",>ZEY"E#bP'PP+F&.V:3,TK^TOJCE4)[.!oP;Id87YsY[PgiA<i5h($SOW^.g3OZ5;[RguCpm$Q.6=IhD$$?8%KU/E_"BH>@a/U!DTN4&!i8(HZ/Ysh&"*EUjY7(bA][pTXJWQh7&hM(hfM5c/2`!@/0a"`'>(&[lY2::3Z$XD!60/aAsFWhJ,g")#nIOPpW$=!fsrP_:$H-U;;_Z,S3GooE-AC]BtN2uBOGDD$(bm'j,'/&,d/Npem(7#dH3i$1BL'"1')12lqGs.3=/AR+=8si[?)-AG(uc4%23O2Go,CN$".6HBiH4+MC*itE)(0)H6V8od[VXU8>@.;q(W5(PQ3j\5$L*+8nqT^Ta`<`SJ!7PnDYRWRWiU1Br47L9)p"iJTIX'RKHJ&7C]KHJaHrgdP)\4'*SCXPVA@*+h1\h\;M;;?oX?s`[CgcM1%_0Z%Co4`.unUn0!KG8Ac(GH3I`AGW&WeI&T^8Lg38ZP"Eo2>Ygg0eb)I:'TIbiUko4^Ek2S8!>iD"1oF,M&ce[0)?JSFfNlI9=[Upad\%O;a5J'KN!,H7EL$fP-0PW#.1/0cOfJaP63'1nXnOPnBlMD;j9X20PGGjC!*>=;67@[LR/fto?G:r?N=J7+^qjgHfeV>X5Sm[7P5mNSc4]7BoFh']Tn:35,S9C@GfNiK[76iU)e0M9a\iF!&E)s/lQt=h9:/?Z"Kuq.XBlp[;6'h)8<,!HO%AnY8X&QR_$7_KiSq@>euTjB-dGl>Opp,lI3_LCqCK`b'#6pB:3(r<LJ43_J:X1<E.g'k+YY9oSq+usJ<.;\jAd"c!."\[.?(3iR\U4]3q;io#mHF6#]<aK&rZrQEg3@(cK$?RakY:>c;Vmf9R<4j!u(LE&1&X.7Lc0uObnud8Y_CJ:6;?E,)s09'!ObBe8o18Djt#pHL,5Of/glV1)W'siK9Rh7RmI6IaSKf&TF6t$3t/RN6Lfe4IS``Y^)uMT8_A,A&ZJaFMTg;0+`)bE'hDJ=+_.&>m.qD$.]D=]@^*qi7TEHTroUK]Uj^6E%f0;BpQ7%!lAZKX5'0(q,NUmY.29XKJ[<jL]ub3p>om+2fVmXpsg#C-,CH*9*ESQRaWDC,shUEQi7Gn:kt%VnDf3[W^.OL#`@O]Jn"r!9*BL1X$OjB/fj*hLC)E`,/FoqDODY)'8//ROXQ>(!b-^>70@:5.\=da856^AS#MgH#oC/q?B.(ji@9Du/d5(Ic`;c9JLI3B%he+PSO`j-N.C6'8V^Fg-33AD/dne>XX(lW&2^&?3F_)"lZaj/O3<A_Lb$]PN`5jpP0pZeO":gdUqER`;r,*m.ET8dAQRsW"Xh9Q-7;tcn+o?o66C,Q10AMf[>U%cUoR[o7W[ThX`_Z;2)R3;c'ePg?DI"]?lX$_*CNWA?7qVlB=,VPN(pPMaY,m*qGI+&o'\gBAq''N&)?j1Hf'8g9n4T4j$,\mr.K"fqnN*Q4.lAOT76Ju_M_cGgUlqG#ehi_IDm<.p[]L&h\L^7?[qcfs6n#-;U-(Cr$_r$8]'jDhj<h6n'a%3r<LR'^HONs'\XbW96jn.<@2Wa--=$UrojB0T!*mP5(!3GI.;Cr4o'GSp%?*!oUUL*ViUiFGQ77Vo]e[9q:iYm(5MpkPMc5=s0r!P;hNVMF3cq^Boi;QrVuPk?iKO:J*chus2cla0:Uj!)6UQ`mG"tR4fS=VAfe/C*dTjHd*l@ub.IG,eXuVXra5D,rP`Cjr8;W^+*c;l@Z+"ZSH!;8JCUZlcW9HG2psuBm!jFjp1k2rom*#I<oqJN^Nt2MOnuYcp('5<:,["cTANH8Rl"h!Zt"G+ULe/Z_6eY)b<!0UHC6p)?[2/ihYbd!<8ic0gi`@()"G'Vs2qsQh`d;#l@H.ME?p&]i/:r>7C.?cY]@uWBk<=^0a%3nK-nCs#G:gb^Adr?Ab_ndoeXhfZaW)FkB$*SIf(Pm^k_B)kPNicC]6?IZQZsDDZ48CZVNd_OH85jkehUN(S#D8c(\ZF^_[IirdF!+!^H43B-01!8=:?a)*`Ili7EAog\9S'_0b%tNlLPelN^t9DnP820+]ruN1[!#UMp#(4._UfeQ`Qc[of%pU8E@F02VR&WDO&#7dZZ\\F=9p8c\"LWP_+us!iHNePJQ#eWLEcIk`f1OIGuNC2/;"reUqN!a^6#"H#&(]a6)RaC.[_V2"sE`qeM=iVlX+/aM!#j-sZ(>']:n45YME]C0IArL1BFa62WX?#AHjWc3"Si6EQkIGVa:p8Hi'I8JhsSnm3R]Y<pDL[KNho31]"O7g,VJ(3>%h]in$qo-Uip:B-@]uXUJ<deteHk3"GJ&r[bpOq&`G86:o0A+9?SJpeRrKH\*qnqp)BCEL6pr$+>EQqe,prr\4Ul<V^g@M5oh>>S^%skh:U64e\NdTa%Dn0NO6_F7s#;:PL1N.P"ruHUf>Mm8N[m+r[Tu-2pe*.,*qpXQMGCAX5+*m9A++;JqLE^paIf%lk\agE+eG)P*>G(l9;eggGK3u1XF,SoGiVOZVqBNcN[8/?'riq7W]:[sQr27:!hYZ1(IieI7TAQ7\^Z@7q4`oCr4`SbFs58[(:,;"IHlqjHe@]ZF_!)tZY]%8S,Q=>H7X3#MaVVZ=q!-W"%0$/.`;.UjSiD3]^K(BtbFT.ECd%=>pt^GrQb@<0pfq)"m+Wq9lYS<=U$UNGi)g"rcNNYE)lRt9jnikNF3;@fl!/Ot3iD@.R,n1_Vg%I+Dq_Mr7loo)1TP1Q;8kj\\!@d)3UJRS/%ZkW2DpH8E;K2?:C2r[fnoQrp*%2LGKT[:J+.fGrFnfloI6Rrs%Y6#a7OMDI,NB_I-g[TJ+:lUp4KpIluPF?K5\N$8j@eI^\,%uSpg%Y/>(HK5PWa%8hRaE3WJ[+pH7un#N#@;pO@f[9>C7S#iGpn+aVQ)s6LuFrL%jmna:`f+!%!b*#(]i)S8N&%nuk-54utbHUg-?MI#egQ[\nTDuJBkT<]Yt1ftVukO=0AL!SZ2W&OGWi",MKhgY!?HM@.`_`rJ9(]XEY#9J0Mr[6.=pO1tpl&3mAqsS^KrUue#hq<2P@l9c][&*\,?>(g1>*qGplMDq[IioTk^Am2F:F)S2LB$T&Icl((^AXbGmYp'#`tr'0a8Pr3T=m`jIe9d-p)H-=55NRM=6uLPVhH2(VgQdE*pqc:LfsV;O0Qhir8:NRrfr!/nlPgcno49=Og,-4/:[B_]jE[Kok>6AH2-MAe[-^"Bf;M((=rHBh"SL<,erq;ptYIDM9`g+#?D:HX)HgZl%(L:hX8[D^?>[h"SsI!UA_8k^\>;.2u;@N_T)1qnlYdLnlRuf<jg/CrT7b,G4uXlqL0S)jfQRq\EBLOr$q?f^if*!r9ka'bqD<UJuBg+bTd$p#\>E^IBEBkk#3js;6+Me4[\2p^%%#A4OBdUpAD:HcT<6KlMLDR]eAU0=fJTY)11A8T=Oh<^RkFQDIY0mK97ot0:5N1^ccutq,$%hn$lE__9Z(+%71L'i%r,sk@"*:lT#35=1urHGK[E'r8)'NA$5BV,d<)q3N^Fr_s`'D$d#k,VB:9'^A4^6pe1A<-5lgEp\JU/7#'"^Pt.GF\-p&QlJ(cE4ap0@3<&.dr3j=MKD<r[aTN&[HfTn;V`o%j_sb;9Z$>KpjPplts5coBpbg7L+,GVZGk[-2rm]bRoF?lYqPRd<k<H#HGAoeFPhklT6KmS]:p=e$[I0(`*rc'Nq.JD&nF^F#k^0ZI3J"eZAN7=%r!VU:I`'M0@\.3C^\=f/>/'_ECL5rC]o%qN+2<RkX.OZ@p8M`in+udB^O>tKG$P(*h$JH(h`Y9ds2ep1s.5:$g@#!]\#/btqql[tEA,mMC3T(!Z^uQrj6ci/&"i`VZgi8-rJ^dMURutEn;bJ_*b+j1UnAcSfQA82QEU,UB:dW94ria8pn?$2U=h']XnUV<07N>A]^6r98a^lehgX48W9b$UKT:QTL#79uU\FGIO7`b3.f7X\STr.)<i2GfH(mFhUJJYf]heTMe9L\\ql,;DIAr#`q9ukprCfeBnp$,mWQq7\HU:Bd$_oBOfNfQr&+*T9'gD=&qr,0/TAH(9g1Pn6$23Dc+9%Wa*OWc<$M-9AG+Q)04Is7C'3LE:NK)NTmZ,a;J8Z,+$toOuha757J+au1V+(5UhcRVZnW/,Prm>*Pq]Gk/J,eA$j;)0Oj+5^KK-pnHCY5caWCM8KB-=TO4bWA@PttP'h:.hN/,]@d^@M4eq"BJ9?@26ehtCIV`U5,Ql-n<EJ+WEK9n2IRhgY.r`XfiQiI?6dGilJmr6i@Ti="+8eh<%IP5VA`/,p,epq_0gQbN+L5Q(,frk6mD^\XeA$U;/qVr:.<rQqH4?iP1riS@MIBODGACM]%1QR3+<e_g4iXptK]@_*I'`ddc?M=t#3s2kNFf*)S$Hh"ggUtI\V'L!<L5<jV[++3HKko]grHH1B\Y83bODb_DMjEJB.0988b`f^:6l'5PRE?\8tIimrTG'dt[&(>Wc`;"aVbs)"@:]9RZ5PRM:TAb3bADn9>_I1d15M<R.%G\L&A'QpqKp.G=dC'/cn`2jRhY5l.CcZXnf#_sIm#ar:jp5nTrgB76!;JOSlUo&BcKti+M"LIuT=B!KPNPk:m#Gj.:HUQF]RSgZFWA1I'`mfFR;R>YX>hAOrT'AaXBkjlGQ.Ie?i!R8SdVbZ^R>m>eU($ng*:Yf<`mLr>^Y*h-<+Q=0_/tho^jm(W0o=LrL']hRJ>po-p[oZZke*=p>_4Op>!s\39\l[4`\n+3CXBK\BM?$1S/ERTH0Fms2=K`G[DotNEq7DqUk2_q!"oll@mT&kC_F$>kWn()^^WUGVXX4\9.Y6m>3@LMY'Q0m6@6-l4'ZkC8d>'GC!@NIc6-o]fi?sGp5jT"bK8rWk\D(s!S/g*@&Fe@QH^P4+G\Zjs>"5W?c:@b0K>JAH2F]re.trhs"H2]XQHPVU_j-TI\O)YpFCUC5saTM7E;L6-XJpFI:(r`2\@V<=@MRAd56prs,+hVFM`d4'tY\@\TD!qPcN\bOWO#2HU9nFKMNNge@JaTmlZ!m')\6KQk`_19@tPR_msH[Ei>7b<r#qqUA_jI;Z[H6uVkDm.mhKf=1Q3$pD?sH$?c-X>ap<=>Lc4/Hh`llqFr=G\W!c"'s=WK.Rt0.AIG38o0AK\n:r^9I?`i',.S_(QK<kDH!<NSQnVM/uhX*qu:S'Q7(62NEVEgbg,W<P@A@@Foq#2!ilJ%[;8iO/d"MY@uPk0[TJPS%D"O+;WSfI-3tN@Y6A@!"B[l6aH[P&Lc+A_13-+1^A`>+U6O6-Vkoh=aM`.s-N0#q$)Wp#+I)uW\5[6Tnt-mq2)@h(O86+K#B(rjOY9<$P9BWn$3"]OE&!/e&iNGQ^W@9.D/]MVUB4k!Sp#*h'FfKJ"c(QR@NHpO8>=6*/(YmYn5WEWgL##Q1LL+@O$<>#07WlP#G-<JK(#?,QN-dB\,P<t57$fFs7.,T4n;B5q"go'rm)\dIt.'.n,LRd+8F,?Ie`H*Icn[7HgCF@r6`Rbl+qTDj'TS"PKQ2jb\s*CZiBg(hnHMC'2O)Of;f^;3W%Alq2;/2IjtC^++)ndGQ-S<:F:8-==`I8:h]Cmhgag%TDi2-s)>qQm(cd(Z!nud"gf@X[_??W(9qf5S;#[bUbPFRd8BPtl4<p\DuF'UD".44^[ZOJr8O>siudageU;r?pHO/Zmm$<h6\c*Jr57+2_)&iFDrP4?J@Pti8*u\k^d%eKa,^+^N*loiUp2#spuSbZ(#3!?IV:(nO4!Gj9=SruDgXb//,']9S`n'Pee.V>%7b<2Hc#a5;Xs$Tak7IVi[9m"/ZkpPZmo3,"ed[Pja6USfW5])g7FBU.5Ss%aEXs`G%>l5pQ^V^Gl9@d:Fuerj"FUF@oo4_^;mOGcTH+BEF400386CZW*\/,3Mf#WQN?fpn:N8.%DVqRRi'#ccDTp.4TFLFQ`_p#53m,ORs*3pJas#1UB#N:h9Z)\QbW=KIg2G[[XRE^hD<S#Wtu4Z0rqpEdOiRm+!:@$J,X@>5P&?+!#IjN2>Z3;s6/i7qPSWpI&]eEnu?7CQJf+"RsseA!,q_$$1j88PiV(Xs4_)N$P.XH$]j0E:>01'rof32knjBgTE"Mt1>hYds81j1/Xu-]GQ)&\Y5c_a]N?\)htU+pK60/(0itDPE^iSGZ1fXG*T$Vd?iT-CIITPhhuE=urG0]Qm$-)"kMmV3e%`Tgmsj[3<nb`7j*'_2mGc&.`\Nt)1@pi^ri?(qeaNN1W@8k:F=VH:`c^-P0CM>>br)$:9qZE]m?^Q"#erL@?Ma-jH0M4[^@Z=s4n7!>^@[UrIJ'EYs5e`'J+*i[0/NUR=31^(s761J"#5r-nk1C5On"cn(-fQ-BH@(BYgSKVR]%4J1Wb+=ZM\?ThLGIq58"2XWD,"iB3W,IpZGL%k8Th4Q'&pj]TiBh8cP?Qp(DAo[*!QBNL,+:s8$Y`l,Q$a:DNp'e"?Qtk=U2PBTi7rKGb6V41*-#Z^9SLP48c#2!8##%mSJ@i+'YT>-Z!k^4WL)qT(J_RZHSE=mIjanTUV,PDPJf?@D*q-gP,d=(a@:XE2BKm4hC^m@O<pQ#o<q*&!m:5+@7HoFlH+f+P_=nHWdjP5&t/m#:H&hm]N:*QunIUR1R@<3Yl=:9's0HI3QkV+oCMS^_t6p9\V[$,Zjj`$4Yt[OP'83m3a+rc+CbkGG.8nOqFnJWD8p]'.)as1+%mF@#cW@(^Gk,)icPfJAB3d#6pH?,W/^,TdH?iM73j0X_Xf4]kOYR_d?0R7H]8,ecI`^tRi;C72p$psl28h<4)I:s40eK6=DIS\2Bip64>dklG/^Ac!85`W,b]^c(V#29ZB$laq<cC(M+R5r?;La`]a%*R6_Xhpj0n?9Qs4of&u/4*'uMpr;@'jp0mF&K::_74Q%L[QE@=7QVn%^uKUlZX584CV5Ik^mQ;bMj_lMO\QWMg.9L?T?@)_2>+-%ZGBpk2ta%\IkusHc*T&q<`,A;&u.i5l,[@J&%\1,C1d%m<qh@;[+\(_)!>'g(WK-gTN<F^N7CHQmS@lV6Vm8+7`WM54)D=f$F/(j/T-'Y];N?3=CnU8-gKb8W1NQ^ATd^^aEKjus-PO-ZPi=9dG\^Z."q&D]RT.=0R2\"+,X26Pk+I[n"Q9Ic6h>VM[`H'b5UaMD]S'kE;g!W&Lf,bZ3Jj6UnP7kLK..)8TQH3Hkl0h>H5M6&)PpD+>Y1(R;Te>dC*>OBp_HH6W;oUAbQ,W%G.YP,R@ifA8^Fsb\ZHHaJj+KTF>1Td!=_I/pj*F9bVgV1d>QOL_r0M^F1l'$BPB2Tq=l7=JB7n)KSM?B_6Sk09.4##:'4e*fU5i!Ie@<5V^Es:UW5K3j#VRk0+%(>Z*"c8V2Rngf.>L;7DFXr><r8U\`:1NsP_DGL*^&?ha2lT=jgkX=%(#4jH6WT:CYDiMgO\?`e4$P3$A3nca:o'okGX4<`/0TJ(ffgV4a*htH2.I(b@)s5ZQIoXhm762]3(rR:doX(NkhEk[OiU*)?-9/>Y9XWV#W1`p'hPnbG[-%MHQ_F?1iT!ZApp25fEKYAtbVp[@-0\VrGbGI&rNb+.?N?_T!KsVXSOV$6'>\VEBd7VTKetYf`gu?"IZokVe,'l;%VsB9AN("?18"l7f#]c:i89;AAI[H#4GL*ce?V$.eVd:WOfi"jZd6e=;#C!a*`b5,KD%*6['!cJ1V8@8b<$IaP73nT_\R+h`A;*>(9.DSdoIo(bdG5*@>0Q2KUt@#g1T+$URa6ZMH$NdY^D:If)qH%#oPV5ora:AE[J]%Sc"ErXkqaT9hp3p3r5QjlF5!?!%C60AB2[JH$$8)(^-04m=b`^2_Bh^\jGhTB#U6!o-Y;1e@+jl-'AX^=_q\W]Xc#;:-`sZ$,a3RL)AYKeb*KM82t>Y'H]arBFH]-rk.MH89EatjS>g!_Yr7;T_JHfIB7^5BR5.pK1i#omUnjO&nlD:jK=.W$;N?ZU^b7mgROH.,r3.po+]pZDes0*,]\^IH*A*kHo/jK\`a&5fRS8&L.=%&>c$TbM*KgTC$69l;#A-$*IBLMWCc+9)W>e@?='Tl<Io2n?m]Wdi-m=E[$HX_h4k'.,'2.N/_2o!:fcZ8X0U*1-'oA6%W%rk^`5MGM]XYbk24CnTfQ?JLO*6H%*M:YNVm6u&T:=C41u`d1l8OG@O4^56<jtm?'8nIQB<kVp7ajmUUd9njeOZUBeM.t#e)GVKrOrEo$aSQJYN#;30ii!,$i(pO1pebD1oi]PH_bCX_5q.o"cKY?JcI8,dUCn!$S(^uZHB:PFb6CFMBu^PoRpSm%7NO<,bisIbY/q?]1[>Q9Cl+*&B\f%D>`$of8Q=LK0.f0HY-ofG@.u,7TkZ0GJoF'@GZtP=eJM*?'+U.oc_oWf"<5ON2:<(NJk*VfBo=%KL"G(1bmOS/DU,Z@?K-iisNU*T^**:2!Gq%5$N-''.TKQUG>IW/8<.j>9+E5]g5]CL3-O#libYYSKWVW(5(d#'F\@n*B&B&FuSpJK2I`QIJnJHU_"X.\'=Nr=W$nc[d7qTm].'RKRmYX6=+#p*U@`R,j)6T*H/RO*(a<+hoV_)lY9p!Oqt1l%`Y)@KfcE<qLK-/X2lMm\*+unRuU]o`7j6IX/cc6n6@Lp8[-*[o"]qa:LALi^+D,TR)m=*,^M>2"W-lI+.!F@MOB@Gg$*+?Z.[=t%#L<"#JI.AU<M*9dm?Wp.`R%Pnk)KE[bP7PPY+@\BHC+e*j*MN],^ThW^^8c"L)]Wg85!44G.?_b0I<6YNW-:f*sR@'Y+qM2M-Dt"[C5TZLOLiV4%!(]IMW%;*h;umtq4n>[nRsq3IGnZ)`&t\'#8Pie%nY_Yu")btOL^qN=l/6_=T<?8apWYP[R'32_hB::%J\2;"M$cTFEr[UT3WfuS3.6(VeP']#QJ,6ui?d_nV^d-g#g_X>c.``,6<;5Ha'VFm-J@SrFCO23eP[B`b*3e^OF4cbI@'eug(#p^<mDCYpJJshEcF$Lk$&GSU/eWGXj_E3%TrOrs_7kLK.2dW`Lc2*g\(13T;7Q9-<)->%#SM.ChkRsrP!XGK`HqW2<o?2m\eC[cY_3gFO2[;g7GE:=HN$O)0R\P#TB]n.\SaDtiiG:#iXEsRc7DM4?;mt,Z3`[tR7>A)t-gJLCn8p*bU!-J4BpL'1MUDWp[`c)^oOX:6Q?fiG0smYi4L9Kq>WWSQ\VFkI=esb;QF5F!p<uEb4bI!?G#bp:\_Rp_o1I=dEdY>KLo%A4Kr^(;>INh6RMl(HY-qrJe<OjLW1Y>+On)200d!WsOIGg'(?W3cmu5:@ZF04I/+V_JFRZ09dos"f.`5XNW0h$Oh8n8aea<V4(L/f;B\o^mh1"$T0S#.akTtB&/k.Y7C7/;(FDihuZjZ#M8!/0f)*Mb*-:MNT4DC'm+ge;W6r/F[+jE/P5ufM*H0$Y^;0C*P\Irq6h4UL6Z%?@j8i!9dEb;[@0e[#i8Nnmu)]K6PRM@u2RKZVl-Y!uplI,?ZDp4A2,;)FTV91+d'0F@7$g9dg@In#YrXh)cgQ0LPq7L8#plh"jkX8T,\'PXgVCEi41EWs3HRp!\4,%7N`RmmhAW/trb^6He9T+bO#Dj1t9EncOKkO)ZY4kV46=84s@>=i\9b!B9^q>tm-Wu5"8p<Zb@s(H]T>ki1p0'CJ\1%X=\"^@BZZ;/)*_&c"#4>sLJosFeeu=N^23U>*hsDL?qWd[`(E=N#\)iNDg7?lbf=>!hRY6"<:+q3m%*ZlHBh>D'!q]Jm[9?S]:PCD:6u<_MjW.9ibfe-YdV[P%9WXLZ*><_K9?KQONpN+Vq^K4A8[[iL3ub_FOt("=C;n+@1V*;@&>,!bC_JeS>NAi!J#$UL7Y]aaeMI+BFh6.]a,J&h/mmI29cU0sfPqHLcM\.BDDGgoVEK(faq4_rhc8u'ULtXW3d^/e=g]Wsf-Jo$kT2m$g&cd<;Nnui?4)#^^p,_SM%+O2Obdq!$d!EE6\(2Uf:nIs3%8nQ3mCt.`foD6Csr].]P76)fB2lH8Jn\FUMAb/8*-/s6?6R"s/K-H,MFiU1sP=0%5#ZAe`g6`"#,nXQZ#HLUS1UOKQSSqJ@&p6[$V6?&o4%3(9a?[NEXHHrTY;sFi6Ds>d!'cHA_@ob[H8,>a)*Xdm;6"B:YaPaf!DA@%,i/q++:*!UYqZj!,otlSl2Xm6D;Ic0&[?gEGDo5I'Y?cJlPG_^ef.P&jjU'1N,RTULg1^f*PO,T3CL&Mm'_GW0jaPuSt=,/VcqgI/h\!Y:lB@U#GPFSF@ka^P(`rTgBUO0mbk`POG9K=IB4&p+7T_ND&cXcmWA)_+U[l/$\W_DACL4Zr;c*jE5VV6GDjl.'k6ggnCs/,,Q\Wi6bQW(^9l]^3Rp9@$NY%)s`Vas`p7fH@Ttb/EeMQ:Y!]QB_*]E]:7=(TgrNqU4t2gjGmJ\lmZ+U:/\4f[_Keh)%-5h!PLE\S"NBSM[8Z"`,o$&J\$'&VM80+bVO,EVDMDCY4)(&o\3p<1\6XOaTlGX7F3JlWZq4`t0#SrE7j@!LSV<Tf&CG<(:YdOTbB;4^T+_M'O-IaO(a7Jt-S;+TUA*WP2;@FUCcp#e+DTnWo>koLp?Bf<8DL;/_BDSgQCo3#.$l)2'u(:ftK"BE(fcQ:>5pPk_<Qmlk>u[N0Z&JJP#6I0,BN+#3?\D;N*?3^tB;-1b"AgU'o1X^'1NR2NUm78BPE2XlYEIiLqFR1mMM-SITZGfP*KQ9c-j;+Z9q$.u;G`^\q:]_2B`3,-ir;23g(cj\9bf4[m%Y5FYf]fmb,<l/hJ$(L+Kg!<k*\4$J5HRA:TN&,l^XNIS=9-39J.EY+Rh]:Ae-d&!JGUQ/ac<!<4#u@&C\5apN?aI:<:TdJVKfdnYC.^^3_rb1\?ik6;+E2SVeLZuClZ\kbFK<&GHc&oURo\]aJBtiXqs0+]6q;dh+Ys0]h/9Ksf8@SN:O43BW-:]p*M1ERb)V_h=AK'%p@f4qk2o?ol`X>qAWaI'F(+9f'.<k\^@n4Y^b1&=%_8giiN+O]M1<8,B"KP=!XB$V<5PaWVb!j/fJ&_Q*&Xo*kH=!15f)[DO7GqB"'j$\#r+P=/*5H3hGNmeo.LCh@K>h>Jbop[8msO_2Haq>,8GsTOiMG8C]#%;W"g9$+mbHENL`D%W&Xe3jk4:4:#&(1R=L-6_f`+,Y1:2KERh=2j3;S=`LIQ*A>Og?4$5S9b,X<dC[;bmRn]Kh@LJ`f(SjooEJ8GaPmEm>EU%cX,R(GBRe'0<J-T9/XfIR8M.bZXkDHT)N_8rHk3Q8<Z`DF69>9=XDm/+R%EjTYH(nnn#[i^P=*5E,oE5G._^OO]di6lajE>(Hkh%;)i99<@&6"0p*eR%6;'*%uXmk%F'4hV.UM"4K_[;8c8ae<;c1)UhBV[rL:!Mq+h`q1rlV&\MUf;E1'@m=e/tro"cG%]llpu=$>UB_j:=TJO#tj,_%pD<<3*+mP;Y,\Y6j,F%66p0@/6I(!957EmpicA8Mdn7nC9t"8.;>;m#*Q.[AC,c?InpjB&dP9s!q8aOdL!C.nm(J-R^8Na8]l_E]e7r#3mrM<)PM:0dQ$PIEA_FpZM"*T)F$"`5a_U!7`c%e"a$'P#%kO<D;"?*F)14MQ^`iiKF,:jLlJD"-FYQc29Peil@RF&;O%MFSP'dCh/;E&VUf(8T&B_e,`tQmWGmB($E!V]Gcd1"2!K5rr+GIsCn4@Oil::X(Xa(PTE]O?+ZNr'\t(Yr)66`cA+kf$AH/kKdT+!41PpS5;FU\5EpT\%4nXC\-%Ir(,tW=`SPD^]bQt_gG`]k-3sVOHAPR.c=,;]W?,4>>-(]jl"oH:4Tj[gnj8%Op7Ha*7Qp!EIc:)SBqT$VPjpgKsl2Hi@&_:Od),hd7/noOS]k%DsHmsUniUQn_X*GV+(F\iXc<bb6ju8IPV<1oZ<s%"`j\<$WSp0JmP0u%['T#C`\1QoR[5RI)SuG]m1f?CI`T(k"mOdKO(\F&Xo?/qmRasJH#;]eQ^`C,CD<LSoNX[`egOl<lI_K?*3D=GVp%-WEpdE<*bHAIZ]dD(q()g5b'#5H\?t$%9eLF$:cB3K[39d0h.!8cJ'*:Yo2q_<CAu"Hnk4D=,HjfQ/Kmr,(Rpno.n@F>HFBKTR)"$[kN5t&(Xg9<n\/9>T"g/T(mnJojH\DPba_7akiVMbXn]@-i]0<8`!Ge%We9]rdg/U3[Wf5>lgpicq$VUQ(mmPC&^?oOI/Pk-Sii4I@EP3a/a7b'82gVc@nYs[Nc'cpu6StN,WNo]lk)8BfQAO?i?%0^:iSc"4!$4.us0f"mNL\G-B6*"CR&'gB\$k`3#KhHP/X[nmJ%0+!HGEX$fe#.lA$IC'c/pATep;J8-Y3@+8!^JF_Q5])WuN`Q\DoU`B6J4[$%(^sk2,;kQF,GiZ$K8-AlaTgkBsX@<E\hiNW\EF]5dZ-o$!nM!B?7GjZol.P#%<F64'$UU<)5h_X,EE\t"u)>oF/a74I2)gq*KL;ugdQ.kZ_]o"eCs5iN,((Q>QVN\uHB-ji;^pi5Q.s5,\Gpe@(\A"d)WS4hfdRr9)g-_2F$jk#N3p_^I)jMVTLQkPM!92Bobq6QY!G:YcS]Y3#@U]t]&'=E2Fqg!IR!PDg,S8m9U2bibWW_)>Q_=Lnp^uRb[B"^0SNuUIrd0SV-=uH2KDS#arXq61iZm/n&5!JU2(.8k!A>66>Q'`f9UM&K*<F_oLp8LouG?JJUUEFMU:mYW"G?uP>8\BG:DQ!]O)YDtM:,Hb>53Lpc4_b\@UVdK:0BOtnT%kUl9-i7s\Dm:Gd/b#9G6oRu]D9#Y_BiKg`f4:T^m9i=`&N%lM7b`E8q71iXn]C`>-=$+^$1V+"4,HEIDei:KRanqp?X\fkCj`p&tk3e>h]a49P]E,D52:B(/!pSjq00$31^t!'8!!mnKMB@"A=WjLE5odJ/?1522Y'qC)"VNh'9+dm$249&"CtUY1E9#BZCiC5u;PigW[$m(08*9<h\RCcCpsY.pd5OK_nC4b3@?+]<F<&bKVGC]<ZaPU#!A^PNBESl8$KDCPd3p:bi,OVdJ?W>^-)2G1l6k](&f_Yd<3$40cUR2n((D`[`u=e?&c\`-8%i+^m(b`<1djK-n5fZY-JgmHR>lK(2=b4b!:BWEgYMgF[7QFs+s$h7.fEL@2Ei%NL;lI;W*P]7!JF=)LT>ftJjhm$`9ONL`ZtY9ScQ\="Vap3CQSFL[):'f'#'4F-WH[j8o]biLs/E*G.]\Nfl]NS!Mlp[&S!BrbGFHru/[N#*,1\/H1Mg=b^@dL^IT@<l2E<kIVMI<>oN$<ZQLQ0oA/gii(9I0-%rEDp^q=/K'A;u&W%3tSjf5"&p7LP*))?`!&]4N.%#%Ds;FB3SSoWs2rY^h#B%gh(9BMc$W,C(HSea"G"g!*8i@,$N-&f:2-"*ScRlY.Bmq"sopJ.>SU8Eul"KIM$22_V+?S[nU1q!mb.G(L3SCqFXO=)8M6ceVWN]nl>uj/TAM32dgq$cJE5>U*:8d@l7?Q3E]cY8/_J('mU\;7g'e=Q*d?W.D+EdZZU9Y#hQ-bm&:?2R_`kHT(g`hR:;IB<$d(([_(&CK+mi5V;smA/E>u9B^mj5V^(#5G.Wa?d9:n8>4#Q.!g:JV45c*^1["5^1M#7Vqt;9die#IS#>.+n)mCSMRu/T>hIg<0Fd%MhFp/ti%SZMlhJ:@/*tYG&fJ<MmmP:pLNf;cT=@rre,QXE7F*7]EWU4?NgfA@Ei5!4/@ZR!6l)M(,W=(?dgYH_4H*3O7(!h9`NU=KDJb($^]fb#;)\ieadX#YR-l*"3"lZ5:`Up:.UO$8oJ+LsO?pXkc]7`dtUJ"h1*j8>oXe)L<<^[)*Cb-R'\[Z+Vp(HU6VBScg.l%]gO%069(,]idaJ9ic+Jc\@MF<R&[KnZhFED7W=XUP`i?k777_f1CgKSUIIY4RbF9m_kV$DTI3aG%)oMukoEGIEl<jgpSL/*^Pdb(Ym;R_p,d6[(f1f9*\V%LVb6V:On,*L4o3/?Ql^AkXT7R**k0bZJNS32o%m*@IHi8bM`_lpct*8GDC4h^[r('^H6'2R,JdOAhqF*pZ?WB`3>IH"1?fHJY^n$icp&qEH%f`W2'6YpVqWQ(nHeso5[be(IiPQ6ZYGs]>t(nh!O8R`BCd0Q:7aVcYuQGti<)524tYLq^#*NomUV8:\D*4r[bjQANISi3qB#$?,3j27<Z[[M(iXr9(s4Ln1"?44R!K7`bE2T>:!PQkeJ5niaj$au\rQg[*T!B7`tSV`2GLk&#Q%OU>=7p[p?fsY\KV(>#U!?9T0?ap`YFGo'LhpNoOah(hA7HaX8r+<4F_6S?=Y^Q&]e=jH'U;k/mGb^'?\E[<8gM0\ATgjA0pt0GhlY`%/E7M03g2S`P@8"(FNJ:>Xe9j1#-RAb&QF2rP-n_?Hlat'u!;:eWd."H^0g8VcmP8NTLu!<>&He@D+1Q:Y)r"u!r3(m&b>Mp^Fsp2*&r@13HEn*I.n35+8*pWAJ=(98#+H1n]E#BM=*Rk#<L<PAcWJVgJcU,D>J6QP&OnWjXH#8LbqXf>!.l=E8sGhOFLd2-Rsi^a^:5(%bbp@MNQ@h'`)_[O.]HrJV9oK&R>b@0%@L*HSKQjne$\!ABP^0$mPc&""`%RBdmRTO4g.@o%?caI/kdLbbfH*qpbhr3>mB6:?=>4'>X">XF&D=K$!,*mmMJGCH3#@-&5NslM&PJ%9,B6dI^d3go[<mCQ3C$:/D4B(n!D##d(#ejfTcs1MHj\6hHL](G/A.3anP4=ST7YoUg`_>V__].c),.]Ou*dI_P$&,Xn$UW!^bW-HKm<m46Fq`(tJ5STi%,7Q"lb1Fq!(7m7iPB%Um\t@&Yj8-Fa]_;!gEc(sDugCfFdnrJ5/(N)S^\9DYf]cCt<n;'#e'n+VJMFZ!G)SL&mRU7-^>S.%U+8;pP']gC=$B1;/(E%4S@\QS']jp(V1?3+//F2ff',M-;&D%;R3/;3cb*&4%sk$mYS$N&>K\W0qIQV4obG7T6PG.!$.f@Orsg2ErNVX9=Nk,pjo0@q7`W6U?m@hNO-7S[-0'O>e(=])^)Wnh-I8h5O=G^6aCY8khLj6C)USgqY#N7W9!()eIiiFpG>Wq1iJI$1s6T;+P$"(e/b1.DT&9IC1^=b;a6AJ\OeN^d5^.CmO%W!2\c9`[&TU1;Ma*M3]L'EjuON8D#@jKoQXHu!i7$Xb)rW,2c@9?RVqT'5DN1--;l:8^RMUBr",cr1`kZ(f]V1N#h(,9(sX\S.RH<i$b0rNNl+(Y[j%o9PkK9LkFV=LaPQhK\D+0sZ:-?bh<%[;$bVd4^Z_dh4qMiI]C6jofLs!aDPiNa[9Es,^il;e2q@ADf#8iPGW(/C5]FO`p&NF"\j?DXAq_PB`tLj%"_\T2?aT=dS.?a[qo!EC!#4.<j'4VVQN!j::$T@N&7ngGRN@;b)iu!&W.^'A$T;g'OZ0ntU(B01U6D9ED^Qd=S/O>HZa8ibr#c6)J[5Ne6G*G4e`2=f8Qc$,cDffM'XLJJKR>,H1u+;U)YG=0FeD;4BOnEGm\l>F#JeJ1^sfENq1LaFk%oNg*j)FecOcit=/8]S^8qVT'Q,:Zp=2S@"Aqk]GN6^oTaU'jah[#4ddH:>SqbaWn!O"*h]*`>ocg0"l7B<)'DrTiMFDc<WP()FmAbUttmA9TEhU:f!r9\:Js#:gg8F)$0KU0t?i:Q,1iQ!GDW!cWW&s[7@(qg>&Eb_206pR/dY>$mmhHgmDr\_LRN#/)!E.S9:Em!5t\+X,@@,UYcf/o`C_B1jCbaGFhf.**bZ`1+*/tNECGcUr;8e+Fjj[Mq=1+G^,f(0/J^k/5C%0]kuTX40+Q9R5G?(+^h[@P"Zos.KDqU+CMdGUp#!)fukd$/kA$O41j?i`'uO8G?B^5R"AOg6eC4d.Q)=t9=U&Wh:2/<k%ii)(6H2qc:,"#$!9&()<9-l$>\bSZV5cRTJ+d=eO+2+20J5Hp7dQ&;2(ra>l]W7'#'k!+"qW+^HGc!e279UrYnVdeU%,SQ!dhbNrh@SKitK<=YL3L9.V*[R_AO7&K7EV.)nPi6IO.Q0>?6GK3a][g1c5iZk%AhbGceG'2p*P7E185eshi,ZN$%91R=<9;8m=\F;EDeq$?G3#;]F:k_cNV%sQMMga5?D[P`9nX*S:'8P456$a_[H^,7fe13B7Ho0@ZYpe&khP,Q4@#L.Ck!]?D`b0=.-=_GWO+M:36V/a[<F]alq%&AW0PE_;"'?$VUe?E9.;O83kDA<pd>*S/(>&Hs<+=GB,Q9JkOH>H4*T<b[uH>!e:1fShW!mt66Q,_WVM-t$`D4FAV8m?-"m]"U_JDQ""JoJ_MMI&?f!m-Y^TW;W(]t4\qA_$GRc0l[dMD.GrPK\a)YNK2!;=:eB2<nUl4f=tuR#[#j'F\Nr.%D@#,G>uiJdFRL@&f.g+t70DABd-(3B[tHlQ.p0@]_m#ps+VJVA$T7RL[ThLc-Vp>=R5S`L0oXno\$HV@6]fgRl^QK,;i!E.i,XMRh!cP?^h_ikEWUS*:%lj-J0*)Z5']==])bh=1 cd,ce=-39550,-39550 end else bq=function(a)local a=bp(a)local b=j(a/2)if(a%2)==0 then return b;end;return-b-1;end ce=20846 end end end end end until ce==-46322 end)(error,next,string.match,tonumber,string.gsub,string.sub,table.insert,string.char,string.byte,coroutine.yield,coroutine.wrap,string.rep,table.concat,math.floor,select,(getfenv or function()return _ENV;end),setmetatable,next,(table.unpack or unpack),(table.pack or function(...)return{...};end),math.min,(function(b)if b<=1 then return false end;if b<=3 then return true end;if b%2==0 or b%3==0 then return false end;local c=5;while c*c<=b do if b%c==0 or b%(c+2)==0 then return false end;c=c+6 end;return true end),string.len,table.remove,table.sort,(string.unpack),string.gmatch,string.find,string.reverse,tostring,math.abs,rawget,string.format);
+local WsExplorer = {}
+
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+
+local ws = nil
+local connected = false
+local subscriptions = {}
+local idCounter = 0
+
+local env = {
+    getnilinstances = getnilinstances,
+    getloadedmodules = getloadedmodules,
+    decompile = decompile,
+    getproperties = getproperties,
+    gethiddenproperties = gethiddenproperties,
+    getscriptbytecode = getscriptbytecode,
+    getconnections = getconnections,
+    getcallbackvalue = getcallbackvalue,
+    getrawmetatable = getrawmetatable,
+    hookfunction = hookfunction,
+    isreadonly = isreadonly,
+    setreadonly = setreadonly,
+    getgc = getgc,
+    getupvalues = getupvalues,
+    setupvalue = setupvalue,
+    getinfo = getinfo or debug.info,
+}
+
+local function generateId()
+    idCounter = idCounter + 1
+    return idCounter
+end
+
+local function safeToString(value)
+    local s, r = pcall(tostring, value)
+    return s and r or "???"
+end
+
+local function safeIsA(inst, className)
+    local s, r = pcall(function() return inst:IsA(className) end)
+    return s and r
+end
+
+local function serializeValue(value, depth)
+    depth = depth or 0
+    if depth > 3 then return {type = "truncated"} end
+
+    local t = typeof(value)
+
+    if t == "nil" then
+        return {type = "nil"}
+    elseif t == "boolean" then
+        return {type = "boolean", value = value}
+    elseif t == "number" then
+        return {type = "number", value = value}
+    elseif t == "string" then
+        return {type = "string", value = value}
+    elseif t == "Instance" then
+        local name = safeToString(value)
+        local className = ""
+        pcall(function() className = value.ClassName end)
+        return {type = "Instance", className = className, name = name}
+    elseif t == "Vector3" then
+        return {type = "Vector3", x = value.X, y = value.Y, z = value.Z}
+    elseif t == "Vector2" then
+        return {type = "Vector2", x = value.X, y = value.Y}
+    elseif t == "CFrame" then
+        return {type = "CFrame", components = {value:GetComponents()}}
+    elseif t == "Color3" then
+        return {type = "Color3", r = value.R, g = value.G, b = value.B}
+    elseif t == "BrickColor" then
+        return {type = "BrickColor", name = value.Name}
+    elseif t == "UDim" then
+        return {type = "UDim", scale = value.Scale, offset = value.Offset}
+    elseif t == "UDim2" then
+        return {type = "UDim2", xScale = value.X.Scale, xOffset = value.X.Offset, yScale = value.Y.Scale, yOffset = value.Y.Offset}
+    elseif t == "Rect" then
+        return {type = "Rect", minX = value.Min.X, minY = value.Min.Y, maxX = value.Max.X, maxY = value.Max.Y}
+    elseif t == "Ray" then
+        return {type = "Ray", origin = {value.Origin.X, value.Origin.Y, value.Origin.Z}, direction = {value.Direction.X, value.Direction.Y, value.Direction.Z}}
+    elseif t == "Enum" then
+        return {type = "Enum", value = tostring(value)}
+    elseif t == "EnumItem" then
+        return {type = "EnumItem", enum = tostring(value.EnumType), name = value.Name, value = value.Value}
+    elseif t == "NumberSequence" or t == "ColorSequence" then
+        return {type = t, keypoints = #value.Keypoints}
+    elseif t == "NumberRange" then
+        return {type = "NumberRange", min = value.Min, max = value.Max}
+    elseif t == "table" then
+        if depth > 1 then return {type = "table"} end
+        local result = {}
+        local count = 0
+        for k, v in pairs(value) do
+            if count >= 20 then break end
+            result[safeToString(k)] = serializeValue(v, depth + 1)
+            count = count + 1
+        end
+        return {type = "table", value = result}
+    elseif t == "function" then
+        return {type = "function"}
+    elseif t == "thread" then
+        return {type = "thread"}
+    else
+        return {type = t, string = safeToString(value)}
+    end
+end
+
+local serviceCache = {}
+local function isService(inst)
+    local className = inst.ClassName
+    if serviceCache[className] ~= nil then
+        return serviceCache[className]
+    end
+    local s, r = pcall(function() return game:GetService(className) == inst end)
+    serviceCache[className] = s and r
+    return serviceCache[className]
+end
+
+local function getInstancePath(obj)
+    if not obj then return "" end
+
+    local parts = {}
+    local curObj = obj
+    local depth = 0
+
+    while curObj and depth < 50 do
+        if curObj == game then
+            table.insert(parts, 1, "game")
+            break
+        end
+
+        local curName = safeToString(curObj)
+        local indexName
+
+        if curName:match("^[%a_][%w_]*$") then
+            indexName = "." .. curName
+        else
+            indexName = '["' .. curName:gsub('\\', '\\\\'):gsub('"', '\\"') .. '"]'
+        end
+
+        local parObj
+        pcall(function() parObj = curObj.Parent end)
+
+        if parObj == game and isService(curObj) then
+            indexName = ':GetService("' .. curObj.ClassName .. '")'
+        end
+
+        table.insert(parts, 1, indexName)
+        curObj = parObj
+        depth = depth + 1
+    end
+
+    local path = table.concat(parts)
+    if path == "" then
+        path = "nil:" .. safeToString(obj)
+    end
+
+    return path
+end
+
+local function getInstanceFromPath(path)
+    if not path or path == "" then return nil end
+
+    if path:sub(1, 4) == "nil:" then
+        local targetName = path:sub(5)
+        if env.getnilinstances then
+            local s, nilInsts = pcall(env.getnilinstances)
+            if s then
+                for _, inst in ipairs(nilInsts) do
+                    if safeToString(inst) == targetName then
+                        return inst
+                    end
+                end
+            end
+        end
+        return nil
+    end
+
+    local fn = loadstring("return " .. path)
+    if fn then
+        local s, result = pcall(fn)
+        if s and typeof(result) == "Instance" then
+            return result
+        end
+    end
+    return nil
+end
+
+local function getInstanceInfoFast(inst)
+    if not inst then return nil end
+
+    local info = {
+        id = generateId()
+    }
+
+    pcall(function() info.name = inst.Name end)
+    pcall(function() info.className = inst.ClassName end)
+
+    info.name = info.name or safeToString(inst)
+    info.className = info.className or "Unknown"
+
+    local s, children = pcall(function() return inst:GetChildren() end)
+    info.childCount = s and #children or 0
+
+    if safeIsA(inst, "LuaSourceContainer") then
+        info.isScript = true
+        if safeIsA(inst, "LocalScript") or safeIsA(inst, "Script") then
+            pcall(function() info.disabled = inst.Disabled end)
+        end
+    end
+
+    return info
+end
+
+local function getInstanceInfo(inst)
+    if not inst then return nil end
+
+    local info = getInstanceInfoFast(inst)
+    if not info then return nil end
+
+    info.path = getInstancePath(inst)
+
+    pcall(function()
+        info.parent = inst.Parent and getInstancePath(inst.Parent) or nil
+    end)
+
+    pcall(function()
+        if safeIsA(inst, "BasePart") then
+            info.position = {inst.Position.X, inst.Position.Y, inst.Position.Z}
+            info.size = {inst.Size.X, inst.Size.Y, inst.Size.Z}
+        end
+    end)
+
+    return info
+end
+
+local function getChildren(inst)
+    if not inst then return {} end
+
+    local children = {}
+    local s, kids = pcall(function() return inst:GetChildren() end)
+    if not s then return {} end
+
+    for _, child in ipairs(kids) do
+        local info = getInstanceInfo(child)
+        if info then
+            table.insert(children, info)
+        end
+    end
+    return children
+end
+
+local function getTree(inst, depth)
+    if not inst then return nil end
+    depth = depth or 1
+
+    local info = getInstanceInfo(inst)
+    if not info then return nil end
+
+    if depth > 0 then
+        info.children = {}
+        local s, kids = pcall(function() return inst:GetChildren() end)
+        if s then
+            for _, child in ipairs(kids) do
+                local childTree = getTree(child, depth - 1)
+                if childTree then
+                    table.insert(info.children, childTree)
+                end
+            end
+        end
+    end
+
+    return info
+end
+
+local defaultProps = {"Name", "Parent", "ClassName", "Archivable"}
+
+local classPropMap = {
+    BasePart = {"Position", "Size", "CFrame", "Orientation", "Anchored", "CanCollide", "Transparency", "Color", "Material"},
+    Part = {"Shape"},
+    MeshPart = {"MeshId", "TextureID"},
+    Model = {"PrimaryPart"},
+    Humanoid = {"Health", "MaxHealth", "WalkSpeed", "JumpPower"},
+    GuiObject = {"Position", "Size", "AnchorPoint", "Visible", "BackgroundColor3", "BackgroundTransparency"},
+    TextLabel = {"Text", "TextColor3", "TextSize", "Font"},
+    TextButton = {"Text", "TextColor3", "TextSize", "Font"},
+    ImageLabel = {"Image", "ImageColor3", "ImageTransparency"},
+    Sound = {"SoundId", "Volume", "Playing", "Looped"},
+    Script = {"Disabled"},
+    LocalScript = {"Disabled"},
+    ObjectValue = {"Value"},
+    StringValue = {"Value"},
+    IntValue = {"Value"},
+    NumberValue = {"Value"},
+    BoolValue = {"Value"},
+}
+
+local function getProperties(inst)
+    if not inst then return {} end
+
+    local props = {}
+    local propsToRead = {}
+
+    for _, p in ipairs(defaultProps) do
+        propsToRead[p] = true
+    end
+
+    for class, classProps in pairs(classPropMap) do
+        if safeIsA(inst, class) then
+            for _, p in ipairs(classProps) do
+                propsToRead[p] = true
+            end
+        end
+    end
+
+    if env.getproperties then
+        local s, allProps = pcall(env.getproperties, inst)
+        if s and type(allProps) == "table" then
+            for _, p in ipairs(allProps) do
+                propsToRead[p] = true
+            end
+        end
+    end
+
+    for propName in pairs(propsToRead) do
+        local success, value = pcall(function() return inst[propName] end)
+        if success then
+            props[propName] = serializeValue(value)
+        end
+    end
+
+    return props
+end
+
+local function setProperty(inst, propName, value)
+    if not inst then return false, "Instance not found" end
+    local success, err = pcall(function() inst[propName] = value end)
+    return success, err
+end
+
+local function searchInstances(query, options)
+    options = options or {}
+    local results = {}
+    local maxResults = options.maxResults or 10000
+    local searchIn = options.searchIn or game
+    local caseSensitive = options.caseSensitive or false
+    local searchClassName = options.searchClassName or false
+
+    if type(searchIn) == "string" then
+        searchIn = getInstanceFromPath(searchIn) or game
+    end
+
+    local lowerQuery = not caseSensitive and query:lower() or query
+
+    local function matches(inst)
+        local name = safeToString(inst)
+        local checkName = caseSensitive and name or name:lower()
+
+        if checkName:find(lowerQuery, 1, true) then
+            return true
+        end
+
+        if searchClassName then
+            local className = ""
+            pcall(function() className = inst.ClassName end)
+            className = caseSensitive and className or className:lower()
+            if className:find(lowerQuery, 1, true) then
+                return true
+            end
+        end
+
+        return false
+    end
+
+    local checked = 0
+    local function search(inst)
+        if #results >= maxResults then return end
+
+        if matches(inst) then
+            table.insert(results, getInstanceInfo(inst))
+        end
+
+        checked = checked + 1
+        if checked % 200 == 0 then
+            task.wait()
+        end
+
+        local s, kids = pcall(function() return inst:GetChildren() end)
+        if s then
+            for _, child in ipairs(kids) do
+                if #results >= maxResults then return end
+                search(child)
+            end
+        end
+    end
+
+    search(searchIn)
+
+    return results
+end
+
+local function getNilInstances()
+    if not env.getnilinstances then return {} end
+
+    local results = {}
+    local s, nilInsts = pcall(env.getnilinstances)
+    if not s or type(nilInsts) ~= "table" then return {} end
+
+    for i, inst in ipairs(nilInsts) do
+        if i % 100 == 0 then task.wait() end
+        local info = getInstanceInfo(inst)
+        if info then
+            table.insert(results, info)
+        end
+    end
+
+    return results
+end
+
+local function getLoadedModules()
+    if not env.getloadedmodules then return {} end
+
+    local results = {}
+    local s, modules = pcall(env.getloadedmodules)
+    if not s or type(modules) ~= "table" then return {} end
+
+    for i, mod in ipairs(modules) do
+        if i % 50 == 0 then task.wait() end
+        if safeIsA(mod, "ModuleScript") then
+            local info = getInstanceInfo(mod)
+            if info then
+                table.insert(results, info)
+            end
+        end
+    end
+
+    return results
+end
+
+local function getServices()
+    local services = {}
+    local serviceNames = {
+        "Workspace", "Players", "Lighting", "ReplicatedFirst", "ReplicatedStorage",
+        "ServerScriptService", "ServerStorage", "StarterGui", "StarterPack", "StarterPlayer",
+        "Teams", "SoundService", "Chat", "HttpService", "RunService", "UserInputService",
+        "TweenService", "Debris", "MarketplaceService", "TeleportService",
+        "CollectionService", "TextService"
+    }
+
+    for _, name in ipairs(serviceNames) do
+        local s, service = pcall(function() return game:GetService(name) end)
+        if s and service then
+            table.insert(services, {
+                name = name,
+                className = service.ClassName,
+                path = 'game:GetService("' .. name .. '")'
+            })
+        end
+    end
+
+    return services
+end
+
+local function decompileScript(inst)
+    if not inst then return nil, "Instance not found" end
+    if not env.decompile then return nil, "Decompile not available" end
+
+    local s, source = pcall(env.decompile, inst)
+    if s then
+        return source
+    else
+        return nil, tostring(source)
+    end
+end
+
+local function getScriptBytecode(inst)
+    if not inst then return nil, "Instance not found" end
+    if not env.getscriptbytecode then return nil, "getscriptbytecode not available" end
+
+    local s, bytecode = pcall(env.getscriptbytecode, inst)
+    if s then
+        return bytecode
+    else
+        return nil, tostring(bytecode)
+    end
+end
+
+local function getSignalConnections(inst, signalName)
+    if not inst or not env.getconnections then return {} end
+
+    local s1, signal = pcall(function() return inst[signalName] end)
+    if not s1 or not signal then return {} end
+
+    local s2, cons = pcall(env.getconnections, signal)
+    if not s2 then return {} end
+
+    local results = {}
+    for i, con in ipairs(cons) do
+        if i % 50 == 0 then task.wait() end
+        table.insert(results, {
+            index = i,
+            enabled = con.Enabled,
+            foreignState = con.ForeignState,
+        })
+    end
+
+    return results
+end
+
+local function sendMessage(msgType, data)
+    if not connected or not ws then return end
+
+    local msg = {
+        type = msgType,
+        data = data,
+        timestamp = os.clock()
+    }
+
+    local s, encoded = pcall(function() return HttpService:JSONEncode(msg) end)
+    if s then
+        pcall(function() ws:Send(encoded) end)
+    end
+end
+
+local messageHandlers = {}
+
+messageHandlers["ping"] = function(payload, respond)
+    respond("pong", {timestamp = os.clock()})
+end
+
+messageHandlers["getTree"] = function(payload, respond)
+    local path = payload.path or "game"
+    local depth = payload.depth or 1
+    local inst = getInstanceFromPath(path)
+    respond("tree", {path = path, tree = getTree(inst, depth)})
+end
+
+messageHandlers["getChildren"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    respond("children", {path = payload.path, children = getChildren(inst)})
+end
+
+messageHandlers["getProperties"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    respond("properties", {path = payload.path, properties = getProperties(inst)})
+end
+
+messageHandlers["setProperty"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    local success, err = setProperty(inst, payload.property, payload.value)
+    respond("propertySet", {path = payload.path, property = payload.property, success = success, error = err})
+end
+
+messageHandlers["search"] = function(payload, respond)
+    local results = searchInstances(payload.query or "", payload.options or {})
+    respond("searchResults", {query = payload.query, results = results, count = #results})
+end
+
+messageHandlers["getInstance"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    respond("instance", {path = payload.path, info = getInstanceInfo(inst)})
+end
+
+messageHandlers["getNil"] = function(payload, respond)
+    local nilInsts = getNilInstances()
+    respond("nilInstances", {instances = nilInsts, count = #nilInsts})
+end
+
+messageHandlers["getLoadedModules"] = function(payload, respond)
+    local modules = getLoadedModules()
+    respond("loadedModules", {modules = modules, count = #modules})
+end
+
+messageHandlers["getServices"] = function(payload, respond)
+    respond("services", {services = getServices()})
+end
+
+messageHandlers["decompile"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    local source, err = decompileScript(inst)
+    respond("decompiled", {path = payload.path, source = source, error = err, success = source ~= nil})
+end
+
+messageHandlers["getBytecode"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    local bytecode, err = getScriptBytecode(inst)
+    respond("bytecode", {path = payload.path, bytecode = bytecode, error = err, success = bytecode ~= nil})
+end
+
+messageHandlers["getConnections"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    local cons = getSignalConnections(inst, payload.signal)
+    respond("connections", {path = payload.path, signal = payload.signal, connections = cons})
+end
+
+messageHandlers["clone"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    if not inst then
+        respond("cloned", {path = payload.path, success = false, error = "Instance not found"})
+        return
+    end
+
+    local s, cloned = pcall(function() return inst:Clone() end)
+    if s and cloned then
+        if payload.parent then
+            local parent = getInstanceFromPath(payload.parent)
+            if parent then cloned.Parent = parent end
+        end
+        respond("cloned", {path = payload.path, newPath = getInstancePath(cloned), success = true})
+    else
+        respond("cloned", {path = payload.path, success = false, error = tostring(cloned)})
+    end
+end
+
+messageHandlers["destroy"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    if not inst then
+        respond("destroyed", {path = payload.path, success = false, error = "Instance not found"})
+        return
+    end
+
+    local s, err = pcall(function() inst:Destroy() end)
+    respond("destroyed", {path = payload.path, success = s, error = err})
+end
+
+messageHandlers["execute"] = function(payload, respond)
+    local fn, compileErr = loadstring(payload.code)
+    if not fn then
+        respond("executeResult", {success = false, error = compileErr})
+        return
+    end
+
+    local results = {pcall(fn)}
+    local serializedResults = {}
+    for i = 2, math.min(#results, 10) do
+        table.insert(serializedResults, serializeValue(results[i]))
+    end
+    respond("executeResult", {success = results[1], results = serializedResults, error = not results[1] and results[2] or nil})
+end
+
+messageHandlers["getGameInfo"] = function(payload, respond)
+    respond("gameInfo", {
+        gameId = game.GameId,
+        placeId = game.PlaceId,
+        placeVersion = game.PlaceVersion,
+        jobId = game.JobId,
+    })
+end
+
+messageHandlers["getPlayerInfo"] = function(payload, respond)
+    local player = Players.LocalPlayer
+    if player then
+        respond("playerInfo", {
+            name = player.Name,
+            displayName = player.DisplayName,
+            userId = player.UserId,
+        })
+    else
+        respond("playerInfo", {error = "LocalPlayer not found"})
+    end
+end
+
+messageHandlers["fireServer"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    if inst and safeIsA(inst, "RemoteEvent") then
+        local s, err = pcall(function() inst:FireServer(table.unpack(payload.args or {})) end)
+        respond("fired", {path = payload.path, success = s, error = err})
+    else
+        respond("fired", {path = payload.path, success = false, error = "RemoteEvent not found"})
+    end
+end
+
+messageHandlers["invokeServer"] = function(payload, respond)
+    local inst = getInstanceFromPath(payload.path)
+    if inst and safeIsA(inst, "RemoteFunction") then
+        local results = {pcall(function() return inst:InvokeServer(table.unpack(payload.args or {})) end)}
+        if results[1] then
+            local serializedResults = {}
+            for i = 2, #results do
+                table.insert(serializedResults, serializeValue(results[i]))
+            end
+            respond("invoked", {path = payload.path, success = true, results = serializedResults})
+        else
+            respond("invoked", {path = payload.path, success = false, error = results[2]})
+        end
+    else
+        respond("invoked", {path = payload.path, success = false, error = "RemoteFunction not found"})
+    end
+end
+
+local function handleMessage(raw)
+    local s, msg = pcall(function() return HttpService:JSONDecode(raw) end)
+    if not s or not msg or not msg.type then return end
+
+    local msgType = msg.type
+    local payload = msg.data or {}
+    local requestId = msg.requestId
+
+    local function respond(respType, respData)
+        respData = respData or {}
+        respData.requestId = requestId
+        sendMessage(respType, respData)
+    end
+
+    local handler = messageHandlers[msgType]
+    if handler then
+        local s2, err = pcall(handler, payload, respond)
+        if not s2 then
+            respond("error", {error = tostring(err), originalType = msgType})
+        end
+    end
+end
+
+local EXPLORER_PORT = 21574
+
+function WsExplorer.connect(url)
+    if connected then
+        WsExplorer.disconnect()
+    end
+
+    url = url or ("ws://127.0.0.1:" .. EXPLORER_PORT)
+
+    local success, socket = pcall(function() return WebSocket.connect(url) end)
+    if not success or not socket then
+        error("Failed to connect to WebSocket: " .. tostring(socket))
+    end
+
+    ws = socket
+    connected = true
+
+    ws.OnMessage:Connect(function(msg)
+        task.spawn(handleMessage, msg)
+    end)
+
+    ws.OnClose:Connect(function()
+        connected = false
+        ws = nil
+        for subId, sub in pairs(subscriptions) do
+            for _, con in ipairs(sub.connections or {}) do
+                pcall(function() con:Disconnect() end)
+            end
+        end
+        table.clear(subscriptions)
+    end)
+
+    sendMessage("connected", {
+        gameId = game.GameId,
+        placeId = game.PlaceId,
+        placeVersion = game.PlaceVersion,
+        jobId = game.JobId,
+        executor = identifyexecutor and identifyexecutor() or "unknown",
+        timestamp = os.clock()
+    })
+
+    return WsExplorer
+end
+
+function WsExplorer.disconnect()
+    if ws then
+        for _, sub in pairs(subscriptions) do
+            for _, con in ipairs(sub.connections or {}) do
+                pcall(function() con:Disconnect() end)
+            end
+        end
+        table.clear(subscriptions)
+        pcall(function() ws:Close() end)
+    end
+    ws = nil
+    connected = false
+end
+
+function WsExplorer.isConnected()
+    return connected
+end
+
+WsExplorer.connect()
+
+return WsExplorer
