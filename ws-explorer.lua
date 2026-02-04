@@ -10,6 +10,9 @@ local idCounter = 0
 local MAX_CHILDREN = 500
 local MAX_STRING_LEN = 10000
 
+local API = nil
+local apiClasses = {}
+
 local env = {
     getnilinstances = getnilinstances,
     getloadedmodules = getloadedmodules,
@@ -26,6 +29,81 @@ local env = {
     setupvalue = setupvalue,
     getinfo = getinfo or debug.info,
 }
+
+local function fetchAPI()
+    if API then return true end
+
+    local apiUrls = {
+        "https://raw.githubusercontent.com/MaximumADHD/Roblox-Client-Tracker/roblox/Mini-API-Dump.json",
+        "https://raw.githubusercontent.com/CloneTrooper1019/Roblox-Client-Tracker/roblox/Mini-API-Dump.json",
+    }
+
+    for _, url in ipairs(apiUrls) do
+        local s, result = pcall(function()
+            return game:HttpGet(url)
+        end)
+
+        if s and result then
+            local s2, parsed = pcall(function()
+                return HttpService:JSONDecode(result)
+            end)
+
+            if s2 and parsed and parsed.Classes then
+                API = parsed
+
+                for _, class in ipairs(API.Classes) do
+                    apiClasses[class.Name] = class
+                end
+
+                return true
+            end
+        end
+    end
+
+    return false
+end
+
+local function getClassProperties(className)
+    if not API then return {} end
+
+    local props = {}
+    local currentClass = className
+    local depth = 0
+
+    while currentClass and depth < 20 do
+        local classData = apiClasses[currentClass]
+        if not classData then break end
+
+        if classData.Members then
+            for _, member in ipairs(classData.Members) do
+                if member.MemberType == "Property" then
+                    local dominated = false
+                    if member.Tags then
+                        for _, tag in ipairs(member.Tags) do
+                            if tag == "ReadOnly" or tag == "Hidden" or tag == "NotScriptable" or tag == "Deprecated" then
+                                dominated = true
+                                break
+                            end
+                        end
+                    end
+
+                    if not dominated and not props[member.Name] then
+                        props[member.Name] = {
+                            Name = member.Name,
+                            ValueType = member.ValueType and member.ValueType.Name or "unknown",
+                            Category = member.Category or "Data",
+                        }
+                    end
+                end
+            end
+        end
+
+        currentClass = classData.Superclass
+        depth = depth + 1
+    end
+
+    return props
+end
 
 local function generateId()
     idCounter = idCounter + 1
@@ -288,46 +366,113 @@ local function getTree(inst, depth)
     return info
 end
 
-local defaultProps = {"Name", "ClassName", "Archivable"}
-
-local classPropMap = {
-    BasePart = {"Position", "Size", "Anchored", "CanCollide", "Transparency", "Color", "Material"},
+local fallbackProps = {
+    Instance = {"Name", "ClassName", "Parent", "Archivable"},
+    BasePart = {"Position", "Size", "CFrame", "Anchored", "CanCollide", "Transparency", "Color", "Material", "BrickColor"},
     Part = {"Shape"},
-    Model = {"PrimaryPart"},
-    Humanoid = {"Health", "MaxHealth", "WalkSpeed", "JumpPower"},
-    GuiObject = {"Position", "Size", "Visible", "BackgroundColor3", "BackgroundTransparency"},
-    TextLabel = {"Text", "TextColor3", "TextSize"},
-    TextButton = {"Text", "TextColor3", "TextSize"},
-    ImageLabel = {"Image"},
-    Sound = {"SoundId", "Volume", "Playing", "Looped"},
-    Script = {"Disabled"},
-    LocalScript = {"Disabled"},
-    ModuleScript = {},
+    MeshPart = {"MeshId", "TextureID"},
+    Model = {"PrimaryPart", "WorldPivot"},
+    Humanoid = {"Health", "MaxHealth", "WalkSpeed", "JumpPower", "JumpHeight", "HipHeight"},
+    GuiObject = {"Position", "Size", "AnchorPoint", "Visible", "BackgroundColor3", "BackgroundTransparency", "BorderColor3", "BorderSizePixel", "ZIndex", "LayoutOrder"},
+    GuiBase2d = {"AbsolutePosition", "AbsoluteSize", "AbsoluteRotation"},
+    TextLabel = {"Text", "TextColor3", "TextSize", "Font", "TextScaled", "TextWrapped", "RichText"},
+    TextButton = {"Text", "TextColor3", "TextSize", "Font", "TextScaled", "TextWrapped"},
+    TextBox = {"Text", "TextColor3", "TextSize", "Font", "PlaceholderText", "ClearTextOnFocus"},
+    ImageLabel = {"Image", "ImageColor3", "ImageTransparency", "ScaleType"},
+    ImageButton = {"Image", "ImageColor3", "ImageTransparency", "ScaleType"},
+    Frame = {},
+    ScrollingFrame = {"ScrollingDirection", "CanvasSize", "CanvasPosition", "ScrollBarThickness"},
+    Sound = {"SoundId", "Volume", "Playing", "Looped", "PlaybackSpeed", "TimePosition", "TimeLength"},
+    Script = {"Disabled", "Source"},
+    LocalScript = {"Disabled", "Source"},
+    ModuleScript = {"Source"},
     ObjectValue = {"Value"},
     StringValue = {"Value"},
     IntValue = {"Value"},
     NumberValue = {"Value"},
     BoolValue = {"Value"},
+    Color3Value = {"Value"},
+    Vector3Value = {"Value"},
+    CFrameValue = {"Value"},
+    RayValue = {"Value"},
+    BrickColorValue = {"Value"},
+    RemoteEvent = {"Name"},
+    RemoteFunction = {"Name"},
+    BindableEvent = {"Name"},
+    BindableFunction = {"Name"},
+    Camera = {"CFrame", "Focus", "FieldOfView", "CameraType", "CameraSubject"},
+    Lighting = {"Ambient", "Brightness", "ColorShift_Bottom", "ColorShift_Top", "GlobalShadows", "OutdoorAmbient", "ClockTime", "GeographicLatitude", "TimeOfDay"},
+    Workspace = {"Gravity", "CurrentCamera", "DistributedGameTime"},
+    Player = {"Name", "DisplayName", "UserId", "Team", "Character", "CharacterAppearanceId"},
+    Tool = {"Name", "ToolTip", "Enabled", "CanBeDropped", "RequiresHandle"},
+    Animation = {"AnimationId"},
+    AnimationTrack = {"Animation", "IsPlaying", "Length", "Looped", "Priority", "Speed", "TimePosition", "WeightCurrent", "WeightTarget"},
+    ParticleEmitter = {"Texture", "Color", "Size", "Transparency", "Lifetime", "Rate", "Speed", "SpreadAngle", "Enabled"},
+    Beam = {"Attachment0", "Attachment1", "Color", "Enabled", "FaceCamera", "LightEmission", "LightInfluence", "Segments", "Texture", "TextureLength", "TextureMode", "TextureSpeed", "Transparency", "Width0", "Width1", "ZOffset"},
+    Trail = {"Attachment0", "Attachment1", "Color", "Enabled", "FaceCamera", "Lifetime", "LightEmission", "LightInfluence", "MaxLength", "MinLength", "Texture", "TextureLength", "TextureMode", "Transparency", "WidthScale"},
+    Attachment = {"CFrame", "Position", "Orientation", "Axis", "SecondaryAxis", "Visible", "WorldCFrame", "WorldPosition", "WorldOrientation", "WorldAxis", "WorldSecondaryAxis"},
+    Weld = {"C0", "C1", "Part0", "Part1", "Enabled"},
+    WeldConstraint = {"Part0", "Part1", "Enabled"},
+    Motor6D = {"C0", "C1", "Part0", "Part1", "CurrentAngle", "DesiredAngle", "MaxVelocity"},
+    Constraint = {"Attachment0", "Attachment1", "Enabled", "Visible"},
+    UIListLayout = {"Padding", "FillDirection", "HorizontalAlignment", "VerticalAlignment", "SortOrder", "Wraps"},
+    UIGridLayout = {"CellPadding", "CellSize", "FillDirection", "FillDirectionMaxCells", "HorizontalAlignment", "VerticalAlignment", "SortOrder", "StartCorner"},
+    UIPadding = {"PaddingBottom", "PaddingLeft", "PaddingRight", "PaddingTop"},
+    UICorner = {"CornerRadius"},
+    UIStroke = {"ApplyStrokeMode", "Color", "Enabled", "LineJoinMode", "Thickness", "Transparency"},
+    UIGradient = {"Color", "Enabled", "Offset", "Rotation", "Transparency"},
+    UIScale = {"Scale"},
+    UIAspectRatioConstraint = {"AspectRatio", "AspectType", "DominantAxis"},
+    UISizeConstraint = {"MaxSize", "MinSize"},
+    UITextSizeConstraint = {"MaxTextSize", "MinTextSize"},
+    SurfaceGui = {"Adornee", "AlwaysOnTop", "Brightness", "CanvasSize", "ClipsDescendants", "Enabled", "Face", "LightInfluence", "PixelsPerStud", "SizingMode", "ToolPunchThroughDistance", "ZOffset"},
+    BillboardGui = {"Adornee", "AlwaysOnTop", "Brightness", "ClipsDescendants", "Enabled", "ExtentsOffset", "ExtentsOffsetWorldSpace", "LightInfluence", "MaxDistance", "Size", "SizeOffset", "StudsOffset", "StudsOffsetWorldSpace", "ZOffset"},
+    ScreenGui = {"DisplayOrder", "Enabled", "IgnoreGuiInset", "ResetOnSpawn", "ZIndexBehavior"},
+    Decal = {"Color3", "Texture", "Transparency", "Face", "ZIndex"},
+    Texture = {"Color3", "OffsetStudsU", "OffsetStudsV", "StudsPerTileU", "StudsPerTileV", "Texture", "Transparency", "Face", "ZIndex"},
+    SpawnLocation = {"AllowTeamChangeOnTouch", "Duration", "Enabled", "Neutral", "TeamColor"},
+    Team = {"AutoAssignable", "TeamColor", "Name"},
+    TeleportService = {},
+    ReplicatedStorage = {},
+    ServerStorage = {},
+    ServerScriptService = {},
 }
 
 local function getProperties(inst)
     if not inst then return {} end
 
-    local props = {}
+    local className = ""
+    pcall(function() className = inst.ClassName end)
+
     local propsToRead = {}
 
-    for _, p in ipairs(defaultProps) do
-        propsToRead[p] = true
+    if API then
+        local apiProps = getClassProperties(className)
+        for propName, propData in pairs(apiProps) do
+            propsToRead[propName] = true
+        end
     end
 
-    for class, classProps in pairs(classPropMap) do
-        if safeIsA(inst, class) then
-            for _, p in ipairs(classProps) do
-                propsToRead[p] = true
+    if not API or not next(propsToRead) then
+        local function addFallbackProps(class)
+            if fallbackProps[class] then
+                for _, prop in ipairs(fallbackProps[class]) do
+                    propsToRead[prop] = true
+                end
+            end
+        end
+
+        addFallbackProps("Instance")
+        addFallbackProps(className)
+
+        for baseClass, _ in pairs(fallbackProps) do
+            if safeIsA(inst, baseClass) then
+                addFallbackProps(baseClass)
             end
         end
     end
 
+    local props = {}
     for propName in pairs(propsToRead) do
         local success, value = pcall(function() return inst[propName] end)
         if success then
@@ -693,6 +838,10 @@ function WsExplorer.connect(url)
     end
 
     url = url or ("ws://127.0.0.1:" .. EXPLORER_PORT)
+
+    task.spawn(function()
+        fetchAPI()
+    end)
 
     local success, socket = pcall(function() return WebSocket.connect(url) end)
     if not success or not socket then
