@@ -696,6 +696,53 @@ messageHandlers["getLoadedModules"] = function(payload, respond)
     respond("loadedModules", {modules = modules, count = #modules})
 end
 
+messageHandlers["getAllScripts"] = function(payload, respond)
+    local scripts = {}
+    local maxScripts = math.min(payload.maxScripts or 1000, 2000)
+    local checked = 0
+
+    local function collectScripts(inst)
+        if #scripts >= maxScripts then return end
+
+        if safeIsA(inst, "LuaSourceContainer") then
+            local info = getInstanceInfo(inst)
+            if info then
+                info.isScript = true
+                table.insert(scripts, info)
+            end
+        end
+
+        checked = checked + 1
+        if checked % 200 == 0 then
+            task.wait()
+        end
+
+        local s, kids = pcall(function() return inst:GetChildren() end)
+        if s then
+            for _, child in ipairs(kids) do
+                if #scripts >= maxScripts then return end
+                collectScripts(child)
+            end
+        end
+    end
+
+    local containers = {
+        game:GetService("ReplicatedStorage"),
+        game:GetService("ReplicatedFirst"),
+        game:GetService("StarterGui"),
+        game:GetService("StarterPack"),
+        game:GetService("StarterPlayer"),
+        game:GetService("Workspace"),
+    }
+
+    for _, container in ipairs(containers) do
+        if #scripts >= maxScripts then break end
+        collectScripts(container)
+    end
+
+    respond("allScripts", {scripts = scripts, count = #scripts})
+end
+
 messageHandlers["getServices"] = function(payload, respond)
     respond("services", {services = getServices()})
 end
