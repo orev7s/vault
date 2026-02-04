@@ -7,13 +7,13 @@ local ws = nil
 local connected = false
 local subscriptions = {}
 local idCounter = 0
+local MAX_CHILDREN = 500
+local MAX_STRING_LEN = 10000
 
 local env = {
     getnilinstances = getnilinstances,
     getloadedmodules = getloadedmodules,
     decompile = decompile,
-    getproperties = getproperties,
-    gethiddenproperties = gethiddenproperties,
     getscriptbytecode = getscriptbytecode,
     getconnections = getconnections,
     getcallbackvalue = getcallbackvalue,
@@ -34,7 +34,13 @@ end
 
 local function safeToString(value)
     local s, r = pcall(tostring, value)
-    return s and r or "???"
+    if s and r then
+        if #r > 200 then
+            return r:sub(1, 200) .. "..."
+        end
+        return r
+    end
+    return "???"
 end
 
 local function safeIsA(inst, className)
@@ -44,7 +50,7 @@ end
 
 local function serializeValue(value, depth)
     depth = depth or 0
-    if depth > 3 then return {type = "truncated"} end
+    if depth > 2 then return {type = "truncated"} end
 
     local t = typeof(value)
 
@@ -53,8 +59,18 @@ local function serializeValue(value, depth)
     elseif t == "boolean" then
         return {type = "boolean", value = value}
     elseif t == "number" then
+        if value ~= value then
+            return {type = "number", value = "NaN"}
+        elseif value == math.huge then
+            return {type = "number", value = "Infinity"}
+        elseif value == -math.huge then
+            return {type = "number", value = "-Infinity"}
+        end
         return {type = "number", value = value}
     elseif t == "string" then
+        if #value > MAX_STRING_LEN then
+            return {type = "string", value = value:sub(1, MAX_STRING_LEN) .. "...(truncated)"}
+        end
         return {type = "string", value = value}
     elseif t == "Instance" then
         local name = safeToString(value)
@@ -66,7 +82,8 @@ local function serializeValue(value, depth)
     elseif t == "Vector2" then
         return {type = "Vector2", x = value.X, y = value.Y}
     elseif t == "CFrame" then
-        return {type = "CFrame", components = {value:GetComponents()}}
+        local comps = {value:GetComponents()}
+        return {type = "CFrame", position = {comps[1], comps[2], comps[3]}}
     elseif t == "Color3" then
         return {type = "Color3", r = value.R, g = value.G, b = value.B}
     elseif t == "BrickColor" then
@@ -78,21 +95,21 @@ local function serializeValue(value, depth)
     elseif t == "Rect" then
         return {type = "Rect", minX = value.Min.X, minY = value.Min.Y, maxX = value.Max.X, maxY = value.Max.Y}
     elseif t == "Ray" then
-        return {type = "Ray", origin = {value.Origin.X, value.Origin.Y, value.Origin.Z}, direction = {value.Direction.X, value.Direction.Y, value.Direction.Z}}
+        return {type = "Ray"}
     elseif t == "Enum" then
         return {type = "Enum", value = tostring(value)}
     elseif t == "EnumItem" then
-        return {type = "EnumItem", enum = tostring(value.EnumType), name = value.Name, value = value.Value}
+        return {type = "EnumItem", name = value.Name, value = value.Value}
     elseif t == "NumberSequence" or t == "ColorSequence" then
         return {type = t, keypoints = #value.Keypoints}
     elseif t == "NumberRange" then
         return {type = "NumberRange", min = value.Min, max = value.Max}
     elseif t == "table" then
-        if depth > 1 then return {type = "table"} end
+        if depth > 0 then return {type = "table"} end
         local result = {}
         local count = 0
         for k, v in pairs(value) do
-            if count >= 20 then break end
+            if count >= 10 then break end
             result[safeToString(k)] = serializeValue(v, depth + 1)
             count = count + 1
         end
@@ -102,7 +119,7 @@ local function serializeValue(value, depth)
     elseif t == "thread" then
         return {type = "thread"}
     else
-        return {type = t, string = safeToString(value)}
+        return {type = t}
     end
 end
 
@@ -130,9 +147,11 @@ local function getInstancePath(obj)
             break
         end
 
-        local curName = safeToString(curObj)
-        local indexName
+        local curName = ""
+        pcall(function() curName = curObj.Name end)
+        curName = curName or safeToString(curObj)
 
+        local indexName
         if curName:match("^[%a_][%w_]*$") then
             indexName = "." .. curName
         else
@@ -197,7 +216,7 @@ local function getInstanceInfoFast(inst)
     pcall(function() info.name = inst.Name end)
     pcall(function() info.className = inst.ClassName end)
 
-    info.name = info.name or safeToString(inst)
+    info.name = info.name or "???"
     info.className = info.className or "Unknown"
 
     local s, children = pcall(function() return inst:GetChildren() end)
@@ -221,17 +240,6 @@ local function getInstanceInfo(inst)
 
     info.path = getInstancePath(inst)
 
-    pcall(function()
-        info.parent = inst.Parent and getInstancePath(inst.Parent) or nil
-    end)
-
-    pcall(function()
-        if safeIsA(inst, "BasePart") then
-            info.position = {inst.Position.X, inst.Position.Y, inst.Position.Z}
-            info.size = {inst.Size.X, inst.Size.Y, inst.Size.Z}
-        end
-    end)
-
     return info
 end
 
@@ -242,10 +250,13 @@ local function getChildren(inst)
     local s, kids = pcall(function() return inst:GetChildren() end)
     if not s then return {} end
 
+    local count = 0
     for _, child in ipairs(kids) do
+        if count >= MAX_CHILDREN then break end
         local info = getInstanceInfo(child)
         if info then
             table.insert(children, info)
+            count = count + 1
         end
     end
     return children
@@ -262,10 +273,13 @@ local function getTree(inst, depth)
         info.children = {}
         local s, kids = pcall(function() return inst:GetChildren() end)
         if s then
+            local count = 0
             for _, child in ipairs(kids) do
+                if count >= MAX_CHILDREN then break end
                 local childTree = getTree(child, depth - 1)
                 if childTree then
                     table.insert(info.children, childTree)
+                    count = count + 1
                 end
             end
         end
@@ -274,21 +288,21 @@ local function getTree(inst, depth)
     return info
 end
 
-local defaultProps = {"Name", "Parent", "ClassName", "Archivable"}
+local defaultProps = {"Name", "ClassName", "Archivable"}
 
 local classPropMap = {
-    BasePart = {"Position", "Size", "CFrame", "Orientation", "Anchored", "CanCollide", "Transparency", "Color", "Material"},
+    BasePart = {"Position", "Size", "Anchored", "CanCollide", "Transparency", "Color", "Material"},
     Part = {"Shape"},
-    MeshPart = {"MeshId", "TextureID"},
     Model = {"PrimaryPart"},
     Humanoid = {"Health", "MaxHealth", "WalkSpeed", "JumpPower"},
-    GuiObject = {"Position", "Size", "AnchorPoint", "Visible", "BackgroundColor3", "BackgroundTransparency"},
-    TextLabel = {"Text", "TextColor3", "TextSize", "Font"},
-    TextButton = {"Text", "TextColor3", "TextSize", "Font"},
-    ImageLabel = {"Image", "ImageColor3", "ImageTransparency"},
+    GuiObject = {"Position", "Size", "Visible", "BackgroundColor3", "BackgroundTransparency"},
+    TextLabel = {"Text", "TextColor3", "TextSize"},
+    TextButton = {"Text", "TextColor3", "TextSize"},
+    ImageLabel = {"Image"},
     Sound = {"SoundId", "Volume", "Playing", "Looped"},
     Script = {"Disabled"},
     LocalScript = {"Disabled"},
+    ModuleScript = {},
     ObjectValue = {"Value"},
     StringValue = {"Value"},
     IntValue = {"Value"},
@@ -314,15 +328,6 @@ local function getProperties(inst)
         end
     end
 
-    if env.getproperties then
-        local s, allProps = pcall(env.getproperties, inst)
-        if s and type(allProps) == "table" then
-            for _, p in ipairs(allProps) do
-                propsToRead[p] = true
-            end
-        end
-    end
-
     for propName in pairs(propsToRead) do
         local success, value = pcall(function() return inst[propName] end)
         if success then
@@ -342,10 +347,9 @@ end
 local function searchInstances(query, options)
     options = options or {}
     local results = {}
-    local maxResults = options.maxResults or 10000
+    local maxResults = math.min(options.maxResults or 100, 100)
     local searchIn = options.searchIn or game
     local caseSensitive = options.caseSensitive or false
-    local searchClassName = options.searchClassName or false
 
     if type(searchIn) == "string" then
         searchIn = getInstanceFromPath(searchIn) or game
@@ -354,23 +358,10 @@ local function searchInstances(query, options)
     local lowerQuery = not caseSensitive and query:lower() or query
 
     local function matches(inst)
-        local name = safeToString(inst)
+        local name = ""
+        pcall(function() name = inst.Name end)
         local checkName = caseSensitive and name or name:lower()
-
-        if checkName:find(lowerQuery, 1, true) then
-            return true
-        end
-
-        if searchClassName then
-            local className = ""
-            pcall(function() className = inst.ClassName end)
-            className = caseSensitive and className or className:lower()
-            if className:find(lowerQuery, 1, true) then
-                return true
-            end
-        end
-
-        return false
+        return checkName:find(lowerQuery, 1, true) ~= nil
     end
 
     local checked = 0
@@ -382,7 +373,7 @@ local function searchInstances(query, options)
         end
 
         checked = checked + 1
-        if checked % 200 == 0 then
+        if checked % 500 == 0 then
             task.wait()
         end
 
@@ -407,11 +398,13 @@ local function getNilInstances()
     local s, nilInsts = pcall(env.getnilinstances)
     if not s or type(nilInsts) ~= "table" then return {} end
 
-    for i, inst in ipairs(nilInsts) do
-        if i % 100 == 0 then task.wait() end
+    local count = 0
+    for _, inst in ipairs(nilInsts) do
+        if count >= MAX_CHILDREN then break end
         local info = getInstanceInfo(inst)
         if info then
             table.insert(results, info)
+            count = count + 1
         end
     end
 
@@ -425,12 +418,14 @@ local function getLoadedModules()
     local s, modules = pcall(env.getloadedmodules)
     if not s or type(modules) ~= "table" then return {} end
 
-    for i, mod in ipairs(modules) do
-        if i % 50 == 0 then task.wait() end
+    local count = 0
+    for _, mod in ipairs(modules) do
+        if count >= MAX_CHILDREN then break end
         if safeIsA(mod, "ModuleScript") then
             local info = getInstanceInfo(mod)
             if info then
                 table.insert(results, info)
+                count = count + 1
             end
         end
     end
@@ -468,6 +463,9 @@ local function decompileScript(inst)
 
     local s, source = pcall(env.decompile, inst)
     if s then
+        if type(source) == "string" and #source > 500000 then
+            return source:sub(1, 500000) .. "\n-- (truncated, too large)"
+        end
         return source
     else
         return nil, tostring(source)
@@ -486,28 +484,6 @@ local function getScriptBytecode(inst)
     end
 end
 
-local function getSignalConnections(inst, signalName)
-    if not inst or not env.getconnections then return {} end
-
-    local s1, signal = pcall(function() return inst[signalName] end)
-    if not s1 or not signal then return {} end
-
-    local s2, cons = pcall(env.getconnections, signal)
-    if not s2 then return {} end
-
-    local results = {}
-    for i, con in ipairs(cons) do
-        if i % 50 == 0 then task.wait() end
-        table.insert(results, {
-            index = i,
-            enabled = con.Enabled,
-            foreignState = con.ForeignState,
-        })
-    end
-
-    return results
-end
-
 local function sendMessage(msgType, data)
     if not connected or not ws then return end
 
@@ -518,8 +494,11 @@ local function sendMessage(msgType, data)
     }
 
     local s, encoded = pcall(function() return HttpService:JSONEncode(msg) end)
-    if s then
-        pcall(function() ws:Send(encoded) end)
+    if s and encoded then
+        local s2 = pcall(function() ws:Send(encoded) end)
+        if not s2 then
+            connected = false
+        end
     end
 end
 
@@ -531,7 +510,7 @@ end
 
 messageHandlers["getTree"] = function(payload, respond)
     local path = payload.path or "game"
-    local depth = payload.depth or 1
+    local depth = math.min(payload.depth or 1, 2)
     local inst = getInstanceFromPath(path)
     respond("tree", {path = path, tree = getTree(inst, depth)})
 end
@@ -588,12 +567,6 @@ messageHandlers["getBytecode"] = function(payload, respond)
     respond("bytecode", {path = payload.path, bytecode = bytecode, error = err, success = bytecode ~= nil})
 end
 
-messageHandlers["getConnections"] = function(payload, respond)
-    local inst = getInstanceFromPath(payload.path)
-    local cons = getSignalConnections(inst, payload.signal)
-    respond("connections", {path = payload.path, signal = payload.signal, connections = cons})
-end
-
 messageHandlers["clone"] = function(payload, respond)
     local inst = getInstanceFromPath(payload.path)
     if not inst then
@@ -633,7 +606,7 @@ messageHandlers["execute"] = function(payload, respond)
 
     local results = {pcall(fn)}
     local serializedResults = {}
-    for i = 2, math.min(#results, 10) do
+    for i = 2, math.min(#results, 5) do
         table.insert(serializedResults, serializeValue(results[i]))
     end
     respond("executeResult", {success = results[1], results = serializedResults, error = not results[1] and results[2] or nil})
@@ -677,7 +650,7 @@ messageHandlers["invokeServer"] = function(payload, respond)
         local results = {pcall(function() return inst:InvokeServer(table.unpack(payload.args or {})) end)}
         if results[1] then
             local serializedResults = {}
-            for i = 2, #results do
+            for i = 2, math.min(#results, 5) do
                 table.insert(serializedResults, serializeValue(results[i]))
             end
             respond("invoked", {path = payload.path, success = true, results = serializedResults})
@@ -723,7 +696,8 @@ function WsExplorer.connect(url)
 
     local success, socket = pcall(function() return WebSocket.connect(url) end)
     if not success or not socket then
-        error("Failed to connect to WebSocket: " .. tostring(socket))
+        warn("[WsExplorer] Failed to connect: " .. tostring(socket))
+        return nil
     end
 
     ws = socket
@@ -736,11 +710,6 @@ function WsExplorer.connect(url)
     ws.OnClose:Connect(function()
         connected = false
         ws = nil
-        for subId, sub in pairs(subscriptions) do
-            for _, con in ipairs(sub.connections or {}) do
-                pcall(function() con:Disconnect() end)
-            end
-        end
         table.clear(subscriptions)
     end)
 
@@ -758,11 +727,6 @@ end
 
 function WsExplorer.disconnect()
     if ws then
-        for _, sub in pairs(subscriptions) do
-            for _, con in ipairs(sub.connections or {}) do
-                pcall(function() con:Disconnect() end)
-            end
-        end
         table.clear(subscriptions)
         pcall(function() ws:Close() end)
     end
